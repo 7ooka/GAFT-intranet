@@ -340,19 +340,19 @@ footer {
                     transition: 300ms;
                     position: relative;
                     padding-#{$end-direction}: 30px;
-                    &::before{
-                      content: "";
-                      position: absolute;
-                      top: 20px;
-                      #{$end-direction}:19px;
-                      width: 11px;
-                      height: 11px;
-                      background-position: center;
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      background-image: url(../images/home/arr-down.svg);
-                      transition: 300ms;
-                    }
+                    // &::before{
+                    //   content: "";
+                    //   position: absolute;
+                    //   top: 20px;
+                    //   #{$end-direction}:19px;
+                    //   width: 11px;
+                    //   height: 11px;
+                    //   background-position: center;
+                    //   background-repeat: no-repeat;
+                    //   background-size: contain;
+                    //   background-image: url(../images/home/arr-down.svg);
+                    //   transition: 300ms;
+                    // }
                   }
                   .sub-menu-childs{
                     position: absolute;

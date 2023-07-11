@@ -432,21 +432,6 @@ footer .left-footer p {
   padding-left: 30px;
 }
 
-.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li.sub-menu .sub-menu-parent::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 19px;
-  width: 11px;
-  height: 11px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/home/arr-down.svg);
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
 .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li.sub-menu .sub-menu-childs {
   position: absolute;
   right: 0;
