@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.952" height="28.952" viewBox="0 0 28.952 28.952">
+  <g id="Arrow-Left2" transform="translate(28.452 28.452) rotate(180)">
+    <rect id="Circle" width="27.952" height="27.952" rx="13.976" fill="none" stroke="#323e48" stroke-width="1" opacity="0.5"/>
+    <path id="Arrow" d="M3.961,4.957.208,1.207a.706.706,0,0,1,0-1,.715.715,0,0,1,1,0L5.464,4.455a.707.707,0,0,1,.021.977L1.215,9.71a.709.709,0,0,1-1-1Z" transform="translate(10.972 9.25)" fill="#323e48"/>
+  </g>
+</svg>

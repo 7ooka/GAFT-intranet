@@ -1,0 +1,39 @@
+$font-ar: "DINNextLT";
+$font-en: "DINNextLT";
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors
+
+
+$p-color: #323E48;
+$green-main:#007066;
+$gold-color:#CCA079;;
+$grey-bbb: #BBBBBB;
+$drak-main-color:#47525B;
+
+$theme-colors: (
+  // "primary": $primary-color,
+  // "warning": $orange-color,
+  // "success": $green-color,
+  // "gray": $gray-color,
+  // "red": $red-color
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 400; // (Regular)
+$w-medium: 500;
+$w-semi-bold: 600; // (Semi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
+
+
+
+//more 
+
+$raduis-normal : 8px;

@@ -1,0 +1,33 @@
+// DINNextLT
+@font-face {
+  font-family: "DINNextLT";
+  src: url($font-path + "DIN-Next-LT-Arabic-Light.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Light.ttf");
+  font-weight: $w-light;
+}
+@font-face {
+  font-family: "DINNextLT";
+  src: url($font-path + "DIN-Next-LT-Arabic-Regular.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Regular.ttf");
+  font-weight: $w-normal;
+}
+@font-face {
+  font-family: "DINNextLT";
+  src: url($font-path + "DINNextLTW23-Medium.woff") format("woff"),
+    url($font-path + "DINNextLTArabic-Medium.ttf");
+  font-weight: $w-medium;
+}
+
+@font-face {
+  font-family: "DINNextLT";
+  src: url($font-path + "DIN-Next-LT-Arabic-Bold.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Bold.ttf");
+  font-weight: $w-bold;
+}
+@font-face {
+  font-family: "DINNextLT";
+  src: url($font-path + "DIN-Next-LT-Arabic-Black.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Black.ttf");
+  font-weight: $w-black;
+}
+
