@@ -818,6 +818,8 @@ footer .left-footer p {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 30px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
 }
 
 .weather-card .date {
