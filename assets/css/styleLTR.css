@@ -2226,6 +2226,64 @@ footer .left-footer p {
           filter: grayscale(1) brightness(3);
 }
 
+.progressbarCircle .font16 {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 7px;
+  display: inline-block;
+}
+
+.progressbarCircle .circle {
+  width: 92px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.progressbarCircle .circle canvas {
+  vertical-align: top;
+  width: 92px !important;
+}
+
+.progressbarCircle .circle strong {
+  position: absolute;
+  top: calc(50% + -5px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: normal;
+  font-size: 35px;
+  color: #000000;
+  font-family: "DINNextLT";
+  font-weight: 500;
+}
+
+.Dark .progressbarCircle .circle strong {
+  color: #fff;
+}
+
+.Dark .progressbarCircle .font16 {
+  color: #BBBBBB;
+}
+
+.charts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 47px 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 1650px) {
   .container {
     max-width: 1640px;

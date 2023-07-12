@@ -236,13 +236,6 @@ $(".sub-menu-parent").on("click", function (e) {
 
 
 
-$(".dark-Mode").on("click", function (e) {
-  console.log("dark-Mode");
-  $(this).toggleClass("dark-here");
-  $("body").toggleClass("Dark");
-  e.stopPropagation();
- 
-});
 
 
 $(function () {
@@ -295,3 +288,117 @@ $(function () {
 });
 
 });
+
+
+
+
+
+
+
+
+/*
+ AO start 
+*/
+
+$(document).ready(function () {
+
+    function animateElements() {
+        $('.progressbarCircle').each(function () {
+            let elementPos = $(this).offset().top;
+            let topOfWindow = $(window).scrollTop();
+            // var percent = $(this).find('.circle').attr('data-percent');
+            let minValue = $(this).find('.circle').attr('aria-valuenow');
+            let maxValue = $(this).find('.circle').attr('aria-valuemax');
+            let animate = $(this).data('animate');
+            let total = (minValue / maxValue) * 100
+      
+            if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+                $(this).data('animate', true);
+                $(this).find('.circle').circleProgress({
+                    startAngle: -Math.PI / 1.3,
+                    value: total / 100,
+                    size : 92,
+                    thickness:10,
+                    emptyFill: " rgba(0, 112, 103, 0.99)" ,
+                    fill: {
+                      color: "rgba(204, 160, 121, 0.99)"
+                    }
+                }).on('circle-animation-progress', function (event, progress, stepValue) {
+                    $(this).find('strong').text((stepValue*100).toFixed(0));
+                    // instance.arcFill = setGradient(stepValue)
+                }).stop();
+            }
+        });
+    }
+
+    animateElements();
+    // $(window).scroll(animateElements);
+
+    if($('body').hasClass("Dark")) {
+      // $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: '#f0f' }});
+    }else {
+      $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
+    }
+
+    $(".dark-Mode").on("click", function (e) {
+      console.log("dark-Mode");
+      $(this).toggleClass("dark-here");
+      $("body").toggleClass("Dark");
+      if($('body').hasClass("Dark")) {
+        $('.circle').circleProgress({ emptyFill:"rgba(0, 154, 189, 0.99)", fill: { color: 'rgba(187, 187, 187, 0.99)' }});
+        $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: 'rgba(0, 112, 103, 0.99)' }});
+      }else {
+        $('.circle').circleProgress({  emptyFill:"rgba(0, 112, 103, 0.99)", fill: { color: ' rgba(204, 160, 121, 0.99)' }});
+        $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
+      }
+      e.stopPropagation();
+     
+    });
+    
+});
+
+
+
+
+
+
+/*
+***** state one
+
+// $(document).ready(function ($) {
+
+//   function animateElements() {
+       
+//     $('.progressbarCircle').each(function () {
+//         var elementPos = $(this).offset().top;
+//         var topOfWindow = $(window).scrollTop();
+//         var percent = $(this).find('.circle').attr('data-percent');
+//         var animate = $(this).data('animate');
+  
+//         if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+//             $(this).data('animate', true);
+//             $(this).find('.circle').circleProgress({
+//                 startAngle: -Math.PI / 1.3,
+//                 value: percent / 100,
+//                 size : 92,
+//                 thickness:10,
+//                 emptyFill: " rgba(204, 160, 121, 0.99)" ,
+//                 fill: {
+//                   color: "#007066"
+//                 }
+//             }).on('circle-animation-progress', function (event, progress, stepValue) {
+//                 $(this).find('strong').text((stepValue*100).toFixed(0));
+//                 // instance.arcFill = setGradient(stepValue)
+//             }).stop();
+//         }
+//     });
+// }
+
+//     animateElements();
+//     $(window).scroll(animateElements);
+// });
+*/
+
+/*
+ AO end 
+*/

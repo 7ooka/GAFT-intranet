@@ -1,0 +1,60 @@
+
+.progressbarCircle {
+  .font16 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 7px;
+    display: inline-block;
+  }
+  .circle {
+    width: 92px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+    canvas {
+      vertical-align: top;
+      width: 92px !important;
+    }
+    strong {
+      position: absolute; 
+      top: calc(50% + -5px);
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      text-align: center;
+      line-height: normal;
+      font-size: 35px;
+      color: #000000;
+      font-family: "DINNextLT";
+      font-weight: $w-medium;
+    }
+    
+  }
+}
+.Dark {
+  .progressbarCircle {
+    .circle {
+      strong {
+        color: #fff;
+      }
+    }
+    .font16 {
+      color: #BBBBBB;
+    }
+  }
+}
+.charts-box {
+  display: flex;
+  width: 100%;
+  margin: 0 47px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: rgba(0, 112, 103, 0.99) ;
+  // color: rgba(0, 154, 189, 0.99);
+  // color: rgba(204, 160, 121, 0.99);
+}
+
+
+  
