@@ -1706,8 +1706,8 @@ footer {
   border-radius: 20px;
   overflow: hidden;
   padding: 50px;
-  padding-#{$start-direction}: 70px;
-  padding-#{$end-direction}: 45px;
+  margin-bottom: 60px;
+  
 }
 .minus-margin{
   margin-top: -195px;
@@ -1733,6 +1733,7 @@ footer {
           position: relative;
           &::after{
             content: ">";
+            margin: 0 5px;
           }
         }
         span{
@@ -1783,6 +1784,113 @@ footer {
   }
 }
 
+.about{
+  padding-#{$start-direction}: 70px;
+  padding-#{$end-direction}: 45px;
+  .rev{
+    .content-box{
+      margin-#{$start-direction}: 35px;
+      margin-#{$end-direction}: 20px;
+    }
+  }
+  .about-sec-one{
+    margin-bottom: 20px;
+  }
+  h3{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: $w-medium;
+    line-height: 40px;
+  }
+  ul{
+    padding: 0;
+    li{
+      font-size: 20px;
+      font-weight: $w-normal;
+      color: #000;
+      margin-bottom: 15px;
+    }
+  }
+  .content-box{
+    margin-#{$end-direction}: 30px;
+    p{
+      font-size: 20px;
+      font-weight: $w-normal;
+      line-height: 40px;
+      color: #000;
+      margin-bottom: 35px;
+      // &:last-child{
+      //   margin-bottom: 0;
+      // }
+    }
+  }
+  .img-box{
+    width: 100%;
+    height: 408px;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &.vid{
+      &::before{
+        content: "";
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        #{$start-direction}:50%;
+        top: 50%;
+        transform: translate(50% , -50%);
+        background-image: url(../images/home/Play-Circle.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: center;
+        border: 2px solid $gold-color;
+        border-radius: 50%;
+        transition: 500ms;
+      }
+      &:hover{
+        &::before{
+          width: 160px;
+          height: 160px;
+          border: 0;
+          background-size: 55%;
+        }
+      }
+    }
+  }
+  .about-sec-two{
+    margin-bottom: 30px;
+    h3{
+      margin-bottom: 50px;
+    }
+    h5{
+      font-size: 20px;
+      font-weight: $w-medium;
+      color: #000;
+      margin-bottom: 50px;
+    }
+  }
+  .about-sec-three{
+    margin-bottom: 40px;
+    .content-box {
+      p{
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .about-sec-four{
+    ul{
+      margin-bottom: 50px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 
 

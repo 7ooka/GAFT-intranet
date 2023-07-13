@@ -2026,8 +2026,7 @@ footer .left-footer p {
   border-radius: 20px;
   overflow: hidden;
   padding: 50px;
-  padding-right: 70px;
-  padding-left: 45px;
+  margin-bottom: 60px;
 }
 
 .minus-margin {
@@ -2057,6 +2056,7 @@ footer .left-footer p {
 
 .breadcrumb-banner .breadcrumb-top .breadcrumb li a::after {
   content: ">";
+  margin: 0 5px;
 }
 
 .breadcrumb-banner .breadcrumb-top .breadcrumb li span {
@@ -2106,6 +2106,120 @@ footer .left-footer p {
   font-size: 30px;
   font-weight: 500;
   color: #fff;
+  margin-bottom: 0;
+}
+
+.about {
+  padding-right: 70px;
+  padding-left: 45px;
+}
+
+.about .rev .content-box {
+  margin-right: 35px;
+  margin-left: 20px;
+}
+
+.about .about-sec-one {
+  margin-bottom: 20px;
+}
+
+.about h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.about ul {
+  padding: 0;
+}
+
+.about ul li {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.about .content-box {
+  margin-left: 30px;
+}
+
+.about .content-box p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.about .img-box {
+  width: 100%;
+  height: 408px;
+  position: relative;
+}
+
+.about .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .img-box.vid::before {
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 94px;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  background-image: url(../images/home/Play-Circle.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  border: 2px solid #CCA079;
+  border-radius: 50%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.about .img-box.vid:hover::before {
+  width: 160px;
+  height: 160px;
+  border: 0;
+  background-size: 55%;
+}
+
+.about .about-sec-two {
+  margin-bottom: 30px;
+}
+
+.about .about-sec-two h3 {
+  margin-bottom: 50px;
+}
+
+.about .about-sec-two h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.about .about-sec-three {
+  margin-bottom: 40px;
+}
+
+.about .about-sec-three .content-box p:last-child {
+  margin-bottom: 0;
+}
+
+.about .about-sec-four ul {
+  margin-bottom: 50px;
+}
+
+.about .about-sec-four ul:last-of-type {
   margin-bottom: 0;
 }
 
@@ -2386,6 +2500,8 @@ footer .left-footer p {
 @media (min-width: 1650px) {
   .container {
     max-width: 1640px;
+    padding-left: 4.5px;
+    padding-right: 4.5px;
   }
   .row > * {
     padding-left: 7.5px;
