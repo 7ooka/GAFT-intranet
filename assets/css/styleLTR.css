@@ -2439,10 +2439,57 @@ footer .left-footer p {
           filter: grayscale(1) brightness(3);
 }
 
-.progressbarCircle .font16 {
-  font-size: 16px;
+.font30,
+.font25,
+.font24,
+.font22,
+.font20,
+.font16 {
   color: #000000;
+  margin: 0;
+}
+
+.font30,
+.font25,
+.font24 {
+  font-weight: 700;
+}
+
+.font22,
+.font20,
+.font16 {
   font-weight: 500;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+.font25 {
+  font-size: 25px;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font22 {
+  font-size: 22px;
+}
+
+.font20 {
+  font-size: 22px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.color007066, .agencyBox .ABContent .font25 {
+  color: #007066;
+}
+
+.progressbarCircle .font16 {
   margin-top: 7px;
   display: inline-block;
 }
@@ -2495,6 +2542,101 @@ footer .left-footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* start agency */
+.headAgency {
+  padding: 20px;
+  background: linear-gradient(130deg, #79CC9C, #BBBBBB);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  min-height: 355px;
+  margin-bottom: 35px;
+  -webkit-box-shadow: 0 3px 40px rgba(255, 0, 0, 0.05);
+          box-shadow: 0 3px 40px rgba(255, 0, 0, 0.05);
+}
+
+.headAgency .HATxt {
+  text-align: center;
+}
+
+.headAgency .HATxt .font30,
+.headAgency .HATxt .font24 {
+  margin-bottom: 8px;
+}
+
+.headAgency .HAImg {
+  margin-right: 50px;
+}
+
+.headAgency .HAImg img {
+  width: 170px;
+  height: 170px;
+}
+
+.padding15 > * {
+  padding-left: 12.5px !important;
+  padding-right: 12.5px !important;
+}
+
+.agencyBox {
+  width: 100%;
+  height: 473px;
+  background: #EFEDE6;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.agencyBox .ABLogo {
+  margin-bottom: 12px;
+}
+
+.agencyBox .ABLogo img {
+  max-height: 120px;
+}
+
+.agencyBox .ABContent .font25 {
+  margin-bottom: 14px;
+  line-height: 35px;
+}
+
+.agencyBox .ABContent .font26 {
+  padding: 14px 0 16px;
+  margin: 0;
+}
+
+.agencyBox .ABContent .font20 {
+  padding-bottom: 27px;
+}
+
+.agencyBox .ABContent .font16:hover {
+  color: #000000;
 }
 
 @media (min-width: 1650px) {

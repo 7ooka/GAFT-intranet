@@ -1,9 +1,47 @@
+.font30,
+.font25,
+.font24,
+.font22,
+.font20,
+.font16 {
+  color: #000000;
+  margin: 0;
+}
+.font30,
+.font25,
+.font24 {
+  font-weight: $w-bold;
+}
+.font22,
+.font20,
+.font16 {
+  font-weight: $w-medium;
+}
+.font30 {
+  font-size: 30px;
+}
+.font25 {
+  font-size: 25px;
+}
+.font24 {
+  font-size: 24px;
+}
+.font22 {
+  font-size: 22px;
+}
+.font20 {
+  font-size: 22px;
+}
+.font16 {
+  font-size: 16px;
+}
+
+.color007066 {
+  color: #007066;
+}
 
 .progressbarCircle {
   .font16 {
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
     margin-top: 7px;
     display: inline-block;
   }
@@ -51,9 +89,74 @@
   margin: 0 47px 0 30px;
   justify-content: space-between;
   align-items: center;
-  // background-color: rgba(0, 112, 103, 0.99) ;
-  // color: rgba(0, 154, 189, 0.99);
-  // color: rgba(204, 160, 121, 0.99);
+}
+/* start agency */
+.headAgency {
+  padding: 20px;
+  background: linear-gradient(130deg, #79CC9C, #BBBBBB);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    min-height: 355px;
+    margin-bottom: 35px;
+    box-shadow: 0 3px 40px rgba(255, 0, 0, 0.05);
+    .HATxt {
+      text-align: center;
+      .font30,
+      .font24 {
+        margin-bottom: 8px;
+      }
+    }
+    .HAImg {
+      margin-#{$end-direction}: 50px;
+      img {
+        width: 170px;
+        height: 170px;
+      }
+    }
+}
+.padding15 > * {
+  padding-left: 12.5px !important;
+  padding-right: 12.5px !important;
+}
+.agencyBox {
+  width: 100%;
+    height: 473px;
+    background: #EFEDE6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 35px;
+    .ABLogo {
+      margin-bottom: 12px;
+      img {
+        max-height: 120px;
+      }
+    }
+    .ABContent {
+      .font25 {
+        @extend .color007066;
+        margin-bottom: 14px;
+        line-height: 35px;
+      }
+      .font26 {
+        padding: 14px 0 16px;
+        margin: 0;
+      }
+      .font20 {
+        padding-bottom: 27px;
+      }
+      .font16 {
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
 }
 
 
