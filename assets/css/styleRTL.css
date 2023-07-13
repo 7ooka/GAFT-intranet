@@ -595,6 +595,7 @@ footer .left-footer p {
   position: fixed;
   top: 328px;
   left: 0;
+  z-index: 99;
 }
 
 .social-share ul {
@@ -2008,6 +2009,104 @@ footer .left-footer p {
 
 .fancybox-lock .fancybox-overlay {
   overflow-y: hidden;
+}
+
+/***********************
+
+              inner
+
+*************************/
+.gold-text {
+  color: #CCA079;
+}
+
+.main-white-card {
+  background-color: #fff;
+  border: 1px solid #BBBBBB;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 50px;
+  padding-right: 70px;
+  padding-left: 45px;
+}
+
+.minus-margin {
+  margin-top: -195px;
+  position: relative;
+}
+
+.breadcrumb-banner .breadcrumb-top {
+  background-color: #007066;
+}
+
+.breadcrumb-banner .breadcrumb-top .breadcrumb {
+  margin: 0;
+  height: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb-banner .breadcrumb-top .breadcrumb li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 5px;
+  position: relative;
+}
+
+.breadcrumb-banner .breadcrumb-top .breadcrumb li a::after {
+  content: ">";
+}
+
+.breadcrumb-banner .breadcrumb-top .breadcrumb li span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.breadcrumb-banner .breadcrumb-end {
+  position: relative;
+  height: 400px;
+}
+
+.breadcrumb-banner .breadcrumb-end .breadcrumb-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.breadcrumb-banner .breadcrumb-end .breadcrumb-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.breadcrumb-banner .breadcrumb-end .breadcrumb-background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #007066;
+  mix-blend-mode: color;
+}
+
+.breadcrumb-banner .breadcrumb-end .breadcrumb-content {
+  position: relative;
+  padding-top: 100px;
+}
+
+.breadcrumb-banner .breadcrumb-end .breadcrumb-content h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0;
 }
 
 /*
