@@ -432,6 +432,21 @@ footer .left-footer p {
   padding-left: 30px;
 }
 
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li.sub-menu .sub-menu-parent::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 19px;
+  width: 11px;
+  height: 11px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/home/arr-down.svg);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li.sub-menu .sub-menu-childs {
   position: absolute;
   right: 0;
@@ -2223,6 +2238,209 @@ footer .left-footer p {
   margin-bottom: 0;
 }
 
+.office-card {
+  width: 100%;
+  height: 473px;
+  background: #EFEDE6;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.office-card.main-card {
+  background: #79cc9c;
+  background: linear-gradient(165deg, #79cc9c 10%, #bbbbbb 100%);
+}
+
+.office-card .img-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.office-card .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.office-card .content-box {
+  margin-top: 20px;
+}
+
+.office-card .content-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+  line-height: 38px;
+}
+
+.office-card .content-box h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+  line-height: 32px;
+}
+
+.office-card .content-box p {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.office-card .content-box p a {
+  color: #000;
+}
+
+.office-card .content-box .location {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.office-card .content-box .location-a {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 27px;
+}
+
+.office-card .content-box .location-a a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 27px;
+}
+
+.office-card .content-box .admin {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.office-card .content-box .phone {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  line-height: 27px;
+}
+
+.office-card .content-box .mail {
+  margin-bottom: 0;
+}
+
+.office-card .content-box .mail a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.depEemp-box {
+  width: 100%;
+  height: 473px;
+  background: #EFEDE6;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.depEemp-box.main-depEemp {
+  background-color: #D9E4F0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.depEemp-box .img-box {
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  border: 3px solid #007066;
+  overflow: hidden;
+}
+
+.depEemp-box .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.depEemp-box .content-box {
+  margin-top: 12px;
+}
+
+.depEemp-box .content-box .name {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 10px;
+  color: #007066;
+}
+
+.depEemp-box .content-box .job {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.depEemp-box .content-box .phone {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31px;
+  margin-bottom: 23px;
+  color: #000;
+}
+
+.depEemp-box .content-box .phone a {
+  font-size: 21px;
+  font-weight: 500;
+  color: #000;
+}
+
+.depEemp-box .content-box .mail {
+  margin-bottom: 0;
+}
+
+.depEemp-box .content-box .mail a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+}
+
 /*
 
       daaaaaaaaaaaaaaaaaaaaark
@@ -2584,6 +2802,8 @@ footer .left-footer p {
 .headAgency .HAImg img {
   width: 170px;
   height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .padding15 > * {
@@ -2611,6 +2831,14 @@ footer .left-footer p {
           align-items: center;
   text-align: center;
   margin-bottom: 35px;
+  position: relative;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.agencyBox:hover {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .agencyBox .ABLogo {

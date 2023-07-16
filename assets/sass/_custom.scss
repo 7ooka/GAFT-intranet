@@ -340,19 +340,19 @@ footer {
                     transition: 300ms;
                     position: relative;
                     padding-#{$end-direction}: 30px;
-                    // &::before{
-                    //   content: "";
-                    //   position: absolute;
-                    //   top: 20px;
-                    //   #{$end-direction}:19px;
-                    //   width: 11px;
-                    //   height: 11px;
-                    //   background-position: center;
-                    //   background-repeat: no-repeat;
-                    //   background-size: contain;
-                    //   background-image: url(../images/home/arr-down.svg);
-                    //   transition: 300ms;
-                    // }
+                    &::before{
+                      content: "";
+                      position: absolute;
+                      top: 20px;
+                      #{$end-direction}:19px;
+                      width: 11px;
+                      height: 11px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      background-image: url(../images/home/arr-down.svg);
+                      transition: 300ms;
+                    }
                   }
                   .sub-menu-childs{
                     position: absolute;
@@ -1892,9 +1892,165 @@ footer {
   }
 }
 
+.office-card{
+  width: 100%;
+  height: 473px;
+  background: #EFEDE6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+  &.main-card{
+    background: rgb(121,204,156);
+    background: linear-gradient(165deg, rgba(121,204,156,1) 10%, rgba(187,187,187,1) 100%);
+  }
+  .img-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content-box{
+    margin-top: 20px;
+    h3{
+      font-size: 24px;
+      font-weight: $w-bold;
+      color: #000;
+      margin-bottom: 5px;
+      line-height: 38px;
+    }
+    h4{
+      font-size: 22px;
+      font-weight: $w-medium;
+      color: #000;
+      margin-bottom: 5px;
+      line-height: 32px;
+    }
+    p{
+      color: #000;
+      margin-bottom: 5px;
+      a{
+        color: #000;
+      }
+    }
+    .location{
+      font-size: 19px;
+      font-weight: $w-medium;
+      line-height: 27px;
+    }
+    .location-a{
+      font-size: 18px;
+      font-weight: $w-normal;
+      margin-bottom: 15px;
+      line-height: 27px;
+      a{
+        font-size: 18px;
+        font-weight: $w-normal;
+        text-decoration: underline;
+        line-height: 27px;
+      }
+    }
+    .admin{
+      font-size: 18px;
+      font-weight: $w-medium;
+      line-height: 27px;
+    }
+    .phone{
+      font-size: 18px;
+      font-weight: $w-normal;
+      margin-bottom: 12px;
+      line-height: 27px;
+    }
+    .mail{
+      margin-bottom: 0;
+      a{
+        font-size: 16px;
+        font-weight: $w-normal;
+        line-height: 20px;
+      }
+    }
+  }
+}
 
+.depEemp-box{
+  width: 100%;
+  height: 473px;
+  background: #EFEDE6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+  &.main-depEemp{
+    background-color: #D9E4F0;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .img-box{
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    border: 3px solid $green-main;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content-box{
+    margin-top: 12px;
+    .name{
+      font-size: 29px;
+      font-weight: $w-bold;
+      line-height: 46px;
+      margin-bottom: 10px;
+      color: $green-main;
+    }
+    .job{
+      font-size: 26px;
+      font-weight: $w-medium;
+      line-height: 38px;
+      margin-bottom: 16px;
+      color: #000;
 
+    }
+    .phone{
+      font-size: 21px;
+      font-weight: $w-medium;
+      line-height: 31px;
+      margin-bottom: 23px;
+      color: #000;
+      a{
+        font-size: 21px;
+        font-weight: $w-medium;
+        color: #000;
+      }
 
+    }
+    .mail{
+      margin-bottom: 0;
+      a{
+        font-size: 16px;
+        font-weight: $w-normal;
+        line-height: 20px;
+        color: #000;
+      }
+    }
+  }
+}
 
 
 
