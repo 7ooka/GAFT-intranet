@@ -2149,6 +2149,296 @@ footer {
 }
 
 
+.agencyBox.policies-box{
+  padding: 50px;
+  overflow: hidden;
+  .img-box{
+    max-width: 90px;
+    max-height: 90px;
+    margin-bottom: 20px;
+    transform: translateY(50px);
+    transition: 500ms;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .content-box{
+    transform: translateY(50px);
+    transition: 500ms;
+    h3{
+      font-size: 24px;
+      font-weight: $w-bold;
+      color: $green-main;
+      margin-bottom: 10px;
+    }
+    p.date{
+      font-size: 22px;
+      font-weight: $w-medium;
+      color: #000;
+      margin-bottom: 0;
+    }
+  }
+  .btns-box{
+    transform: translateY(100px);
+    // display: none;
+    opacity: 0;
+    transition: 500ms;
+    a{
+      width: 120px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: $w-normal;
+      border-radius: 50px;
+      cursor: pointer;
+      img{
+        margin-#{$start-direction}: 10px;
+        // transition: 300ms;
+      }
+      &.show{
+        background-color: $gold-color;
+        transition: 300ms;
+        color: #fff;
+        &:hover{
+          background-color: $green-main;
+
+        }
+      }
+      &.download{
+        background-color: transparent;
+        color: $green-main;
+        border: 1px solid $green-main;
+        margin-#{$start-direction}:10px ;
+        transition: 300ms;
+        &:hover{
+          background-color: $green-main;
+          color: #fff;
+          img{
+            filter: grayscale(1) contrast(3) brightness(500);
+
+          }
+        }
+      }
+    }
+  }
+  &:hover{
+    .content-box , .img-box{
+      transform: translateY(0);
+    }
+    .btns-box{
+      // display: block;
+      transform: none;
+      opacity: 1;
+      margin-top: 40px;
+
+    }
+  }
+}
+.search-full{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  .search-area{
+    border-radius: 50px;
+    height: 70px;
+    width: 600px;
+    border: 1px solid #707070;
+    background-image: url(../images/home/Search-Icon.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center ;
+    background-size: 23px;
+    background-color: transparent;
+    font-size: 20px;
+    color: $green-main;
+    padding: 15px ;
+    padding-#{$start-direction}: 70px;
+
+    &::placeholder{
+      color: $grey-bbb;
+    }
+
+  }
+  .search-area-a{
+    background-color: $gold-color;
+    color: #fff;
+    width: 160px;
+    height: 70px;
+    font-size: 22px;
+    font-weight: $w-normal;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-#{$start-direction}: 10px;
+  }
+}
+
+.Policies_Details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  background-color: $gold-color;
+  border-radius: 37px;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+  h3{
+    font-size: 25px;
+    font-weight: $w-medium;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  a{
+    font-size: 16px;
+    font-weight: $w-bold;
+    color: #fff;
+    margin-#{$start-direction}:auto ;
+    margin-#{$end-direction}:0 ;
+    img{
+      margin-#{$start-direction}:10px ;
+    }
+  }
+}
+
+
+
+
+.accordion{
+  .accordion-item{
+    border-radius: 0;
+    border: none;
+    margin-bottom: 30px;
+    .accordion-header{
+      .accordion-button{
+        font-size: 25px;
+        font-weight: $w-medium;
+        color: $green-main;
+        margin-bottom: 0;
+        background-color: rgba($color: #EFEDE6 , $alpha: 0.5);
+        box-shadow: none;
+        border-radius: 0;
+        height: 100px;
+        align-items: center;
+        padding: 25px 30px;
+        position: relative;
+        img{
+          margin-#{$end-direction}:20px ;
+        }
+        &::after{
+          background-image: url(../images/policies/Icon-plus.svg);
+          width: 23px;
+          height: 23px;
+          margin: 0;
+          position: absolute;
+          left: 30px;
+          top: 40px;
+
+        }
+        &:not(.collapsed)::after{
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .accordion-body{
+      padding: 35px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border: .5px solid rgba($color: $grey-bbb , $alpha: 0.5);
+      margin: 0 1px;
+
+      .content-sec{
+        overflow-y: auto;
+        max-height: 710px;
+        padding-#{$end-direction}:30px ;
+
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+        
+        /* Track */
+        
+        &::-webkit-scrollbar-track {
+          background: #EBEBEB;
+          border-radius: 8px;
+          
+        }
+         
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $gold-color;
+          border-radius: 8px;
+
+        }
+        
+     
+
+        .acc-sec{
+          padding-bottom: 15px;
+          
+          h4{
+            font-size: 22px;
+            font-weight: $w-medium;
+            color: $gold-color;
+            margin-bottom: 20px;
+          }
+          p{
+            font-size: 15px;
+            font-weight: normal;
+            color: #58595B;
+            margin-bottom: 7px;
+            strong{
+              font-weight: $w-medium;
+            }
+          }
+          + .acc-sec{
+            margin: 20px 0;
+          }
+        }
+
+        ul{
+          list-style: disc;
+          list-style-position: inside;
+          padding: 0;
+          margin-bottom: 0;
+          margin-top: 15px;
+          li{
+            margin-bottom: 20px;
+            a{
+              padding-#{$start-direction}:5px ;
+              font-size: 20px;
+              font-weight: $w-normal;
+              color: #58595B;
+            }
+            &::marker{
+              font-size: 17px;
+              color: $green-main;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
       daaaaaaaaaaaaaaaaaaaaark
