@@ -1826,6 +1826,7 @@ footer .left-footer p {
   background-color: #fff;
   border: 1px solid #BBBBBB;
   height: 500px;
+  position: relative;
 }
 
 .calender .news-top-section {
@@ -1845,6 +1846,59 @@ footer .left-footer p {
 .calender .news-top-section .show-all a img {
   -webkit-filter: none;
           filter: none;
+}
+
+.calender .calender-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+}
+
+.calender .calender-indicator .indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calender .calender-indicator .indicator span {
+  width: 50px;
+  height: 5px;
+  margin-right: 10px;
+}
+
+.calender .calender-indicator .indicator p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.calender .calender-indicator .indicator.indic-1 span {
+  background-color: #007066;
+}
+
+.calender .calender-indicator .indicator.indic-2 {
+  margin-left: 70px;
+}
+
+.calender .calender-indicator .indicator.indic-2 span {
+  background-color: #CCA079;
 }
 
 .vote {
@@ -2885,6 +2939,118 @@ footer .left-footer p {
 .accordion .accordion-item .accordion-body .content-sec ul li::marker {
   font-size: 17px;
   color: #007066;
+}
+
+.modalSearch .modal-dialog {
+  max-width: 800px;
+  min-height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .modalSearch .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+.modalSearch .modal-dialog .modal-content {
+  background: transparent;
+  border: unset;
+}
+
+.modalSearch .modal-dialog .modal-content .SearchCustom {
+  width: 750px;
+}
+
+.modalSearch button.btn {
+  background: transparent;
+  border: unset;
+}
+
+.SearchCustom {
+  background: #fff;
+  height: 74px;
+  width: 100%;
+  border-radius: 16px;
+  padding-left: 30px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.SearchCustom .forGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.SearchCustom .searchInput {
+  height: 100%;
+  width: 80%;
+  border: unset;
+  font-size: 1rem;
+  color: #727f7c;
+}
+
+.SearchCustom .searchInput::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #727f7c;
+}
+
+.SearchCustom .searchInput:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #727f7c;
+}
+
+.SearchCustom .searchInput::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #727f7c;
+}
+
+.SearchCustom .searchInput::placeholder {
+  font-size: 1rem;
+  color: #727f7c;
+}
+
+.SearchCustom .searchSubmit {
+  height: 100%;
+  width: 71px;
+  background: #007066;
+  border: unset;
+  border-radius: 16px;
+}
+
+.SearchCustom .boxSloce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 31px;
+}
+
+.SearchCustom .boxSloce button {
+  opacity: 1;
 }
 
 /*

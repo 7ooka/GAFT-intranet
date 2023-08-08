@@ -1489,6 +1489,7 @@ footer {
   background-color: #fff;
   border: 1px solid $grey-bbb;
   height: 500px;
+  position: relative;
   .news-top-section{
     padding: 0;
     margin-bottom: 30px; 
@@ -1507,6 +1508,42 @@ footer {
       }
     }
 
+  }
+  .calender-indicator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 25px;
+    #{$start-direction}: 0;
+    width: 100%;
+    .indicator{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span{
+        width: 50px;
+        height: 5px;
+        margin-#{$end-direction}: 10px;
+      }
+      p{
+        font-size: 15px;
+        font-weight: $w-medium;
+        color: #000000;
+        margin-bottom: 0;
+      }
+      &.indic-1{
+        span{
+          background-color: $green-main;
+        }
+      }
+      &.indic-2{
+        margin-#{$start-direction}: 70px;
+        span{
+          background-color: $gold-color;
+        }
+      }
+    }
   }
 }
 
@@ -2431,6 +2468,77 @@ footer {
 
 
 
+
+.modalSearch {
+  .modal-dialog {
+    max-width: 800px;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    @media (max-width: 768px) {
+      min-height: calc(100vh - 20px);
+    }
+    .modal-content {
+      background: transparent;
+      border: unset;
+      .SearchCustom {
+        width: 750px;
+      }
+    }
+  }
+  button.btn {
+    background: transparent;
+    border: unset;
+  }
+}
+
+.SearchCustom {
+  background: #fff;
+  height: 74px;
+  width: 100%;
+  border-radius: 16px;
+  padding-#{$start-direction}: 30px;
+  padding-#{$end-direction}: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100%;
+  .forGroup {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .searchInput {
+    height: 100%;
+    width: 80%;
+    border: unset;
+    font-size: 1rem;;
+    
+    color: #727f7c;
+    &::placeholder {
+      font-size: 1rem;;
+      color: #727f7c;
+    }
+  }
+  .searchSubmit {
+    height: 100%;
+    width: 71px;
+    background: $green-main;
+    border: unset;
+    border-radius: 16px;
+  }
+  .boxSloce {
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+    button {
+      opacity: 1;
+    }
+  }
+}
 
 
 

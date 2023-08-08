@@ -131,7 +131,7 @@
                           <!-- <a href="javascript:;" class="slide-nav">
                             <img src="../assets/images/home/Menu_Icon.svg" alt="">
                          </a> -->
-                          <a href="#" class="search">
+                          <a href="javascript:;" class="search" data-bs-toggle="modal" data-bs-target="#exampleModal">
                            <img src="../assets/images/home/Search-Icon.svg" alt="">
                           </a>
                           <a href="javascript:;" class="dark-Mode">
@@ -203,6 +203,38 @@
 
 
 
+    <!-- start search modal -->
+
+    <div class="modal modalSearch fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="SearchCustom">
+              <div class="forGroup">
+                <input
+                  type="text"
+                  class="searchInput"
+                  value=""
+                  placeholder="أدخل كلمة البحث..."
+                />
+                <button type="submit" class="searchSubmit">
+                  <img src="../assets/images/home/SearchPopup.svg" alt="" />
+                </button>
+              </div>
+              <div class="boxSloce">
+                <button
+                button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                >
+                  <img src="../assets/images/home/closeSearch.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <!-- end search modal -->
 
     <section class="social-share">
       <ul>
