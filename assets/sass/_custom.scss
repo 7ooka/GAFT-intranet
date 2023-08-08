@@ -2541,7 +2541,158 @@ footer {
 }
 
 
+.event-card{
+  height: 420px;
+  width: 100%;
+  background-color: #EFEDE6;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+  .dates-box{
+    display: flex;
+    .date-circle{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 65px;
+      border: 2px solid;
+      padding: 15px;
+      width: 133px;
+      height: 133px;
 
+      &.date-from{
+        background-color: $gold-color;
+        border-color: $gold-color;
+      }
+      &.date-to{
+        margin-#{$start-direction}:20px ;
+        background-color: $green-main;
+        border-color: $green-main;
+      }
+
+
+      .day{
+        font-size: 30px;
+        font-weight: $w-medium;
+        color: #fff;
+      }
+      .month{
+        font-size: 18px;
+        font-weight: $w-normal;
+        color: #fff;
+      }
+      .year{
+        font-size: 16px;
+        font-weight: $w-normal;
+        color: #fff;
+      }
+    }
+  }
+  .content-box{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+      font-size: 28px;
+      font-weight: $w-medium;
+      color: #135740;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 40px;
+      max-height: calc(40px *3);
+      overflow: hidden;
+    }
+    .location{
+      img{
+        width: 15px;
+        height: 22px;
+        margin-#{$end-direction}: 10px;
+      }
+      span{
+        font-size: 13px;
+        font-weight: $w-medium;
+        color: #000;
+      }
+    }
+  }
+}
+
+
+
+.event-details{
+  h2{
+    font-size: 35px;
+    font-weight: $w-medium;
+    color: $green-main;
+    margin-bottom: 30px;
+  }
+  .details{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #CDCDCD;
+    border-radius: 10px;
+    .date{
+      padding: 15px 33px;
+      min-width: 250px;
+      min-height: 110px;
+      border-#{$end-direction}: 1px solid #CDCDCD;
+      h4{
+        font-size: 18px;
+        font-weight: $w-medium;
+        color: $gold-color;
+        margin-bottom: 10px;
+      }
+     .date-details{
+      display: flex;
+      img{}
+      span{
+        font-size: 20px;
+        font-weight: $w-normal;
+        color: #474747;
+        margin-#{$start-direction}:10px ;
+      }
+     }
+      &.date-from{}
+      &.date-to{}
+    }
+    .location{
+      padding: 15px 33px;
+      min-width: 250px;
+      min-height: 110px;
+      h4{
+        font-size: 18px;
+        font-weight: $w-medium;
+        color: $gold-color;
+        margin-bottom: 10px;
+      }
+      .loc-details{
+        display: flex;
+        img{}
+        span{
+          font-size: 16px;
+          font-weight: $w-normal;
+          color: #000;
+          margin-#{$start-direction}:10px ;
+        }
+      }
+    }
+  }
+  .content-box{
+    margin-top: 40px;
+    p{
+      font-size: 16px;
+      font-weight: $w-normal;
+      color: $p-7B7B7B;
+    }
+  }
+}
 
 
 
