@@ -3253,6 +3253,122 @@ footer .left-footer p {
   color: #7B7B7B;
 }
 
+.translate-dropdown label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-left: 15px;
+}
+
+.translate-dropdown select {
+  display: inline-block;
+  border: 1px solid #BBBBBB;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 25px;
+  padding-right: 75px;
+  padding-left: 40px;
+  width: 300px;
+  height: 70px;
+  position: relative;
+  background-image: url(../images/translator/lang-Arrow.svg), url(../images/translator/lang-Icon.svg);
+  background-position: 21px 30px, calc(100% - 24px) 20px;
+  background-size: auto , 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+.translate-textarea {
+  margin-top: 30px;
+}
+
+.translate-textarea textarea {
+  width: 100%;
+  border: 1px solid #BBBBBB;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: #F6F6F6;
+  min-height: 400px;
+}
+
+.translate-textarea textarea::-webkit-input-placeholder {
+  color: #BBBBBB;
+}
+
+.translate-textarea textarea:-ms-input-placeholder {
+  color: #BBBBBB;
+}
+
+.translate-textarea textarea::-ms-input-placeholder {
+  color: #BBBBBB;
+}
+
+.translate-textarea textarea::placeholder {
+  color: #BBBBBB;
+}
+
+.translate-textarea textarea:focus {
+  background-color: #fff;
+}
+
+.translate-textarea textarea:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+.translate-textarea textarea:focus:-ms-input-placeholder {
+  color: #000;
+}
+
+.translate-textarea textarea:focus::-ms-input-placeholder {
+  color: #000;
+}
+
+.translate-textarea textarea:focus::placeholder {
+  color: #000;
+}
+
+.tr-from {
+  margin-left: 10px;
+}
+
+.tr-to {
+  margin-right: 10px;
+}
+
+.trans {
+  position: relative;
+}
+
+.trans .lang-swap {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 50%;
+  -webkit-transform: translateX(58%);
+          transform: translateX(58%);
+  top: 52%;
+}
+
+.trans .lang-swap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #007066;
+  border-radius: 50%;
+}
+
 /*
 
       daaaaaaaaaaaaaaaaaaaaark
