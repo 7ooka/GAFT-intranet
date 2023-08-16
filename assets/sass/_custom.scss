@@ -253,7 +253,8 @@ footer {
           background-color: #fff;
           padding: 0;
           padding-bottom: 25px;
-          border-radius: 0;
+          border-radius: 4px;
+          overflow: hidden;
 
 
 
@@ -1739,11 +1740,13 @@ footer {
 }
 .main-white-card{
   background-color: #fff;
-  border: 1px solid $grey-bbb;
+  // border: 1px solid $grey-bbb;
   border-radius: 20px;
   overflow: hidden;
   padding: 50px;
   margin-bottom: 60px;
+  // background-color: #ffffff30;
+  // backdrop-filter: blur(5px);
   
 }
 .minus-margin{
@@ -1768,9 +1771,18 @@ footer {
           color: #fff;
           margin-#{$end-direction}: 5px;
           position: relative;
+          padding-#{$end-direction}: 20px;
           &::after{
-            content: ">";
-            margin: 0 5px;
+            content: "";
+            // margin: 0 5px;
+            position: absolute;
+            #{$end-direction}:5px;
+            top: 5px;
+            height: 10px;
+            width: 5px;
+            background-image: url(../images/about/Arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
           }
         }
         span{
@@ -1810,9 +1822,9 @@ footer {
     }
     .breadcrumb-content{
       position: relative;
-      padding-top: 100px;
+      padding-top: 85px;
       h2{
-        font-size: 30px;
+        font-size: 40px;
         font-weight: $w-medium;
         color: #fff;
         margin-bottom: 0;
@@ -2020,7 +2032,7 @@ footer {
 
 .depEemp-box{
   width: 100%;
-  height: 473px;
+  height: 315px;
   background: #EFEDE6;
   padding: 20px;
   display: flex;
@@ -2030,14 +2042,39 @@ footer {
   text-align: center;
   margin-bottom: 35px;
   position: relative;
+  border-radius: 8px;
   &.main-depEemp{
     background-color: #D9E4F0;
-    border-radius: 30px;
+    // border-radius: 30px;
     overflow: hidden;
+    height: 365px;
+    overflow: visible;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #FFF;
+      border: 3px solid #007066;
+      #{$end-direction}: -7px;
+      top: calc(50% - 11px);
+      z-index: 5;  
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color: #fff;
+      border: 1px dashed #007066;
+      #{$end-direction}:-46px;
+      top: calc(50% - 1px);
+    }
   }
   .img-box{
-    width: 127px;
-    height: 127px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
     border: 3px solid $green-main;
     overflow: hidden;
@@ -2048,30 +2085,30 @@ footer {
     }
   }
   .content-box{
-    margin-top: 12px;
+    margin-top: 5px;
     .name{
-      font-size: 29px;
+      font-size: 23px;
       font-weight: $w-bold;
-      line-height: 46px;
+      line-height: 30px;
       margin-bottom: 10px;
       color: $green-main;
     }
     .job{
-      font-size: 26px;
+      font-size: 20px;
       font-weight: $w-medium;
-      line-height: 38px;
-      margin-bottom: 16px;
+      line-height: 24px;
+      margin-bottom: 5px;
       color: #000;
 
     }
     .phone{
-      font-size: 21px;
+      font-size: 16px;
       font-weight: $w-medium;
-      line-height: 31px;
-      margin-bottom: 23px;
+      line-height: 28px;
+      margin-bottom: 0px;
       color: #000;
       a{
-        font-size: 21px;
+        font-size: 16px;
         font-weight: $w-medium;
         color: #000;
       }
@@ -2143,12 +2180,14 @@ footer {
 .news-details{
   .details-head{
     margin-bottom: 30px;
+    margin-#{$end-direction}: 75px;
     h2{
-      font-size: 35px;
+      font-size: 40px;
       font-weight: $w-medium;
       color: $green-main;
-      line-height: 44px;
-      margin-bottom: 30px;
+      line-height: 1.5;
+      margin-bottom: 50px;
+      margin-top: 20px;
     }
     .date{
       img{
@@ -2166,7 +2205,8 @@ footer {
   }
   .img-box{
     width: 100%;
-    height: 500px;
+    height: 550px;
+    border-radius: 4px;
     overflow: hidden;
     img{
       width: 100%;
@@ -2190,9 +2230,9 @@ footer {
   padding: 50px;
   overflow: hidden;
   .img-box{
-    max-width: 90px;
-    max-height: 90px;
-    margin-bottom: 20px;
+    max-width: 65px;
+    max-height: 65px;
+    margin-bottom: 10px;
     transform: translateY(50px);
     transition: 500ms;
     img{
@@ -2204,13 +2244,13 @@ footer {
     transform: translateY(50px);
     transition: 500ms;
     h3{
-      font-size: 24px;
+      font-size: 20px;
       font-weight: $w-bold;
       color: $green-main;
       margin-bottom: 10px;
     }
     p.date{
-      font-size: 22px;
+      font-size: 18px;
       font-weight: $w-medium;
       color: #000;
       margin-bottom: 0;
@@ -2222,18 +2262,18 @@ footer {
     opacity: 0;
     transition: 500ms;
     a{
-      width: 120px;
-      height: 50px;
+      width: 110px;
+      height: 40px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
-      font-size: 16px;
+      padding: 5px 10px;
+      font-size: 15px;
       font-weight: $w-normal;
       border-radius: 50px;
       cursor: pointer;
       img{
-        margin-#{$start-direction}: 10px;
+        margin-#{$start-direction}: 7px;
         // transition: 300ms;
       }
       &.show{
@@ -2457,10 +2497,57 @@ footer {
               font-size: 17px;
               color: $green-main;
             }
+            &:last-child{
+              margin-bottom: 0;
+            }
           }
         }
       }
 
+    }
+  }
+
+
+  &.sitemap-acc{
+    .accordion-item {
+      .accordion-header {
+        .accordion-button{
+          background-color: #f7f7f7;
+          border-radius: 8px;
+          height: 80px;
+          font-size: 22px;
+          font-weight: $w-bold;
+          img{
+            max-width: 35px;
+          }
+          &::after{
+            top: 30px
+          }
+        }
+      }
+      .accordion-body{
+        border: none;
+        border-top: 1px solid #fff;
+        background-color: #f7f7f7;
+        border-radius: 0 0 8px 8px;
+        .acc-sec{
+          padding: 0;
+          padding-bottom: 5px;
+          ul{
+            margin: 0;
+            li{
+              margin-bottom: 10px;
+              a{
+                font-size: 18px;
+                font-weight: $w-medium;
+              }
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -2542,10 +2629,10 @@ footer {
 
 
 .event-card{
-  height: 420px;
+  height: 350px;
   width: 100%;
   background-color: #EFEDE6;
-  padding: 30px 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2562,8 +2649,8 @@ footer {
       border-radius: 65px;
       border: 2px solid;
       padding: 15px;
-      width: 133px;
-      height: 133px;
+      width: 115px;
+      height: 115px;
 
       &.date-from{
         background-color: $gold-color;
@@ -2577,36 +2664,37 @@ footer {
 
 
       .day{
-        font-size: 30px;
+        font-size: 26px;
+        line-height: 1;
         font-weight: $w-medium;
         color: #fff;
       }
       .month{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: $w-normal;
         color: #fff;
       }
       .year{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: $w-normal;
         color: #fff;
       }
     }
   }
   .content-box{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3{
-      font-size: 28px;
+      font-size: 20px;
       font-weight: $w-medium;
       color: #135740;
       text-align: center;
       margin-bottom: 10px;
-      line-height: 40px;
-      max-height: calc(40px *3);
+      line-height: 25px;
+      max-height: calc(25px *3);
       overflow: hidden;
     }
     .location{
@@ -2636,13 +2724,14 @@ footer {
   .details{
     display: flex;
     flex-direction: row;
-    border: 1px solid #CDCDCD;
+    // border: 1px solid #CDCDCD;
     border-radius: 10px;
+    background-color: #f1f1f1;
     .date{
       padding: 15px 33px;
       min-width: 250px;
       min-height: 110px;
-      border-#{$end-direction}: 1px solid #CDCDCD;
+      border-#{$end-direction}: 1px solid #e2e2e2;
       h4{
         font-size: 18px;
         font-weight: $w-medium;
@@ -2784,7 +2873,9 @@ footer {
 
 
 
-
+.cards-align-center{
+  align-items: center;
+}
 
 
 
@@ -2959,6 +3050,7 @@ footer {
   }
   .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li.sub-menu .sub-menu-parent::before{
     filter: grayscale(1) brightness(3);
+    filter: invert(1);
   }
 }
 
