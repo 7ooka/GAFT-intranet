@@ -115,7 +115,9 @@ body {
   justify-content: space-between;
 }
 
-
+// Map
+path {fill: lightgray; stroke: white;}
+path:hover {fill: gray;}
 
 
 
@@ -530,7 +532,7 @@ footer {
         background-color: #25D366;
       }
       &.twitter{
-        background-color: #1DA1F2;
+        background-color: #000000;
       }
       &.linkedin{
         background-color: #0077B5;

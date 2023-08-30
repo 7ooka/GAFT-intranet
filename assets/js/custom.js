@@ -117,7 +117,17 @@ $('.owl-carousel-vote').owlCarousel({
 })
 
 
+var world = document.getElementsByTagName("path");
+for (var i = 0; i < world.length; i++) {
+	var country = world[i];
+	country.setAttribute("data-toggle", "tooltip");
+	country.setAttribute("data-placement", "top");
+	country.setAttribute("title", country.getAttribute("id"));
+}
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 
