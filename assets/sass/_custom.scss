@@ -2880,6 +2880,194 @@ footer {
 
 
 
+// locations
+
+.locations-main{
+  .locations-map{
+    position: relative;
+    .map{
+      width: 100%;
+      max-height: 1000px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .location-with-card{
+      a.location {
+        position: absolute;
+      }
+      &.KSA{
+        a.location {
+          left: 55.25%;
+          top: 58%;
+        }
+       }
+       &.UAE{
+        a.location {
+          left: 60%;
+          top: 57%;
+        }
+       }
+       &.EGYPT{
+        a.location {
+          left: 53%;
+          top: 57%;
+        }
+       }
+
+      .hub-card {
+          background-color: #fff;
+          position: absolute;
+          right: -170px;
+          top: 25px;
+          min-height: 250px;
+          width: 350px;
+          padding: 9px 30px ;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20px;
+          box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+          &.hide{
+            opacity: 0;
+            z-index: -555;
+          }
+      }
+
+      // span.close-details {
+      //     position: absolute;
+      //     top: 18px;
+      //     right: 18px;
+      //     background-color: #1d1d1b;
+      //     border-radius: 21px;
+      //     width: 36px;
+      //     height: 36px;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+
+      // }
+
+      .img-box {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-bottom: 10px;
+
+      }
+
+      .content-box {
+          position: relative;
+          text-align: center;
+          .address{
+            font-size: 17px;
+            font-weight: $w-medium;
+            color: #000;
+            margin-bottom: 5px;
+          }
+          .respon{
+            font-size: 16px;
+            font-weight: $w-medium;
+            color: #000;
+            margin-bottom: 7px
+          }
+          .phone{
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 12px;
+          }
+          .mail{
+            font-size: 16px;
+            color: #000;
+          }
+      }
+    }
+  }
+  .locations-slider{
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 25px 90px;
+    position: relative;
+    margin-top: 30px;
+    .item{
+      background-color: #fff;
+      border-radius: 0;
+      height: 100px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      flex-direction: row;
+      padding: 15px 22px;
+      .img-boxx{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-#{$end-direction}: 10px;
+        img{}
+      }
+      .content-boxx{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 80px);
+        h6{
+          font-size: 20px;
+          font-weight: $w-bold;
+          color: #000;
+          margin-bottom: 8px;
+        }
+        p{
+          font-size: 18px;
+          font-weight: $w-normal;
+          color: #000;
+          margin-bottom: 0;
+        }
+      }
+
+      &.clicked{
+        background-color: $green-main;
+        .content-boxx{
+          h6{
+            color: #fff;
+          }
+          p{
+            color: #fff;
+
+          }
+        }
+      }
+    }
+    .swiperArr{
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 35px;
+        height: 35px;
+        transform: translateY(7px);
+        &::after{
+          display: none;
+        }
+      }
+      .swiper-button-next{
+        background-image: url(../images/about/sliderLeft.svg);
+        #{$end-direction}:25px;
+        #{$start-direction}:auto
+      }
+      .swiper-button-prev{
+        background-image: url(../images/about/sliderRight.svg);
+        #{$start-direction}:25px;
+        #{$end-direction}:auto
+      }
+      
+    }
+  }
+}
+
+
 
 /*
 
@@ -3052,8 +3240,89 @@ footer {
     filter: grayscale(1) brightness(3);
     filter: invert(1);
   }
+
+  .main-white-card {
+    background-color: #47525B;
 }
 
+.main-white-card p , 
+.about .about-sec-two h5 ,
+.about ul li{
+    color: #fff;
+}
+.event-details h2 ,
+.news-details .details-head h2{
+  color: $gold-color;
+}
+.event-details .details {
+  background-color: #446b68;
+}
+
+.event-details .details .date .date-details img , 
+.event-details .details .location .loc-details img{
+  filter: brightness(0) contrast(1) invert(1);
+}
+.event-details .details .date .date-details span,
+.event-details .details .location .loc-details span{
+  color: #fff
+  
+}
+.news-card .content-box .details{
+  color: #fff;
+}
+.trans .lang-swap a{
+  background-color: $gold-color;
+}
+
+.locations-main .locations-slider {
+  background-color: #323E48;
+}
+
+.locations-main .locations-slider .item {
+  background-color: #47525b;
+}
+
+.locations-main .locations-slider .item .content-boxx h6 {
+  color: #BBBBBB;
+}
+
+.locations-main .locations-slider .item .content-boxx p {
+  color: #BBBBBB;
+}
+
+.locations-main .locations-slider .item.clicked {
+  background-color: #007066;
+}
+.locations-main .locations-slider .item.clicked .content-boxx h6 {
+  color: #fff;
+}
+
+.locations-main .locations-slider .item.clicked .content-boxx p {
+  color: #fff;
+}
+
+.locations-main .locations-map .location-with-card .hub-card {
+  background-color: #323e48;
+}
+
+.locations-main .locations-map .location-with-card .content-box .address ,
+.locations-main .locations-map .location-with-card .content-box .respon ,
+.locations-main .locations-map .location-with-card .content-box .phone,
+.locations-main .locations-map .location-with-card .content-box .mail
+{
+
+  color: #fff !important;
+}
+.translate-textarea textarea{
+  background-color: #323e48;
+}
+
+
+
+
+
+
+}
 
 // html[lang="en"]{
   

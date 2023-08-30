@@ -304,10 +304,78 @@ $(function () {
 
 
 
+/*
+              mySwiperContary
+*/
 
 
 
 
+$(function (){
+
+
+  var swiper = new Swiper(".mySwiperContary", {
+    // slidesPerView: 9,
+    spaceBetween: 20,
+    slidesPerView: "auto",
+    slidesPerGroup: 2,
+    pagination: {
+      // el: ".swiper-pagination",
+      // clickable: true,
+    },
+    navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    376: {
+      slidesPerView: 2,
+      spaceBetween: 7,
+      slidesPerGroup: 2,
+    },
+    
+    575: {
+      slidesPerView: "auto",
+      spaceBetween: 12
+    },
+    1440: {
+      slidesPerView: "4.3",
+      spaceBetween: 20
+    },
+  
+  }
+  });
+
+
+})
+
+
+function showKsaDetails(){
+  $(".hub-card").addClass("hide")
+  $(".KSA .hub-card").toggleClass("hide")
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".ksa-a").closest(".item").addClass("clicked")
+}
+
+function showUaeDetails(){
+  $(".hub-card").addClass("hide")
+  $(".UAE .hub-card").toggleClass("hide")
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".uae-a").closest(".item").addClass("clicked")
+}
+
+function showEgyDetails(){
+  $(".hub-card").addClass("hide")
+  $(".EGYPT .hub-card").toggleClass("hide")
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".egy-a").closest(".item").addClass("clicked")
+
+}
 
 /*
  AO start 

@@ -3462,6 +3462,207 @@ footer .left-footer p {
           align-items: center;
 }
 
+.locations-main .locations-map {
+  position: relative;
+}
+
+.locations-main .locations-map .map {
+  width: 100%;
+  max-height: 1000px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.locations-main .locations-map .location-with-card a.location {
+  position: absolute;
+}
+
+.locations-main .locations-map .location-with-card.KSA a.location {
+  left: 55.25%;
+  top: 58%;
+}
+
+.locations-main .locations-map .location-with-card.UAE a.location {
+  left: 60%;
+  top: 57%;
+}
+
+.locations-main .locations-map .location-with-card.EGYPT a.location {
+  left: 53%;
+  top: 57%;
+}
+
+.locations-main .locations-map .location-with-card .hub-card {
+  background-color: #fff;
+  position: absolute;
+  right: -170px;
+  top: 25px;
+  min-height: 250px;
+  width: 350px;
+  padding: 9px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+}
+
+.locations-main .locations-map .location-with-card .hub-card.hide {
+  opacity: 0;
+  z-index: -555;
+}
+
+.locations-main .locations-map .location-with-card .img-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.locations-main .locations-map .location-with-card .content-box {
+  position: relative;
+  text-align: center;
+}
+
+.locations-main .locations-map .location-with-card .content-box .address {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.locations-main .locations-map .location-with-card .content-box .respon {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 7px;
+}
+
+.locations-main .locations-map .location-with-card .content-box .phone {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.locations-main .locations-map .location-with-card .content-box .mail {
+  font-size: 16px;
+  color: #000;
+}
+
+.locations-main .locations-slider {
+  background-color: #F1F1F1;
+  border-radius: 20px;
+  padding: 25px 90px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.locations-main .locations-slider .item {
+  background-color: #fff;
+  border-radius: 0;
+  height: 100px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px 22px;
+}
+
+.locations-main .locations-slider .item .img-boxx {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.locations-main .locations-slider .item .content-boxx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% - 80px);
+}
+
+.locations-main .locations-slider .item .content-boxx h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.locations-main .locations-slider .item .content-boxx p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.locations-main .locations-slider .item.clicked {
+  background-color: #007066;
+}
+
+.locations-main .locations-slider .item.clicked .content-boxx h6 {
+  color: #fff;
+}
+
+.locations-main .locations-slider .item.clicked .content-boxx p {
+  color: #fff;
+}
+
+.locations-main .locations-slider .swiperArr .swiper-button-next,
+.locations-main .locations-slider .swiperArr .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.locations-main .locations-slider .swiperArr .swiper-button-next::after,
+.locations-main .locations-slider .swiperArr .swiper-button-prev::after {
+  display: none;
+}
+
+.locations-main .locations-slider .swiperArr .swiper-button-next {
+  background-image: url(../images/about/sliderLeft.svg);
+  right: 25px;
+  left: auto;
+}
+
+.locations-main .locations-slider .swiperArr .swiper-button-prev {
+  background-image: url(../images/about/sliderRight.svg);
+  left: 25px;
+  right: auto;
+}
+
 /*
 
       daaaaaaaaaaaaaaaaaaaaark
@@ -3678,6 +3879,87 @@ footer .left-footer p {
           filter: grayscale(1) brightness(3);
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.Dark .main-white-card {
+  background-color: #47525B;
+}
+
+.Dark .main-white-card p,
+.Dark .about .about-sec-two h5,
+.Dark .about ul li {
+  color: #fff;
+}
+
+.Dark .event-details h2,
+.Dark .news-details .details-head h2 {
+  color: #CCA079;
+}
+
+.Dark .event-details .details {
+  background-color: #446b68;
+}
+
+.Dark .event-details .details .date .date-details img,
+.Dark .event-details .details .location .loc-details img {
+  -webkit-filter: brightness(0) contrast(1) invert(1);
+          filter: brightness(0) contrast(1) invert(1);
+}
+
+.Dark .event-details .details .date .date-details span,
+.Dark .event-details .details .location .loc-details span {
+  color: #fff;
+}
+
+.Dark .news-card .content-box .details {
+  color: #fff;
+}
+
+.Dark .trans .lang-swap a {
+  background-color: #CCA079;
+}
+
+.Dark .locations-main .locations-slider {
+  background-color: #323E48;
+}
+
+.Dark .locations-main .locations-slider .item {
+  background-color: #47525b;
+}
+
+.Dark .locations-main .locations-slider .item .content-boxx h6 {
+  color: #BBBBBB;
+}
+
+.Dark .locations-main .locations-slider .item .content-boxx p {
+  color: #BBBBBB;
+}
+
+.Dark .locations-main .locations-slider .item.clicked {
+  background-color: #007066;
+}
+
+.Dark .locations-main .locations-slider .item.clicked .content-boxx h6 {
+  color: #fff;
+}
+
+.Dark .locations-main .locations-slider .item.clicked .content-boxx p {
+  color: #fff;
+}
+
+.Dark .locations-main .locations-map .location-with-card .hub-card {
+  background-color: #323e48;
+}
+
+.Dark .locations-main .locations-map .location-with-card .content-box .address,
+.Dark .locations-main .locations-map .location-with-card .content-box .respon,
+.Dark .locations-main .locations-map .location-with-card .content-box .phone,
+.Dark .locations-main .locations-map .location-with-card .content-box .mail {
+  color: #fff !important;
+}
+
+.Dark .translate-textarea textarea {
+  background-color: #323e48;
 }
 
 .font30,
