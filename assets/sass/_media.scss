@@ -46,12 +46,54 @@
 
 
 @media (max-width: 1650.98px) {
-
+  .charts-box{
+    margin: 0 5px;
+  }
+  .progressbarCircle .circle canvas{
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .progressbarCircle .circle strong{
+    top: calc(46% + -5px);
+    font-size: 30px;
+  }
+  .interactive-services .interactive-service-cards{
+    padding: 0;
+  }
 }
 
 
-@media (max-width: 1440.98px) {
+@media (max-width: 1399.98px) {
+  .progressbarCircle .font16{
+    font-size: 14px;
+  }
+  .progressbarCircle .circle strong{
+    font-size: 25px;
+  }
+  .progressbarCircle .circle canvas {
+    width: 70px !important;
+    height: 70px !important;
+}
+.progressbarCircle .circle {
+  width: 75px;
+}
+.Vacation .content-box .main-cards-hd{
+  width: 150px;
+}
 
+.interactive-services .interactive-service-cards .interactive-service-card{
+  width: 130px;
+  height: 130px;
+}
+.interactive-services .interactive-service-cards .interactive-service-card .title{
+  font-size: 16px;
+}
+.servey .form-submit .voteNow{
+  width: 120px;
+}
+.servey .form-submit .result{
+  width: 140px;
+}
 }
 
 
