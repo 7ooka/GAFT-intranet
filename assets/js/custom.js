@@ -1,17 +1,40 @@
 $( document ).ready(function() {
 
+  var darkModeCookie = getCookie('darkMode');
+	console.log(darkModeCookie);
+	if (darkModeCookie == null || darkModeCookie == "0"){
+		setLightMode();
+	} else {
+		 setDarkMode();
+	}
+
     let arrow = [
-      '<img src="../assets/images/home/Arrow-Right.svg" />',
-      '<img src="../assets/images/home/Arrow-Left.svg" />',
+      '<img src="/Style Library/ar-sa/assets/images/home/Arrow-Right.svg" />',
+      '<img src="/Style Library/ar-sa/assets/images/home/Arrow-Left.svg" />',
       ]
       let arrow2 = [
-        '<img src="../assets/images/home/Arrow-Right2.svg" />',
-        '<img src="../assets/images/home/Arrow-Left2.svg" />',
+        '<img src="/Style Library/ar-sa/assets/images/home/Arrow-Right2.svg" />',
+        '<img src="/Style Library/ar-sa/assets/images/home/Arrow-Left2.svg" />',
         ]
       let arrow3 = [
-        '<img src="../assets/images/home/vote-Arrow-Right.svg" />',
-        '<img src="../assets/images/home/vote-Arrow-Left.svg" />',
+        '<img src="/Style Library/ar-sa/assets/images/home/vote-Arrow-Right.svg" />',
+        '<img src="/Style Library/ar-sa/assets/images/home/vote-Arrow-Left.svg" />',
         ]
+
+
+
+    // let arrow = [
+    //   '<img src="../assets/images/home/Arrow-Right.svg" />',
+    //   '<img src="../assets/images/home/Arrow-Left.svg" />',
+    //   ]
+    //   let arrow2 = [
+    //     '<img src="../assets/images/home/Arrow-Right2.svg" />',
+    //     '<img src="../assets/images/home/Arrow-Left2.svg" />',
+    //     ]
+    //   let arrow3 = [
+    //     '<img src="../assets/images/home/vote-Arrow-Right.svg" />',
+    //     '<img src="../assets/images/home/vote-Arrow-Left.svg" />',
+    //     ]
 
 
    
@@ -227,22 +250,33 @@ $(function () {
 animateElements();
 // $(window).scroll(animateElements);
 
-if($('body').hasClass("Dark")) {
-  // $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: '#f0f' }});
-}else {
-  $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
-}
+// if($('body').hasClass("Dark")) {
+//   // $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: '#f0f' }});
+// }else {
+//   $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
+// }
+
+// $(".dark-Mode").on("click", function (e) {
+//   console.log("dark-Mode");
+//   $(this).toggleClass("dark-here");
+//   $("body").toggleClass("Dark");
+//   if($('body').hasClass("Dark")) {
+//     $('.circle').circleProgress({ emptyFill:"rgba(0, 154, 189, 0.99)", fill: { color: 'rgba(187, 187, 187, 0.99)' }});
+//     $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: 'rgba(0, 112, 103, 0.99)' }});
+//   }else {
+//     $('.circle').circleProgress({  emptyFill:"rgba(0, 112, 103, 0.99)", fill: { color: ' rgba(204, 160, 121, 0.99)' }});
+//     $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
+//   }
+//   e.stopPropagation();
+ 
+// });
+
 
 $(".dark-Mode").on("click", function (e) {
-  console.log("dark-Mode");
-  $(this).toggleClass("dark-here");
-  $("body").toggleClass("Dark");
   if($('body').hasClass("Dark")) {
-    $('.circle').circleProgress({ emptyFill:"rgba(0, 154, 189, 0.99)", fill: { color: 'rgba(187, 187, 187, 0.99)' }});
-    $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: 'rgba(0, 112, 103, 0.99)' }});
+  	setLightMode();
   }else {
-    $('.circle').circleProgress({  emptyFill:"rgba(0, 112, 103, 0.99)", fill: { color: ' rgba(204, 160, 121, 0.99)' }});
-    $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
+  	setDarkMode();
   }
   e.stopPropagation();
  
@@ -255,7 +289,24 @@ $(".dark-Mode").on("click", function (e) {
     // end ready
 
 
-
+function setLightMode(){
+  if($('body').hasClass("Dark")) {
+      $("body").toggleClass("Dark");
+      $(".dark-Mode").toggleClass("dark-here");
+      $('.circle').circleProgress({  emptyFill:"rgba(0, 112, 103, 0.99)", fill: { color: ' rgba(204, 160, 121, 0.99)' }});
+      $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
+  }
+  document.cookie = "darkMode=0;path=/";
+}
+function setDarkMode(){
+  if($('body').hasClass("Dark") == false) {
+      $("body").toggleClass("Dark");
+      $(".dark-Mode").toggleClass("dark-here");
+      $('.circle').circleProgress({ emptyFill:"rgba(0, 154, 189, 0.99)", fill: { color: 'rgba(187, 187, 187, 0.99)' }});
+      $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: 'rgba(0, 112, 103, 0.99)' }});
+  }
+  document.cookie = "darkMode=1;path=/";
+}
 
 
 
@@ -314,12 +365,36 @@ $(function () {
 
 
 
+
+
+
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+      begin = dc.indexOf(prefix);
+      if (begin != 0) return null;
+  }
+  else
+  {
+      begin += 2;
+      var end = document.cookie.indexOf(";", begin);
+      if (end == -1) {
+      end = dc.length;
+      }
+  }
+  // because unescape has been deprecated, replaced with decodeURI
+  //return unescape(dc.substring(begin + prefix.length, end));
+  return decodeURI(dc.substring(begin + prefix.length, end));
+} 
+
+
+
+
 /*
               mySwiperContary
 */
-
-
-
 
 $(function (){
 
