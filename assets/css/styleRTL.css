@@ -3981,7 +3981,121 @@ footer .left-footer p {
 }
 
 .Dark .translate-textarea textarea {
-  background-color: #323e48;
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+
+.Dark .translate-dropdown select {
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+
+.Dark .translate-dropdown label {
+  color: #fff;
+}
+
+.Dark .accordion-header {
+  background-color: #5E676E;
+}
+
+.Dark .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+
+.Dark .accordion .accordion-item .accordion-header .accordion-button::after {
+  -webkit-filter: grayscale(1) brightness(2);
+          filter: grayscale(1) brightness(2);
+}
+
+.Dark .accordion .accordion-item .accordion-header .accordion-button img {
+  -webkit-filter: brightness(1.5) contrast(0.5);
+          filter: brightness(1.5) contrast(0.5);
+}
+
+.Dark .accordion .accordion-item .accordion-body {
+  background-color: #a7aaaa66;
+}
+
+.Dark .sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.Dark .headAgency {
+  background: #323E48;
+}
+
+.Dark .headAgency .HATxt .font20,
+.Dark .headAgency .HATxt .font22,
+.Dark .headAgency .HATxt .font30 {
+  color: #BBBBBB;
+}
+
+.Dark .depEemp-box {
+  background-color: #5E676E;
+}
+
+.Dark .depEemp-box .content-box .name {
+  color: #CCA079;
+}
+
+.Dark .depEemp-box .content-box .job,
+.Dark .depEemp-box .content-box .phone,
+.Dark .depEemp-box .content-box .phone a,
+.Dark .depEemp-box .content-box .mail a {
+  color: #BBBBBB;
+}
+
+.Dark .agencyBox {
+  background-color: #5E676E;
+}
+
+.Dark .agencyBox .ABContent .font25 {
+  color: #CCA079;
+}
+
+.Dark .agencyBox .ABContent .font26,
+.Dark .agencyBox .ABContent .font20,
+.Dark .agencyBox .ABContent .font16 {
+  color: #BBBBBB;
+}
+
+.Dark .event-card {
+  background-color: #5E676E;
+}
+
+.Dark .event-card .content-box h3 {
+  color: #CCA079;
+}
+
+.Dark .event-card .content-box .location span {
+  color: #BBBBBB;
+}
+
+.Dark .agencyBox.policies-box .content-box h3 {
+  color: #CCA079;
+}
+
+.Dark .agencyBox.policies-box .content-box p.date {
+  color: #BBBBBB;
+}
+
+.Dark .news-card {
+  background-color: #5E676E;
+}
+
+.Dark .agencyBox.policies-box .btns-box a.download {
+  color: #BBBBBB;
+  border-color: #BBBBBB;
+}
+
+.Dark .agencyBox.policies-box .btns-box a.download img {
+  -webkit-filter: grayscale(2) invert(1);
+          filter: grayscale(2) invert(1);
 }
 
 .font30,
@@ -4227,6 +4341,91 @@ footer .left-footer p {
   .interactive-services .interactive-service-cards {
     padding: 0;
   }
+  .about h3 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .about .content-box p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .about .about-sec-two h3 {
+    margin-bottom: 20px;
+  }
+  .about .about-sec-two h5 {
+    margin-bottom: 20px;
+  }
+  .about ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .event-card .dates-box .date-circle.date-to {
+    margin-right: 7px;
+  }
+  .event-card .dates-box .date-circle {
+    width: 105px;
+    height: 105px;
+  }
+  .news-details .details-head h2 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .agencyBox.policies-box {
+    padding: 30px 25px;
+  }
+  .agencyBox.policies-box .content-box h3 {
+    font-size: 18px;
+  }
+  .agencyBox.policies-box .content-box p.date {
+    font-size: 16px;
+  }
+  .agencyBox.policies-box .btns-box a {
+    width: 90px;
+  }
+  .time-card .time span {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .time-card .pray-time {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .time-card .pray-time span {
+    font-size: 16px;
+  }
+  .weather-card .weather .icon .temp {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .weather-card .weather .icon .temp::before {
+    top: 4px;
+    font-size: 20px;
+  }
+  .weather-card .weather .icon img {
+    width: 35px;
+    height: 37px;
+  }
+  .personal-card .content-box .name {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .personal-card .content-box .details a {
+    width: 140px;
+    font-size: 14px;
+  }
+  .personal-card .content-box .location {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .personal-card .content-box .job {
+    font-size: 14px;
+  }
+  .personal-card .img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 165px;
+            flex: 0 0 165px;
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -4258,6 +4457,555 @@ footer .left-footer p {
   }
   .servey .form-submit .result {
     width: 140px;
+  }
+  .agencyBox .ABContent .font20 {
+    font-size: 14px;
+  }
+  .event-details h2 {
+    font-size: 28px;
+  }
+  .news-details .details-head h2 {
+    font-size: 32px;
+  }
+  .news-card {
+    height: 370px;
+  }
+  .news-card .img-box {
+    height: 235px;
+  }
+  .search-full .search-area {
+    height: 55px;
+    font-size: 18px;
+  }
+  .search-full .search-area-a {
+    width: 130px;
+    height: 55px;
+    font-size: 18px;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 22px;
+    height: 85px;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button::after {
+    top: 20px;
+  }
+  .personal-card .img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px;
+    height: 140px;
+    background-size: contain;
+  }
+  .personal-card .img-box img {
+    width: 100px;
+    height: 100px;
+  }
+  .personal-card .img-box .notifications {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .time-card .pray-time {
+    font-size: 14px;
+    text-align: center;
+  }
+  .time-card .pray-time span {
+    font-size: 14px;
+  }
+  .weather-card .date .melady {
+    font-size: 12px;
+  }
+  .weather-card .date .hegry {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .weather-card .weather .status {
+    font-size: 12px;
+  }
+  .weather-card .weather .icon img {
+    width: 30px;
+    height: 32px;
+  }
+  .weather-card .weather .icon .temp {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .weather-card .weather .icon .temp::before {
+    top: 0px;
+    font-size: 16px;
+  }
+  .time-card .time {
+    font-size: 16px;
+  }
+  .time-card .time span {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .Vacation .content-box .today-time {
+    font-size: 25px;
+  }
+  .Vacation .content-box .title {
+    font-size: 14px;
+  }
+  .main-cards-hd {
+    width: 140px;
+  }
+  .Vacation .content-box .main-cards-hd {
+    width: 130px;
+  }
+  .main-cards-hd {
+    font-size: 14px;
+  }
+  .owl-carousel-banner .item .content-box h4 {
+    font-size: 20px;
+  }
+  .owl-carousel-banner .item .content-box p {
+    font-size: 17px;
+  }
+  .favorite .item .fav-card .content-box h4 {
+    font-size: 14px;
+  }
+  .services .item .fav-card .img-box {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .favorite .item .fav-card .img-box {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .services .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+  .comu-and-best .nav-tabs .nav-link {
+    padding: 8px 15px 5px;
+    font-size: 14px;
+  }
+  .comu-and-best .community-card .community-top .content-box .celebration {
+    font-size: 18px;
+  }
+  .comu-and-best .community-card .community-top .content-box .name {
+    font-size: 16px;
+  }
+  .offers .item .content-box h4 {
+    font-size: 14px;
+    line-height: 21px;
+    height: calc(21px * 3);
+  }
+  .news .news-card .content-box .date span {
+    font-size: 12px;
+  }
+  .news .news-card .content-box .date {
+    margin-bottom: 8px;
+  }
+  .news .news-card .content-box h4 {
+    font-size: 16px;
+    line-height: 25px;
+    height: calc(25px * 2);
+    overflow: hidden;
+  }
+  .docs .list-docs .doc-card .content-box h4.name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .vote .vote-card .content-box h4 {
+    font-size: 16px;
+  }
+  .servey .form-area h4 {
+    font-size: 16px;
+  }
+  .servey .form-area label.radio-label {
+    font-size: 14px;
+  }
+  .interactive-services .interactive-service-cards .interactive-service-card .img-box {
+    max-width: 40px;
+    max-height: 35px;
+  }
+  .interactive-services .interactive-service-cards .interactive-service-card .title {
+    font-size: 14px;
+  }
+  .servey .form-submit .voteNow {
+    font-size: 14px;
+  }
+  .servey .form-submit .voteNow {
+    width: 100px;
+  }
+  .servey .form-submit .result {
+    width: 110px;
+  }
+  .interactive-services .interactive-service-cards .interactive-service-card {
+    width: 115px;
+    height: 115px;
+  }
+  .servey .form-submit .result {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .about h3 {
+    font-size: 23px;
+  }
+  .about .content-box p {
+    font-size: 16px;
+  }
+  .about .about-sec-two h5 {
+    font-size: 18px;
+  }
+  .about ul li {
+    font-size: 16px;
+  }
+  .about .img-box {
+    height: auto;
+  }
+  .about .content-box p {
+    margin-bottom: 20px;
+  }
+  .news-details .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-details .row .col-lg-5,
+  .news-details .row .col-lg-7 {
+    width: 100%;
+  }
+  .news-details .details-head {
+    margin-left: 0;
+  }
+  .news-details .details-head h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .Policies_Details {
+    height: 60px;
+  }
+  .Policies_Details h3 {
+    font-size: 20px;
+  }
+  .Policies_Details a {
+    font-size: 14px;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 20px;
+    height: 60px;
+  }
+  .translate-dropdown select {
+    width: 195px;
+    height: 50px;
+    font-size: 16px;
+    background-size: auto , 22px;
+    background-position: 21px 23px, calc(100% - 20px) 15px;
+    padding: 7px 35px;
+    padding-right: 50px;
+  }
+  .trans .lang-swap {
+    -webkit-transform: translateX(67%);
+            transform: translateX(67%);
+  }
+  .main-cards-hd {
+    font-size: 13px;
+  }
+  .show-all a {
+    font-size: 12px;
+  }
+  .show-all a img {
+    margin-right: 5px;
+  }
+  .comu-and-best .nav-tabs .nav-link {
+    padding: 8px 10px 5px;
+    margin-left: 5px;
+  }
+  .Vacation .content-box .main-cards-hd {
+    width: 115px;
+  }
+  .Vacation .content-box .today-time {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .personal-card .img-box img {
+    width: 60px;
+    height: 60px;
+  }
+  .personal-card .img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    height: 100px;
+  }
+  .personal-card .content-box .name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .personal-card .img-box .notifications {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about {
+    padding: 50px;
+  }
+  .about .about-sec-two h5 {
+    font-size: 16px;
+  }
+  .about .img-box {
+    margin-bottom: 15px;
+  }
+  .about .about-sec-one {
+    margin-bottom: 0;
+  }
+  .about .content-box {
+    margin: 0;
+  }
+  .about .rev .content-box {
+    margin: 0;
+  }
+  .headAgency {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .headAgency .HATxt .font30 {
+    font-size: 22px;
+  }
+  .headAgency .HATxt .font22 {
+    font-size: 18px;
+  }
+  .headAgency .HATxt .font20 {
+    font-size: 18px;
+  }
+  .headAgency .HATxt {
+    margin-top: 15px;
+  }
+  .headAgency .HAImg {
+    margin: 0;
+  }
+  .headAgency .HAImg img {
+    width: 125px;
+    height: 125px;
+  }
+  .breadcrumb-banner .breadcrumb-end .breadcrumb-content h2 {
+    font-size: 30px;
+  }
+  .event-details .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .event-details .details .date {
+    border-left: 0;
+    border-bottom: 1px solid #e2e2e2;
+    min-height: 90px;
+  }
+  .event-details .details .date .date-details span {
+    font-size: 16px;
+  }
+  .trans .lang-swap {
+    left: 10px;
+    right: auto;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 50%;
+  }
+  .tr-to {
+    margin-right: 0;
+    margin-top: 35px;
+  }
+  .personal-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gaft-card.weather-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .gaft-card.time-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .Vacation.gaft-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .main-topnav .bgTopNav .topNav {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+  .main-topnav .bgTopNav .topNav .left .logo {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-white-card {
+    padding: 50px 25px;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+  .about ul li,
+  .about .content-box p {
+    font-size: 14px;
+  }
+  .about .about-sec-four ul {
+    margin-bottom: 25px;
+  }
+  .depEemp-box.main-depEemp::before {
+    left: calc(50% - 10px);
+    top: calc(100% - 11px);
+  }
+  .depEemp-box.main-depEemp::after {
+    left: calc(50% - 25px);
+    top: calc(100% + 20px);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .agencyBox .ABContent .font26 {
+    font-size: 17px;
+  }
+  .breadcrumb-banner .breadcrumb-end .breadcrumb-content h2 {
+    font-size: 25px;
+  }
+  .event-details h2 {
+    font-size: 22px;
+  }
+  .event-card {
+    height: 280px;
+    margin-bottom: 25px;
+  }
+  .event-card .content-box h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    max-height: calc(19px *3);
+  }
+  .news-details .img-box {
+    height: 300px;
+  }
+  .news-details .details-head h2 {
+    font-size: 20px;
+  }
+  .news-details .content-box p {
+    font-size: 14px;
+  }
+  .agencyBox.policies-box {
+    height: 280px;
+  }
+  .search-full .search-area-a {
+    height: 40px;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .search-full .search-area {
+    height: 40px;
+    font-size: 14px;
+    background-size: 18px;
+    padding-right: 50px;
+  }
+  .agencyBox.policies-box .content-box p.date {
+    font-size: 14px;
+  }
+  .agencyBox.policies-box .content-box h3 {
+    font-size: 16px;
+  }
+  .Policies_Details {
+    padding: 20px 25px;
+  }
+  .Policies_Details h3 {
+    font-size: 16px;
+  }
+  .Policies_Details a {
+    font-size: 12px;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button img {
+    max-width: 25px;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+    text-align: right;
+    padding-right: 15px;
+    padding-left: 39px;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button::after {
+    left: 20px;
+  }
+  .accordion .accordion-item .accordion-body .content-sec .acc-sec h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .accordion.sitemap-acc .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+  }
+  .accordion.sitemap-acc .accordion-item .accordion-header .accordion-button img {
+    max-width: 30px;
+    margin-left: 10px;
+  }
+  .accordion.sitemap-acc .accordion-item .accordion-body .acc-sec ul li a {
+    font-size: 16px;
+  }
+  .trans .lang-swap {
+    width: 55px;
+    height: 55px;
+    top: 52%;
+  }
+  .trans .lang-swap a {
+    width: 55px;
+    height: 55px;
+  }
+  .owl-carousel-banner .item .content-box {
+    padding: 25px;
+  }
+  .owl-carousel-banner .item .content-box h4 {
+    font-size: 16px;
+  }
+  .owl-carousel-banner .item .content-box p {
+    font-size: 14px;
+  }
+  .services .nav-tabs .nav-link {
+    font-size: 12px;
+    padding: 8px 20px 5px;
+    margin-bottom: 5px;
+  }
+  .favorite {
+    height: auto;
+  }
+}
+
+@media (max-width: 574.98px) {
+  .news-details .img-box {
+    height: 200px;
+  }
+  .main-topnav .bgTopNav .topNav .left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+  .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li a.active {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+  .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li a {
+    font-size: 16px;
+    padding: 7px 20px 5px;
+  }
+  .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu ul li ul li a {
+    font-size: 14px;
+  }
+  .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu {
+    width: 305px;
   }
 }
 

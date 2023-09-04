@@ -3329,13 +3329,104 @@ footer {
   color: #fff !important;
 }
 .translate-textarea textarea{
-  background-color: #323e48;
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
 }
 
 
+.translate-dropdown select {
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+.translate-dropdown label{
+  color: #fff;
+}
+.accordion-header{
+  background-color: #5E676E;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+.accordion .accordion-item .accordion-header .accordion-button::after{
+  filter: grayscale(1) brightness(2);
+}
+.accordion .accordion-item .accordion-header .accordion-button img{
+  filter: brightness(1.5) contrast(0.5);
+}
+.accordion .accordion-item .accordion-body {
+  background-color: #a7aaaa66;
+}
 
+.sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img{
+  filter: none;
+}
 
+.headAgency {
+  background: #323E48;
+}
 
+.headAgency .HATxt .font20 ,
+.headAgency .HATxt .font22 ,
+.headAgency .HATxt .font30{
+  color: #BBBBBB;
+}
+.depEemp-box {
+  background-color: #5E676E;
+}
+
+.depEemp-box .content-box .name{
+  color: $gold-color;
+}
+.depEemp-box .content-box .job , 
+.depEemp-box .content-box .phone,
+.depEemp-box .content-box .phone a,
+.depEemp-box .content-box .mail a{
+  color: #BBBBBB;
+}
+
+.agencyBox{
+  background-color: #5E676E;
+}
+.agencyBox .ABContent .font25{
+  color: $gold-color;
+}
+
+.agencyBox .ABContent .font26,
+.agencyBox .ABContent .font20,
+.agencyBox .ABContent .font16{
+  color: #BBBBBB;
+}
+
+.event-card{
+  background-color: #5E676E;
+}
+
+.event-card .content-box h3{
+  color: $gold-color;
+}
+.event-card .content-box .location span{
+  color: #BBBBBB;
+}
+.agencyBox.policies-box .content-box h3{
+  color: $gold-color;
+}
+.agencyBox.policies-box .content-box p.date{
+  color: #BBBBBB;
+}
+.news-card{
+  background-color: #5E676E;
+}
+.agencyBox.policies-box .btns-box a.download{
+  color: #BBBBBB;
+  border-color: #BBBBBB;
+}
+.agencyBox.policies-box .btns-box a.download img{
+  filter: grayscale(2) invert(1);
+}
 
 }
 

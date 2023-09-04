@@ -57,7 +57,26 @@ $( document ).ready(function() {
       navText: arrow2,
       rtl: true,
       items:3,
-      dots:false
+      dots:false,
+      
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+          items:2,
+        },
+        // breakpoint from 480 up
+        480 : {
+
+        },
+        // breakpoint from 768 up
+        768 : {
+          items:2,
+        },
+        1650 : {
+          items:3,
+        }
+    }
+
   })
 
 
@@ -68,7 +87,24 @@ $( document ).ready(function() {
     navText: arrow2,
     rtl: true,
     items:5,
-    dots:false
+    dots:false,
+    responsive : {
+      // breakpoint from 0 up
+      0 : {
+        items:2,
+      },
+      // breakpoint from 480 up
+      480 : {
+
+      },
+      // breakpoint from 768 up
+      768 : {
+        items:4,
+      },
+      1400 : {
+        items:5,
+      }
+    }
 })
 
 
@@ -92,7 +128,25 @@ $('.owl-carousel-most').owlCarousel({
   navText: arrow2,
   rtl: true,
   items:5,
-  dots:false
+  dots:false,
+  responsive : {
+    // breakpoint from 0 up
+    0 : {
+      items:2,
+    },
+    // breakpoint from 480 up
+    480 : {
+
+    },
+    // breakpoint from 768 up
+    768 : {
+      items:4,
+    },
+    1400 : {
+      items:5,
+    }
+  }
+
 })
 
 
@@ -103,7 +157,24 @@ $('.owl-carousel-sys').owlCarousel({
   navText: arrow2,
   rtl: true,
   items:5,
-  dots:false
+  dots:false,
+  responsive : {
+    // breakpoint from 0 up
+    0 : {
+      items:2,
+    },
+    // breakpoint from 480 up
+    480 : {
+
+    },
+    // breakpoint from 768 up
+    768 : {
+      items:4,
+    },
+    1400 : {
+      items:5,
+    }
+  }
 })
 
 
