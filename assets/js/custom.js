@@ -447,11 +447,11 @@ function showKsaDetails(){
   $(".ksa-a").closest(".item").addClass("clicked")
 }
 
-function showUaeDetails(){
+function showIrDetails(){
   $(".hub-card").addClass("hide")
-  $(".UAE .hub-card").toggleClass("hide")
+  $(".Iraq .hub-card").toggleClass("hide")
   $(".mySwiperContary .item").removeClass("clicked")
-  $(".uae-a").closest(".item").addClass("clicked")
+  $(".ir-a").closest(".item").addClass("clicked")
 }
 
 function showEgyDetails(){
@@ -459,7 +459,27 @@ function showEgyDetails(){
   $(".EGYPT .hub-card").toggleClass("hide")
   $(".mySwiperContary .item").removeClass("clicked")
   $(".egy-a").closest(".item").addClass("clicked")
+}
 
+function showRUDetails(){
+  $(".hub-card").addClass("hide")
+  $(".Russia .hub-card").toggleClass("hide")
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".ru-a").closest(".item").addClass("clicked")
+}
+
+function showUSADetails(){
+  $(".hub-card").addClass("hide")
+  $(".USA .hub-card").toggleClass("hide")
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".usa-a").closest(".item").addClass("clicked")
+}
+
+function showAUSDetails(){
+  $(".hub-card").addClass("hide")
+  $(".AUS .hub-card").toggleClass("hide")
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".aus-a").closest(".item").addClass("clicked")
 }
 
 /*

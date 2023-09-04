@@ -1802,6 +1802,104 @@ path:hover {
   fill: #007066;
 }
 
+.RU-pin {
+  position: absolute;
+  right: 800px;
+  top: 300px;
+  width: 25px;
+}
+
+.JP-pin {
+  position: absolute;
+  right: 655px;
+  top: 435px;
+  width: 25px;
+}
+
+.KR-pin {
+  position: absolute;
+  right: 700px;
+  top: 450px;
+  width: 25px;
+}
+
+.CN-pin {
+  position: absolute;
+  right: 800px;
+  top: 450px;
+  width: 25px;
+}
+
+.IN-pin {
+  position: absolute;
+  right: 875px;
+  top: 500px;
+  width: 25px;
+}
+
+.PK-pin {
+  position: absolute;
+  right: 900px;
+  top: 475px;
+  width: 25px;
+}
+
+.IR-pin {
+  position: absolute;
+  right: 950px;
+  top: 470px;
+  width: 25px;
+}
+
+.SR-pin {
+  position: absolute;
+  right: 985px;
+  top: 500px;
+  width: 25px;
+}
+
+.EG-pin {
+  position: absolute;
+  right: 1040px;
+  top: 490px;
+  width: 25px;
+}
+
+.MO-pin {
+  position: absolute;
+  right: 1160px;
+  top: 470px;
+  width: 25px;
+}
+
+.US-pin {
+  position: absolute;
+  right: 1490px;
+  top: 440px;
+  width: 25px;
+}
+
+.MY-pin {
+  position: absolute;
+  right: 790px;
+  top: 570px;
+  width: 25px;
+}
+
+.AU-pin {
+  position: absolute;
+  right: 680px;
+  top: 680px;
+  width: 25px;
+}
+
+.SA-pin {
+  position: absolute;
+  right: 1050px;
+  top: 690px;
+  width: 25px;
+}
+
 .links-box {
   width: 100%;
   height: 200px;
@@ -2716,18 +2814,19 @@ path:hover {
   position: absolute;
 }
 .locations-main .locations-map .location-with-card.KSA a.location {
-  left: 55.25%;
-  top: 58%;
-}
-.locations-main .locations-map .location-with-card.UAE a.location {
-  left: 60%;
-  top: 57%;
+  right: 620px;
+  top: 460px;
 }
 .locations-main .locations-map .location-with-card.EGYPT a.location {
-  left: 53%;
-  top: 57%;
+  right: 650px;
+  top: 460px;
+}
+.locations-main .locations-map .location-with-card.Iraq a.location {
+  right: 570px;
+  top: 430px;
 }
 .locations-main .locations-map .location-with-card .hub-card {
+  z-index: 9999999999;
   background-color: #fff;
   position: absolute;
   right: -170px;
