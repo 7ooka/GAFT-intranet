@@ -8,12 +8,11 @@ body {
 html{
   overflow-x: hidden !important;
 }
+
 // general style
 img {
   max-width: 100%;
 }
-
-
 
 a {
   text-decoration: none;
@@ -22,6 +21,9 @@ a {
   }
 }
 
+p {
+  text-align: justify;
+}
 
 .owl-carousel .owl-item img {
   width: auto;
@@ -29,8 +31,6 @@ a {
 ul {
   list-style: none;
 }
-
-
 
 // owl style
 body {
@@ -63,7 +63,6 @@ body {
     // }
   }
 }
-
 
 .homeBanner {
   width: 100%;
@@ -115,26 +114,6 @@ body {
   justify-content: space-between;
 }
 
-// Map
-path {fill: lightgray; stroke: white;}
-path:hover {fill: gray;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
   background-color: $green-main;
   padding: 25px 0px 27px;
@@ -183,17 +162,6 @@ footer {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .main-topnav{
   .bgTopNav{
@@ -498,8 +466,6 @@ footer {
   }
 }
 
-
-
 /*
                social-share
 */
@@ -578,14 +544,12 @@ footer {
   }
 }
 
-
 .gaft-card{
   border-radius: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   
 }
-
 
 .personal-card{
   padding: 11px 25px;
@@ -935,8 +899,6 @@ footer {
   }
 }
 
-
-
 .favorite{
   background-color: #EFEDE6;
   border: 1px solid $grey-bbb;
@@ -997,8 +959,6 @@ footer {
 }
 }
 
-
-
 .services{
   .nav-tabs{
     border: none;
@@ -1037,8 +997,6 @@ footer {
     top: -42%;
   }
 }
-
-
 
 .offers{
   border: 1px solid $grey-bbb;
@@ -1098,7 +1056,6 @@ footer {
   }
 
 }
-
 
 .news-top-section{
   padding: 20px 27px;
@@ -1215,7 +1172,6 @@ footer {
   
   }
 }
-
 
 .comu-and-best{
   border: 1px solid $grey-bbb;
@@ -1389,7 +1345,6 @@ footer {
   }
 }
 
-
 .interactive-services{
   height: 500px;
    .main-cards-hd {
@@ -1438,8 +1393,6 @@ footer {
     }
   }
 }
-
-
 
 .docs{
   background-color: $green-main;
@@ -1496,8 +1449,6 @@ footer {
     }
   }
 }
-
-
 
 .calender{
   padding: 25px 22px ;
@@ -1562,10 +1513,6 @@ footer {
   }
 }
 
-
-
-
-
 .vote{
   padding: 25px 22px ;
   background-color: $gold-color;
@@ -1613,7 +1560,6 @@ footer {
   
   }
 }
-
 
 .servey{
   padding: 25px 22px ;
@@ -1729,7 +1675,6 @@ footer {
   }
 }
 
-
 .twitter-card{
   background-color: #fff;
   border: 1px solid $grey-bbb;
@@ -1740,8 +1685,6 @@ footer {
 .fancybox-lock .fancybox-overlay {
   overflow-y: hidden;
 }
-
-
 
 /***********************
 
@@ -1767,8 +1710,6 @@ footer {
   margin-top: -195px;
   position: relative;
 }
-
-
 
 .breadcrumb-banner{
   .breadcrumb-top{
@@ -1800,7 +1741,7 @@ footer {
           }
         }
         span{
-           font-size: 16px;
+          font-size: 16px;
           font-weight: $w-medium;
           color: #fff;
         }
@@ -1831,8 +1772,8 @@ footer {
         top: 0;
         #{$start-direction}:0;
         background-color: $green-main;
-        mix-blend-mode: color;
-        // opacity: 0;
+        mix-blend-mode: multiply;
+        opacity: 85%;
       }
     }
     .breadcrumb-content{
@@ -1955,6 +1896,131 @@ footer {
     }
   }
 }
+
+// Map
+path {fill: lightgray; stroke: white;}
+path:hover {fill: $green-main;}
+
+// Pins 
+.RU-pin {
+  position: absolute;
+  right: 800px;
+  top: 300px;
+  width: 25px;
+}
+.JP-pin {
+  position: absolute;
+  right: 655px;
+  top: 435px;
+  width: 25px;
+}
+.KR-pin {
+  position: absolute;
+  right: 700px;
+  top: 450px;
+  width: 25px;
+}
+.CN-pin {
+  position: absolute;
+  right: 800px;
+  top: 450px;
+  width: 25px;
+}
+.IN-pin {
+  position: absolute;
+  right: 875px;
+  top: 500px;
+  width: 25px;
+}
+.PK-pin {
+  position: absolute;
+  right: 900px;
+  top: 475px;
+  width: 25px;
+}
+.IR-pin {
+  position: absolute;
+  right: 950px;
+  top: 470px;
+  width: 25px;
+}
+.SR-pin {
+  position: absolute;
+  right: 985px;
+  top: 500px;
+  width: 25px;
+}
+.EG-pin {
+  position: absolute;
+  right: 1040px;
+  top: 490px;
+  width: 25px;
+}
+.MO-pin {
+  position: absolute;
+  right: 1160px;
+  top: 470px;
+  width: 25px;
+}
+.US-pin {
+  position: absolute;
+  right: 1490px;
+  top: 440px;
+  width: 25px;
+}
+.MY-pin {
+  position: absolute;
+  right: 790px;
+  top: 570px;
+  width: 25px;
+}
+.AU-pin {
+  position: absolute;
+  right: 680px;
+  top: 680px;
+  width: 25px;
+}
+.SA-pin {
+  position: absolute;
+  right: 1050px;
+  top: 690px;
+  width: 25px;
+}
+
+
+.links-box {
+  width: 100%;
+  height: 200px;
+  background: #F8F6F4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;  
+  img {
+    filter: grayscale(100%);
+    width: 90%;
+  }
+  &:hover {
+    cursor: pointer;
+    img {
+      filter: grayscale(0%);
+    }
+  }
+}
+.links-title{
+  h3{
+    font-size: 20px;
+    font-weight: $w-bold;
+    color: $green-main;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 
 .office-card{
   width: 100%;
@@ -2912,24 +2978,43 @@ footer {
       }
       &.KSA{
         a.location {
-          left: 55.25%;
-          top: 58%;
+          right: 620px;
+          top: 460px;
         }
-       }
-       &.UAE{
+      }
+      &.EGYPT{
         a.location {
-          left: 60%;
-          top: 57%;
+          right: 650px;
+          top: 460px;
         }
-       }
-       &.EGYPT{
+      }
+      &.Iraq{
         a.location {
-          left: 53%;
-          top: 57%;
+          right: 570px;
+          top: 430px;
         }
-       }
+      }
+      &.Russia{
+        a.location {
+          right: 430px;
+          top: 270px;
+        }
+      }
+      &.USA{
+        a.location {
+          right: 1115px;
+          top: 400px;
+        }
+      }
+      &.AUS{
+        a.location {
+          right: 300px;
+          top: 640px;
+        }
+      }
 
       .hub-card {
+          z-index: 9999999999;
           background-color: #fff;
           position: absolute;
           right: -170px;
