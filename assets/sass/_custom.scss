@@ -1741,7 +1741,7 @@ footer {
           }
         }
         span{
-           font-size: 16px;
+          font-size: 16px;
           font-weight: $w-medium;
           color: #fff;
         }
@@ -1772,8 +1772,8 @@ footer {
         top: 0;
         #{$start-direction}:0;
         background-color: $green-main;
-        mix-blend-mode: color;
-        // opacity: 0;
+        mix-blend-mode: multiply;
+        opacity: 85%;
       }
     }
     .breadcrumb-content{
