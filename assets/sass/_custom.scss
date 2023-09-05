@@ -2335,6 +2335,7 @@ path:hover {fill: $green-main;}
       font-weight: $w-medium;
       color: #000;
       margin-bottom: 0;
+      text-align: center;
     }
   }
   .btns-box{
@@ -3168,6 +3169,14 @@ path:hover {fill: $green-main;}
 }
 
 
+.pinz{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -50px;
+  #{$start-direction}: -380px;
+}
+
 
 /*
 
@@ -3443,7 +3452,10 @@ path:hover {fill: $green-main;}
   filter: brightness(1.5) contrast(0.5);
 }
 .accordion .accordion-item .accordion-body {
-  background-color: #a7aaaa66;
+  background-color: #5e676e;
+}
+.accordion .accordion-item .accordion-body .content-sec .acc-sec p{
+  color: #fff;
 }
 
 .sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img{
@@ -3512,6 +3524,12 @@ path:hover {fill: $green-main;}
 .agencyBox.policies-box .btns-box a.download img{
   filter: grayscale(2) invert(1);
 }
+
+.links-title h3{
+  color: $gold-color;
+}
+
+
 
 }
 

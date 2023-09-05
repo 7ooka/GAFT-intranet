@@ -489,17 +489,24 @@ $(function (){
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    376: {
-      slidesPerView: 2,
-      spaceBetween: 7,
-      slidesPerGroup: 2,
-    },
     
-    575: {
-      slidesPerView: "auto",
+    // 575: {
+    //   slidesPerView: "auto",
+    //   spaceBetween: 12
+    // },
+    992: {
+      slidesPerView: "2",
       spaceBetween: 12
     },
+    1200: {
+      slidesPerView: "2.5",
+      spaceBetween: 20
+    },
     1440: {
+      slidesPerView: "3",
+      spaceBetween: 20
+    },
+    1650: {
       slidesPerView: "4.3",
       spaceBetween: 20
     },

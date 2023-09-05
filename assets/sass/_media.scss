@@ -144,6 +144,21 @@
     flex: 0 0 165px;
     margin-#{$end-direction}: 15px;
   }
+  .links-title h3 {
+    font-size: 18px;
+  }
+
+
+
+  .pinz{
+    top: -13px;
+    #{$start-direction}: -509px;
+    transform: scale(.92);
+  }
+  .locations-main .locations-map .location-with-card .hub-card{
+    #{$start-direction}: -320px;
+    top: 15px;
+  }
 }
 
 
@@ -363,7 +378,37 @@
 .servey .form-submit .result{
   font-size: 14px;
 }
+.links-title h3{
+  font-size: 14px;
+}
 
+.pinz{
+  top: 40px;
+  #{$start-direction}: -507px;
+  transform: scale(.79);
+  }
+  .locations-main .locations-map .location-with-card .hub-card{
+    #{$start-direction}: -350px;
+    top: 0;
+    min-height: 215px;
+    width: 315px;
+  }
+  .locations-main .locations-map .location-with-card .img-box{
+    width: 50px;
+    height: 50px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .address {
+    font-size: 15px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .respon {
+    font-size: 14px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .phone {
+    font-size: 14px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .mail {
+    font-size: 12px;
+  }
 }
 
 
@@ -465,7 +510,50 @@
   height: 28px;
   font-size: 12px;
 }
+.agencyBox .ABContent .font26{
+  font-size: 18px;
+    margin-bottom: 5px;
+}
+.agencyBox .ABContent .font16{
+  font-size: 14px;
+}
+.container > svg{
+  height: 650px;
+  }
+.pinz {
+  top: 31px;
+  #{$start-direction}: -472px;
+  transform: scale(0.65);
+}
+.locations-main .locations-map .location-with-card .hub-card{
+  #{$start-direction}: -435px;
+    top: -100px;
+}
 
+.locations-main .locations-map .location-with-card.Russia a.location {
+  #{$start-direction}: 540px;
+  top: 350px;
+}
+.locations-main .locations-map .location-with-card.USA a.location {
+  #{$start-direction}: 900px;
+}
+.locations-main .locations-map .location-with-card.AUS a.location{
+  #{$start-direction}: 455px;
+  top: 540px;
+}
+
+
+
+  .accordion .accordion-item .accordion-body .content-sec .acc-sec h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .accordion .accordion-item .accordion-body .content-sec .acc-sec p{
+    font-size: 14px;
+  }
+  .accordion .accordion-item .accordion-body .content-sec .acc-sec {
+    padding-bottom: 0;
+  }
 }
 
 
@@ -574,10 +662,47 @@
 .main-topnav .bgTopNav .topNav .left .logo {
   max-width: 250px;
 }
+.locations-main .locations-slider .item{
+  margin: 0 auto;
+}
+.locations-main .locations-slider{
+  padding: 25px 10px;
+}
+
+
+.locations-main .locations-slider .item .content-boxx p {
+  font-size: 14px;
+}
+.locations-main .locations-slider .item .content-boxx h6 {
+  font-size: 18px;
+}
+.container > svg{
+  height: 430px;
+}
+.pinz {
+  top: 15px;
+  #{$start-direction}: -376px;
+  transform: scale(0.44);
+}
+.locations-main .locations-map .location-with-card .hub-card {
+  #{$start-direction}: -550px;
+  top: -230px;
+}
+
+.locations-main .locations-map .location-with-card.USA a.location {
+  #{$start-direction}: 760px;
+}
+.locations-main .locations-map .location-with-card.AUS a.location{
+  #{$start-direction}: 550px;
+}
+
 
 }
 
 @media (max-width: 767.98px) {
+  .locations-main .swiperArr{
+    display: none;
+  }
   .main-white-card {
     padding: 50px 25px;
   }
@@ -634,14 +759,15 @@
   }
   .search-full .search-area-a {
     height: 40px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px;
+    min-width: 75px;
   }
   .search-full .search-area {
     height: 40px;
-    font-size: 14px;
+    font-size: 12px;
     background-size: 18px;
-    padding-#{$start-direction}: 50px;
+    padding-#{$start-direction}: 40px;
   }
   .agencyBox.policies-box .content-box p.date {
     font-size: 14px;
@@ -710,6 +836,34 @@
   .favorite{
     height: auto;
   }
+  .container > svg{
+    height: 360px;
+  }
+  .pinz {
+    top: 27px;
+    #{$start-direction}: -310px;
+    transform: scale(0.34);
+  }
+  .locations-main .locations-map .location-with-card .hub-card {
+    #{$start-direction}: -560px;
+    top: -275px;
+    min-height: 190px;
+    width: 275px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .address {
+    font-size: 14px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .respon {
+    font-size: 13px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .phone {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .mail {
+    font-size: 10px;
+  }
+
 }
 
 
@@ -739,9 +893,67 @@
   .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu{
     width: 305px;
   }
+  .locations-main .locations-map .location-with-card .hub-card {
+    #{$start-direction}: -560px;
+    top: -320px;
+    min-height: 150px;
+    width: 230px;
+    padding: 9px 15px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .address {
+    font-size: 12px;
+  }
+  .locations-main .locations-map .location-with-card .content-box .respon {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+  .locations-main .locations-map .location-with-card .content-box .phone {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+
+  .container > svg{
+    height: 265px;
+  }
+  .pinz {
+    top: 20px;
+    #{$start-direction}: -242px;
+    transform: scale(0.25);
+  }
+
+  .locations-main .locations-map .location-with-card.AUS a.location {
+    top: 460px;
+  }
+  .locations-main .locations-map .location-with-card.USA a.location {
+    #{$start-direction}: 600px;
+}
+.locations-main .locations-map .location-with-card.EGYPT a.location {
+  #{$start-direction}: 580px;
+}
+.locations-main .locations-map .location-with-card.KSA a.location {
+  #{$start-direction}: 565px;
+}
+.locations-main .locations-slider .item .content-boxx h6 {
+  font-size: 16px;
+}
+.locations-main .locations-slider .item .img-boxx {
+  width: 50px;
+  height: 50px;
 }
 
 
+
+}
+
+
+@media(max-width:400px){
+  .pinz {
+    top: 40px;
+    #{$start-direction}: -204px;
+    transform: scale(0.205);
+}
+}
 
 
 
