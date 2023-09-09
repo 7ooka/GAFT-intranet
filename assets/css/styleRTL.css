@@ -3170,6 +3170,28 @@ path:hover {
   top: 30px;
 }
 
+.accordion.sitemap-acc .accordion-item .accordion-header a {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  height: 80px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #007066;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 30px;
+  position: relative;
+}
+
+.accordion.sitemap-acc .accordion-item .accordion-header a img {
+  margin-left: 20px;
+  max-width: 35px;
+}
+
 .accordion.sitemap-acc .accordion-item .accordion-body {
   border: none;
   border-top: 1px solid #fff;
@@ -3645,40 +3667,6 @@ path:hover {
   overflow: hidden;
 }
 
-.locations-main .locations-map .location-with-card a.location {
-  position: absolute;
-}
-
-.locations-main .locations-map .location-with-card.KSA a.location {
-  right: 620px;
-  top: 460px;
-}
-
-.locations-main .locations-map .location-with-card.EGYPT a.location {
-  right: 650px;
-  top: 460px;
-}
-
-.locations-main .locations-map .location-with-card.Iraq a.location {
-  right: 570px;
-  top: 430px;
-}
-
-.locations-main .locations-map .location-with-card.Russia a.location {
-  right: 430px;
-  top: 270px;
-}
-
-.locations-main .locations-map .location-with-card.USA a.location {
-  right: 1115px;
-  top: 400px;
-}
-
-.locations-main .locations-map .location-with-card.AUS a.location {
-  right: 300px;
-  top: 640px;
-}
-
 .locations-main .locations-map .location-with-card .hub-card {
   z-index: 9999999999;
   background-color: #fff;
@@ -3761,7 +3749,6 @@ path:hover {
   background-color: #fff;
   border-radius: 0;
   height: 100px;
-  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3826,6 +3813,11 @@ path:hover {
   color: #fff;
 }
 
+.locations-main .locations-slider .swiper-slide {
+  width: auto !important;
+  min-width: 270px;
+}
+
 .locations-main .locations-slider .swiperArr .swiper-button-next,
 .locations-main .locations-slider .swiperArr .swiper-button-prev {
   width: 35px;
@@ -3857,6 +3849,198 @@ path:hover {
   height: 100%;
   top: -50px;
   right: -380px;
+}
+
+.new-map .svg-map {
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  padding: 15px 50px;
+  -webkit-box-shadow: 0 5px 20px #00000026;
+          box-shadow: 0 5px 20px #00000026;
+}
+
+.new-map .map-pins {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.new-map .map-pins .location-with-card {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.new-map .map-pins .location-with-card img {
+  width: 25px;
+  height: 25px;
+}
+
+.new-map .map-pins .location-with-card.KSA {
+  left: 59%;
+  top: -354px;
+}
+
+.new-map .map-pins .location-with-card.EGYPT {
+  left: 56%;
+  top: -365px;
+}
+
+.new-map .map-pins .location-with-card.IRAQ {
+  left: 62%;
+  top: -390px;
+}
+
+.new-map .map-pins .location-with-card.RUSSIA {
+  left: 72%;
+  top: -555px;
+}
+
+.new-map .map-pins .location-with-card.USA {
+  left: 28%;
+  top: -420px;
+}
+
+.new-map .map-pins .location-with-card.AUSTRALIA {
+  left: 78%;
+  top: -190px;
+}
+
+.new-map-side .data-section .close-nav span {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #007066;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 20px #00000026;
+          box-shadow: 0 5px 20px #00000026;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.new-map-side .data-section h3 {
+  font-size: 23px;
+  font-weight: 500;
+  color: #007066;
+  margin-bottom: 25px;
+}
+
+.new-map-side .data-section .loc-card {
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-box-shadow: 0 5px 20px #00000026;
+          box-shadow: 0 5px 20px #00000026;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.new-map-side .data-section .loc-card .hub-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-map-side .data-section .loc-card .hub-card .img-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.new-map-side .data-section .loc-card .hub-card .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.new-map-side .data-section .loc-card .hub-card .content-box {
+  text-align: center;
+}
+
+.new-map-side .data-section .loc-card .hub-card .content-box .address {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.new-map-side .data-section .loc-card .hub-card .content-box .respon {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 7px;
+  line-height: 1.2;
+}
+
+.new-map-side .data-section .loc-card .hub-card .content-box .phone {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.new-map-side .data-section .loc-card .hub-card .content-box .mail {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.plus-scaled {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fill-map-color {
+  fill: #007066;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .KSA {
+  left: 60%;
+  top: -370px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .EGYPT {
+  left: 56.5%;
+  top: -375px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+  left: 63%;
+  top: -395px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
+  left: 83%;
+  top: -220px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .USA {
+  left: 23%;
+  top: -430px;
 }
 
 /*
@@ -4174,7 +4358,8 @@ path:hover {
   background-color: #5E676E;
 }
 
-.Dark .accordion .accordion-item .accordion-header .accordion-button {
+.Dark .accordion .accordion-item .accordion-header .accordion-button,
+.Dark .accordion .accordion-item .accordion-header a {
   background-color: #5E676E;
   border: none;
   color: #bbbbbb;
@@ -4185,7 +4370,8 @@ path:hover {
           filter: grayscale(1) brightness(2);
 }
 
-.Dark .accordion .accordion-item .accordion-header .accordion-button img {
+.Dark .accordion .accordion-item .accordion-header .accordion-button img,
+.Dark .accordion .accordion-item .accordion-header a img {
   -webkit-filter: brightness(1.5) contrast(0.5);
           filter: brightness(1.5) contrast(0.5);
 }
@@ -4198,7 +4384,8 @@ path:hover {
   color: #fff;
 }
 
-.Dark .sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img {
+.Dark .sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img,
+.Dark .sitemap-acc.accordion .accordion-item .accordion-header a img {
   -webkit-filter: none;
           filter: none;
 }
@@ -4278,6 +4465,27 @@ path:hover {
 
 .Dark .links-title h3 {
   color: #CCA079;
+}
+
+.Dark .new-map-side .data-section .close-nav span {
+  background-color: #CCA079;
+}
+
+.Dark .new-map-side .data-section h3 {
+  color: #CCA079;
+}
+
+.Dark .new-map-side .data-section .loc-card .hub-card .content-box .address {
+  color: #BBBBBB;
+}
+
+.Dark .new-map-side .data-section .loc-card .hub-card .content-box .respon {
+  color: #BBBBBB;
+}
+
+.Dark .new-map-side .data-section .loc-card .hub-card .content-box .phone,
+.Dark .new-map-side .data-section .loc-card .hub-card .content-box .mail {
+  color: #BBBBBB;
 }
 
 .font30,
@@ -4622,6 +4830,72 @@ path:hover {
     right: -320px;
     top: 15px;
   }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 63%;
+    top: -390px;
+  }
+  .new-map .map-pins .location-with-card.KSA {
+    left: 60%;
+    top: -364px;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 56.5%;
+    top: -373px;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 22%;
+    top: -435px;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 82%;
+    top: -210px;
+  }
+  .col-xl-9 .new-map .svg-map svg {
+    height: 550px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
+    left: 82%;
+    top: -145px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .USA {
+    left: 23%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
+    left: 72%;
+    top: -400px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .KSA {
+    left: 60%;
+    top: -256px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+    left: 62.5%;
+    top: -275px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .EGYPT {
+    left: 56%;
+    top: -263px;
+  }
+  .new-map-side .data-section .loc-card .hub-card .img-box {
+    width: 55px;
+    height: 55px;
+  }
+  .new-map-side .data-section .loc-card .hub-card .content-box .address {
+    font-size: 16px;
+  }
+  .new-map-side .data-section .loc-card .hub-card .content-box .respon,
+  .new-map-side .data-section .loc-card .hub-card .content-box .phone,
+  .new-map-side .data-section .loc-card .hub-card .content-box .mail {
+    font-size: 14px;
+  }
+  .locations-main .locations-slider .item .content-boxx h6 {
+    font-size: 18px;
+  }
+  .locations-main .locations-slider .item .content-boxx p {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -4866,6 +5140,38 @@ path:hover {
   .locations-main .locations-map .location-with-card .content-box .mail {
     font-size: 12px;
   }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 82%;
+    top: -252px;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 56.5%;
+    top: -384px;
+  }
+  .new-map .map-pins .location-with-card.KSA {
+    left: 60%;
+    top: -380px;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 63%;
+    top: -401px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
+    left: 81%;
+    top: -180px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .KSA {
+    left: 59%;
+    top: -274px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .EGYPT {
+    left: 55.5%;
+    top: -276px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+    left: 62%;
+    top: -290px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -5010,6 +5316,15 @@ path:hover {
   .accordion .accordion-item .accordion-body .content-sec .acc-sec {
     padding-bottom: 0;
   }
+  .custom-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .data-section {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -5145,6 +5460,43 @@ path:hover {
   .locations-main .locations-map .location-with-card.AUS a.location {
     right: 550px;
   }
+  .new-map .svg-map svg {
+    height: 430px !important;
+  }
+  .new-map .map-pins .location-with-card img {
+    width: 15px;
+    height: 15px;
+  }
+  .new-map .locations-map .map-pins .KSA {
+    left: 57% !important;
+    top: -217px !important;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 54% !important;
+    top: -223px !important;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 60% !important;
+    top: -230px !important;
+  }
+  .new-map .map-pins .location-with-card.RUSSIA {
+    left: 70% !important;
+    top: -300px !important;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 24% !important;
+    top: -245px !important;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 78% !important;
+    top: -147px !important;
+  }
+  .locations-main .swiperArr {
+    display: none;
+  }
+  .locations-main .locations-slider .swiper-slide {
+    width: inherit !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -5240,6 +5592,17 @@ path:hover {
     padding-right: 15px;
     padding-left: 39px;
   }
+  .accordion.sitemap-acc .accordion-item .accordion-header a img {
+    max-width: 30px;
+    margin-left: 10px;
+  }
+  .accordion.sitemap-acc .accordion-item .accordion-header a {
+    font-size: 16px;
+    text-align: right;
+    padding-right: 15px;
+    padding-left: 39px;
+    font-size: 16px;
+  }
   .accordion .accordion-item .accordion-header .accordion-button::after {
     left: 20px;
   }
@@ -5310,6 +5673,33 @@ path:hover {
   }
   .locations-main .locations-map .location-with-card .content-box .mail {
     font-size: 10px;
+  }
+  .new-map .svg-map svg {
+    height: 300px !important;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 76% !important;
+    top: -108px !important;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 24% !important;
+    top: -178px !important;
+  }
+  .new-map .map-pins .location-with-card.RUSSIA {
+    left: 70% !important;
+    top: -224px !important;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 58.5% !important;
+    top: -170px !important;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 52.5% !important;
+    top: -164px !important;
+  }
+  .new-map .locations-map .map-pins .KSA {
+    left: 56% !important;
+    top: -161px !important;
   }
 }
 
@@ -5386,12 +5776,68 @@ path:hover {
   }
 }
 
+@media (max-width: 450px) {
+  .new-map .map-pins .location-with-card {
+    width: 10px;
+    height: 9px;
+  }
+  .new-map .map-pins .location-with-card img {
+    width: 10px;
+    height: 9px;
+  }
+  .new-map .locations-map .map-pins .KSA {
+    left: 58% !important;
+    top: -166px !important;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 55% !important;
+    top: -169px !important;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 60% !important;
+    top: -172px !important;
+  }
+  .new-map .map-pins .location-with-card.RUSSIA {
+    left: 66% !important;
+    top: -215px !important;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 75% !important;
+    top: -132px !important;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 28% !important;
+    top: -178px !important;
+  }
+}
+
 @media (max-width: 400px) {
-  .pinz {
-    top: 40px;
-    right: -204px;
-    -webkit-transform: scale(0.205);
-            transform: scale(0.205);
+  .new-map .svg-map svg {
+    height: 200px !important;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 29% !important;
+    top: -130px !important;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 73% !important;
+    top: -92px !important;
+  }
+  .new-map .map-pins .location-with-card.RUSSIA {
+    left: 66% !important;
+    top: -152px !important;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 59% !important;
+    top: -126px !important;
+  }
+  .new-map .locations-map .map-pins .KSA {
+    left: 57% !important;
+    top: -120px !important;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 54% !important;
+    top: -122px !important;
   }
 }
 

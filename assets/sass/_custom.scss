@@ -2606,6 +2606,22 @@ path:hover {fill: $green-main;}
             top: 30px
           }
         }
+        a {
+          background-color: #f7f7f7;
+          border-radius: 8px;
+          height: 80px;
+          font-size: 22px;
+          font-weight: 700;
+          color: #007066;
+          display: flex;
+          align-items: center;
+          padding: 25px 30px;
+          position: relative;
+          img{
+            margin-left: 20px;
+            max-width: 35px;
+          }
+        }
       }
       .accordion-body{
         border: none;
@@ -2974,45 +2990,45 @@ path:hover {fill: $green-main;}
       overflow: hidden;
     }
     .location-with-card{
-      a.location {
-        position: absolute;
-      }
-      &.KSA{
-        a.location {
-          right: 620px;
-          top: 460px;
-        }
-      }
-      &.EGYPT{
-        a.location {
-          right: 650px;
-          top: 460px;
-        }
-      }
-      &.Iraq{
-        a.location {
-          right: 570px;
-          top: 430px;
-        }
-      }
-      &.Russia{
-        a.location {
-          right: 430px;
-          top: 270px;
-        }
-      }
-      &.USA{
-        a.location {
-          right: 1115px;
-          top: 400px;
-        }
-      }
-      &.AUS{
-        a.location {
-          right: 300px;
-          top: 640px;
-        }
-      }
+      // a.location {
+      //   position: absolute;
+      // }
+      // &.KSA{
+      //   a.location {
+      //     right: 620px;
+      //     top: 460px;
+      //   }
+      // }
+      // &.EGYPT{
+      //   a.location {
+      //     right: 650px;
+      //     top: 460px;
+      //   }
+      // }
+      // &.Iraq{
+      //   a.location {
+      //     right: 570px;
+      //     top: 430px;
+      //   }
+      // }
+      // &.Russia{
+      //   a.location {
+      //     right: 430px;
+      //     top: 270px;
+      //   }
+      // }
+      // &.USA{
+      //   a.location {
+      //     right: 1115px;
+      //     top: 400px;
+      //   }
+      // }
+      // &.AUS{
+      //   a.location {
+      //     right: 300px;
+      //     top: 640px;
+      //   }
+      // }
 
       .hub-card {
           z-index: 9999999999;
@@ -3096,7 +3112,7 @@ path:hover {fill: $green-main;}
       background-color: #fff;
       border-radius: 0;
       height: 100px;
-      width: 300px;
+      // width: 300px;
       display: flex;
       align-items: center;
       // justify-content: center;
@@ -3143,6 +3159,10 @@ path:hover {fill: $green-main;}
         }
       }
     }
+    .swiper-slide {
+      width: auto !important;
+      min-width: 270px;
+    }
     .swiperArr{
       .swiper-button-next,
       .swiper-button-prev {
@@ -3176,6 +3196,193 @@ path:hover {fill: $green-main;}
   top: -50px;
   #{$start-direction}: -380px;
 }
+
+.new-map{
+  .svg-map{
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    padding: 15px 50px;
+    box-shadow: 0 5px 20px #00000026;
+  }
+  .map-pins {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .location-with-card {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+
+
+      &.KSA{
+        left: 59%;
+        top: -354px;
+      }
+      &.EGYPT{
+        left: 56%;
+        top: -365px;
+      }
+      &.IRAQ{
+        left: 62%;
+        top: -390px;
+      }
+      &.RUSSIA{
+        left: 72%;
+        top: -555px;
+      }
+      &.USA{
+        left: 28%;
+        top: -420px;
+      }
+      &.AUSTRALIA{
+        // right: 315px;
+        left: 78%;
+        top: -190px;
+      }
+    }
+  }
+}
+.new-map-side{
+  .data-section{
+    .close-nav{
+      span{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green-main;
+        padding: 10px;
+        box-shadow: 0 5px 20px #00000026;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    }
+    h3{
+      font-size: 23px;
+      font-weight: $w-medium;
+      color: $green-main;
+      margin-bottom: 25px;
+    }
+    .loc-card{
+      border: 1px solid #f1f1f1;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 5px 20px #00000026;
+      margin-#{$end-direction}: 10px;
+      margin-bottom: 20px;
+      display: none;
+      // opacity: 0;
+
+      .hub-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .img-box{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-bottom: 15px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .content-box{
+          text-align: center;
+          .address{
+            font-size: 17px;
+            font-weight: $w-medium;
+            color: #000;
+            margin-bottom: 5px;
+            line-height: 1.2;
+          }
+          .respon{
+            font-size: 16px;
+            font-weight: $w-medium;
+            color: #000;
+            margin-bottom: 7px;
+            line-height: 1.2;
+          }
+          .phone{
+            font-size: 15px;
+            color: #000;
+            line-height: 1.2;
+            margin-bottom: 10px;
+          }
+          .mail{
+            font-size: 15px;
+            line-height: 1.2;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.plus-scaled{
+  transform: scale(1.2);
+  // filter: brightness(.6) contrast(0.6);
+}
+
+
+.fill-map-color{
+  fill: $green-main;
+}
+
+.col-xl-9{
+  .new-map{
+    .locations-map{
+      .map-pins{
+        .KSA {
+          left: 60%;
+          top: -370px;
+        }
+        .EGYPT{
+          left: 56.5%;
+          top: -375px;
+        }
+        .IRAQ{
+          left: 63%;
+          top: -395px;
+        }
+        .AUSTRALIA{
+          left: 83%;
+          top: -220px;
+        }
+        .USA{
+          left: 23%;
+          top: -430px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /*
@@ -3440,15 +3647,19 @@ path:hover {fill: $green-main;}
 .accordion-header{
   background-color: #5E676E;
 }
-.accordion .accordion-item .accordion-header .accordion-button {
+.accordion .accordion-item .accordion-header .accordion-button,
+.accordion .accordion-item .accordion-header a
+ {
   background-color: #5E676E;
   border: none;
   color: #bbbbbb;
 }
+
 .accordion .accordion-item .accordion-header .accordion-button::after{
   filter: grayscale(1) brightness(2);
 }
-.accordion .accordion-item .accordion-header .accordion-button img{
+.accordion .accordion-item .accordion-header .accordion-button img,
+  .accordion .accordion-item .accordion-header a img{
   filter: brightness(1.5) contrast(0.5);
 }
 .accordion .accordion-item .accordion-body {
@@ -3458,7 +3669,9 @@ path:hover {fill: $green-main;}
   color: #fff;
 }
 
-.sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img{
+.sitemap-acc.accordion .accordion-item .accordion-header .accordion-button img,
+.sitemap-acc.accordion .accordion-item .accordion-header a img
+{
   filter: none;
 }
 
@@ -3529,6 +3742,24 @@ path:hover {fill: $green-main;}
   color: $gold-color;
 }
 
+
+.new-map-side .data-section .close-nav span{
+  background-color: $gold-color;
+}
+.new-map-side .data-section h3{
+  color: $gold-color;
+}
+.new-map-side .data-section .loc-card .hub-card .content-box .address{
+  color: #BBBBBB
+}
+.new-map-side .data-section .loc-card .hub-card .content-box .respon{
+  color: #BBBBBB
+}
+
+.new-map-side .data-section .loc-card .hub-card .content-box .phone,
+.new-map-side .data-section .loc-card .hub-card .content-box .mail{
+  color: #BBBBBB;
+}
 
 
 }

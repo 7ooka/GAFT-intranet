@@ -159,6 +159,80 @@
     #{$start-direction}: -320px;
     top: 15px;
   }
+
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 63%;
+    top: -390px;
+  }
+  .new-map .map-pins .location-with-card.KSA {
+    left: 60%;
+    top: -364px;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 56.5%;
+    top: -373px;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 22%;
+    top: -435px;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 82%;
+    top: -210px;
+  }
+
+  .col-xl-9 .new-map {
+    .svg-map svg{
+      height: 550px;
+    }
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
+    left: 82%;
+    top: -145px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .USA {
+    left: 23%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
+    left: 72%;
+    top: -400px;
+}
+.col-xl-9 .new-map .locations-map .map-pins .KSA {
+  left: 60%;
+  top: -256px;
+}
+.col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+  left: 62.5%;
+  top: -275px;
+}
+.col-xl-9 .new-map .locations-map .map-pins .EGYPT {
+  left: 56%;
+  top: -263px;
+}
+
+.new-map-side .data-section .loc-card .hub-card .img-box{
+  width: 55px;
+  height: 55px;
+}
+.new-map-side .data-section .loc-card .hub-card .content-box {
+  .address {
+    font-size: 16px;
+  }
+  .respon,
+  .phone,
+  .mail{
+    font-size: 14px;
+  }
+}
+.locations-main .locations-slider .item .content-boxx h6 {
+  font-size: 18px;
+}
+.locations-main .locations-slider .item .content-boxx p {
+  font-size: 16px;
+  text-align: #{$start-direction};
+}
+
 }
 
 
@@ -409,6 +483,43 @@
   .locations-main .locations-map .location-with-card .content-box .mail {
     font-size: 12px;
   }
+
+
+
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 82%;
+    top: -252px;
+}
+.new-map .map-pins .location-with-card.EGYPT {
+  left: 56.5%;
+  top: -384px;
+}
+.new-map .map-pins .location-with-card.KSA {
+  left: 60%;
+  top: -380px;
+}
+.new-map .map-pins .location-with-card.IRAQ {
+  left: 63%;
+  top: -401px;
+}
+
+
+.col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
+  left: 81%;
+  top: -180px;
+}
+.col-xl-9 .new-map .locations-map .map-pins .KSA {
+  left: 59%;
+  top: -274px;
+}
+.col-xl-9 .new-map .locations-map .map-pins .EGYPT {
+  left: 55.5%;
+  top: -276px;
+}
+.col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+  left: 62%;
+  top: -290px;
+}
 }
 
 
@@ -554,6 +665,12 @@
   .accordion .accordion-item .accordion-body .content-sec .acc-sec {
     padding-bottom: 0;
   }
+  .custom-row{
+    flex-direction: column-reverse;
+  }
+  .data-section {
+    padding-top: 30px;
+}
 }
 
 
@@ -697,6 +814,44 @@
 }
 
 
+.new-map .svg-map svg{
+  height: 430px !important;
+}
+.new-map .map-pins .location-with-card img {
+  width: 15px;
+  height: 15px;
+}
+.new-map .locations-map .map-pins .KSA {
+  left: 57% !important;
+  top: -217px !important;
+}
+.new-map .map-pins .location-with-card.EGYPT {
+  left: 54% !important;
+  top: -223px !important;
+}
+.new-map .map-pins .location-with-card.IRAQ {
+  left: 60% !important;
+  top: -230px !important;
+}
+.new-map .map-pins .location-with-card.RUSSIA {
+  left: 70% !important;
+  top: -300px !important;
+}
+.new-map .map-pins .location-with-card.USA {
+  left: 24% !important;
+  top: -245px !important;
+}
+.new-map .map-pins .location-with-card.AUSTRALIA {
+  left: 78% !important;
+  top: -147px !important;
+}
+.locations-main .swiperArr {
+  display: none;
+}
+.locations-main .locations-slider .swiper-slide{
+  width: inherit !important;
+}
+
 }
 
 @media (max-width: 767.98px) {
@@ -793,6 +948,18 @@
     padding-#{$start-direction}: 15px;
     padding-#{$end-direction}: 39px;
   }
+  .accordion.sitemap-acc  .accordion-item .accordion-header a img{
+    max-width: 30px;
+    margin-#{$end-direction}: 10px;
+  }
+  .accordion.sitemap-acc  .accordion-item .accordion-header a{
+    font-size: 16px;
+    text-align: #{$start-direction};
+    padding-#{$start-direction}: 15px;
+    padding-#{$end-direction}: 39px;
+    font-size: 16px;
+  }
+
   .accordion .accordion-item .accordion-header .accordion-button::after{
     #{$end-direction}:20px
   }
@@ -863,6 +1030,36 @@
   .locations-main .locations-map .location-with-card .content-box .mail {
     font-size: 10px;
   }
+
+
+  .new-map .svg-map svg {
+    height: 300px !important;
+}
+
+.new-map .map-pins .location-with-card.AUSTRALIA {
+  left: 76% !important;
+  top: -108px !important;
+}
+.new-map .map-pins .location-with-card.USA {
+  left: 24% !important;
+  top: -178px !important;
+}
+.new-map .map-pins .location-with-card.RUSSIA {
+  left: 70% !important;
+  top: -224px !important;
+}
+.new-map .map-pins .location-with-card.IRAQ {
+  left: 58.5% !important;
+  top: -170px !important;
+}
+.new-map .map-pins .location-with-card.EGYPT {
+  left: 52.5% !important;
+  top: -164px !important;
+}
+.new-map .locations-map .map-pins .KSA {
+  left: 56% !important;
+  top: -161px !important;
+}
 
 }
 
@@ -946,13 +1143,70 @@
 
 }
 
-
-@media(max-width:400px){
-  .pinz {
-    top: 40px;
-    #{$start-direction}: -204px;
-    transform: scale(0.205);
+@media(max-width:450px){
+  .new-map .map-pins .location-with-card{
+    width: 10px;
+    height: 9px;
+  }
+  .new-map .map-pins .location-with-card img {
+    width: 10px;
+    height: 9px;
 }
+.new-map .locations-map .map-pins .KSA {
+  left: 58% !important;
+  top: -166px !important;
+}
+.new-map .map-pins .location-with-card.EGYPT {
+  left: 55% !important;
+  top: -169px !important;
+}
+.new-map .map-pins .location-with-card.IRAQ {
+  left: 60% !important;
+  top: -172px !important;
+}
+.new-map .map-pins .location-with-card.RUSSIA {
+  left: 66% !important;
+  top: -215px !important;
+}
+.new-map .map-pins .location-with-card.AUSTRALIA {
+  left: 75% !important;
+  top: -132px !important;
+}
+.new-map .map-pins .location-with-card.USA {
+  left: 28% !important;
+  top: -178px !important;
+}
+
+}
+@media(max-width:400px){
+  .new-map .svg-map svg {
+    height: 200px !important;
+}
+.new-map .map-pins .location-with-card.USA {
+  left: 29% !important;
+  top: -130px !important;
+}
+.new-map .map-pins .location-with-card.AUSTRALIA {
+  left: 73% !important;
+  top: -92px !important;
+}
+.new-map .map-pins .location-with-card.RUSSIA {
+  left: 66% !important;
+  top: -152px !important;
+}
+.new-map .map-pins .location-with-card.IRAQ {
+  left: 59% !important;
+  top: -126px !important;
+}
+.new-map .locations-map .map-pins .KSA {
+  left: 57% !important;
+  top: -120px !important;
+}
+.new-map .map-pins .location-with-card.EGYPT {
+  left: 54% !important;
+  top: -122px !important;
+}
+
 }
 
 
