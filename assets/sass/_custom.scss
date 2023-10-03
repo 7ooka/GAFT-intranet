@@ -2125,33 +2125,34 @@ path:hover {fill: $green-main;}
   position: relative;
   border-radius: 8px;
   &.main-depEemp{
-    background-color: #D9E4F0;
-    // border-radius: 30px;
-    overflow: hidden;
-    height: 365px;
-    overflow: visible;
-    &::before{
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #FFF;
-      border: 3px solid #007066;
-      #{$end-direction}: -7px;
-      top: calc(50% - 11px);
-      z-index: 5;  
-    }
-    &::after{
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 2px;
-      background-color: #fff;
-      border: 1px dashed #007066;
-      #{$end-direction}:-46px;
-      top: calc(50% - 1px);
-    }
+    background-color: rgba($color: #79CC9C , $alpha: 0.6);
+    // background-color: #D9E4F0;
+    // // border-radius: 30px;
+    // overflow: hidden;
+    // height: 365px;
+    // overflow: visible;
+    // &::before{
+    //   content: "";
+    //   position: absolute;
+    //   width: 20px;
+    //   height: 20px;
+    //   border-radius: 50%;
+    //   background-color: #FFF;
+    //   border: 3px solid #007066;
+    //   #{$end-direction}: -7px;
+    //   top: calc(50% - 11px);
+    //   z-index: 5;  
+    // }
+    // &::after{
+    //   content: "";
+    //   position: absolute;
+    //   width: 50px;
+    //   height: 2px;
+    //   background-color: #fff;
+    //   border: 1px dashed #007066;
+    //   #{$end-direction}:-46px;
+    //   top: calc(50% - 1px);
+    // }
   }
   .img-box{
     width: 105px;
@@ -2166,16 +2167,17 @@ path:hover {fill: $green-main;}
     }
   }
   .content-box{
-    margin-top: 5px;
+    margin: 0 !important;
+    margin-top: 5px !important;
     .name{
-      font-size: 23px;
+      font-size: 20px;
       font-weight: $w-bold;
       line-height: 30px;
       margin-bottom: 10px;
       color: $green-main;
     }
     .job{
-      font-size: 20px;
+      font-size: 18px;
       font-weight: $w-medium;
       line-height: 24px;
       margin-bottom: 5px;
@@ -2188,6 +2190,7 @@ path:hover {fill: $green-main;}
       line-height: 28px;
       margin-bottom: 0px;
       color: #000;
+      text-align: center;
       a{
         font-size: 16px;
         font-weight: $w-medium;
@@ -2197,6 +2200,7 @@ path:hover {fill: $green-main;}
     }
     .mail{
       margin-bottom: 0;
+      text-align: center;
       a{
         font-size: 16px;
         font-weight: $w-normal;
@@ -3229,7 +3233,7 @@ path:hover {fill: $green-main;}
         top: -365px;
       }
       &.IRAQ{
-        left: 62%;
+        left: 59%;
         top: -390px;
       }
       &.RUSSIA{
@@ -3244,6 +3248,68 @@ path:hover {fill: $green-main;}
         // right: 315px;
         left: 78%;
         top: -190px;
+      }
+      
+      &.JAPAN {
+        left: 80.3%;
+        top: -415px;
+      }
+      &.SOUTH-KOREA {
+        left: 77.4%;
+        top: -409px;
+      }
+      &.ITALY {
+        left: 52.1%;
+        top: -434px;
+      }
+      &.TURKEY {
+        left: 56.2%;
+        top: -418px;
+      }
+
+      &.MALAYSIA {
+        left: 71.8%;
+        top: -291px;
+      }
+      &.INDIA {
+        left: 66.5%;
+        top: -345px;
+      }
+      &.CHINA {
+        left: 71%;
+        top: -403px;
+      }
+      &.GREMANY {
+        left: 51.6%;
+        top: -485px;
+      }
+      &.SWIS {
+        left: 51%;
+        top: -457px;
+      }
+      &.LEBANON {
+        left: 57.25%;
+        top: -400px;
+      }
+      &.ENGLAND {
+        left: 49%;
+        top: -492px;
+      }
+      &.PAKISTAN {
+        left: 64%;
+        top: -370px;
+      }
+      &.S-AFRICA {
+        left: 54.5%;
+        top: -160px;
+      }
+      &.MOROCCO{
+        left: 47.5%;
+        top: -385px;
+      }
+      &.GREECE {
+        left: 54.2%;
+        top: -420px;
       }
     }
   }
@@ -3360,8 +3426,8 @@ path:hover {fill: $green-main;}
           top: -375px;
         }
         .IRAQ{
-          left: 63%;
-          top: -395px;
+          left: 60%;
+          top: -402px;
         }
         .AUSTRALIA{
           left: 83%;
@@ -3371,6 +3437,69 @@ path:hover {fill: $green-main;}
           left: 23%;
           top: -430px;
         }
+
+        .JAPAN {
+          left: 84.3%;
+          top: -415px;
+        }
+        .SOUTH-KOREA {
+          left: 81.3%;
+          top: -415px;
+        }
+        .ITALY {
+          left: 52.5%;
+          top: -433px;
+        }
+        .TURKEY {
+          left: 57%;
+          top: -424px;
+        }
+  
+        .MALAYSIA {
+          left: 74.8%;
+          top: -312px;
+        }
+        .INDIA {
+          left: 69%;
+          top: -355px;
+        }
+        .CHINA {
+          left: 74%;
+          top: -403px;
+        }
+        .GREMANY {
+          left: 51.6%;
+          top: -483px;
+        }
+        .SWIS {
+          left: 51%;
+          top: -455px;
+        }
+        .LEBANON {
+          left: 58%;
+          top: -403px;
+        }
+        .ENGLAND {
+          left: 48.5%;
+          top: -483px;
+        }
+        .PAKISTAN {
+          left: 66%;
+          top: -382px;
+        }
+        .S-AFRICA {
+          left: 54.5%;
+          top: -200px;
+        }
+        .MOROCCO{
+          left: 47%;
+          top: -397px;
+        }
+        .GREECE {
+          left: 54.4%;
+          top: -423px;
+        }
+
       }
     }
   }

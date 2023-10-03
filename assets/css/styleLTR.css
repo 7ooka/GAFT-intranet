@@ -2610,34 +2610,7 @@ path:hover {
 }
 
 .depEemp-box.main-depEemp {
-  background-color: #D9E4F0;
-  overflow: hidden;
-  height: 365px;
-  overflow: visible;
-}
-
-.depEemp-box.main-depEemp::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #FFF;
-  border: 3px solid #007066;
-  right: -7px;
-  top: calc(50% - 11px);
-  z-index: 5;
-}
-
-.depEemp-box.main-depEemp::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  background-color: #fff;
-  border: 1px dashed #007066;
-  right: -46px;
-  top: calc(50% - 1px);
+  background-color: rgba(121, 204, 156, 0.6);
 }
 
 .depEemp-box .img-box {
@@ -2656,11 +2629,12 @@ path:hover {
 }
 
 .depEemp-box .content-box {
-  margin-top: 5px;
+  margin: 0 !important;
+  margin-top: 5px !important;
 }
 
 .depEemp-box .content-box .name {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 10px;
@@ -2668,7 +2642,7 @@ path:hover {
 }
 
 .depEemp-box .content-box .job {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 5px;
@@ -2681,6 +2655,7 @@ path:hover {
   line-height: 28px;
   margin-bottom: 0px;
   color: #000;
+  text-align: center;
 }
 
 .depEemp-box .content-box .phone a {
@@ -2691,6 +2666,7 @@ path:hover {
 
 .depEemp-box .content-box .mail {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .depEemp-box .content-box .mail a {
@@ -3889,7 +3865,7 @@ path:hover {
 }
 
 .new-map .map-pins .location-with-card.IRAQ {
-  left: 62%;
+  left: 59%;
   top: -390px;
 }
 
@@ -3906,6 +3882,81 @@ path:hover {
 .new-map .map-pins .location-with-card.AUSTRALIA {
   left: 78%;
   top: -190px;
+}
+
+.new-map .map-pins .location-with-card.JAPAN {
+  left: 80.3%;
+  top: -415px;
+}
+
+.new-map .map-pins .location-with-card.SOUTH-KOREA {
+  left: 77.4%;
+  top: -409px;
+}
+
+.new-map .map-pins .location-with-card.ITALY {
+  left: 52.1%;
+  top: -434px;
+}
+
+.new-map .map-pins .location-with-card.TURKEY {
+  left: 56.2%;
+  top: -418px;
+}
+
+.new-map .map-pins .location-with-card.MALAYSIA {
+  left: 71.8%;
+  top: -291px;
+}
+
+.new-map .map-pins .location-with-card.INDIA {
+  left: 66.5%;
+  top: -345px;
+}
+
+.new-map .map-pins .location-with-card.CHINA {
+  left: 71%;
+  top: -403px;
+}
+
+.new-map .map-pins .location-with-card.GREMANY {
+  left: 51.6%;
+  top: -485px;
+}
+
+.new-map .map-pins .location-with-card.SWIS {
+  left: 51%;
+  top: -457px;
+}
+
+.new-map .map-pins .location-with-card.LEBANON {
+  left: 57.25%;
+  top: -400px;
+}
+
+.new-map .map-pins .location-with-card.ENGLAND {
+  left: 49%;
+  top: -492px;
+}
+
+.new-map .map-pins .location-with-card.PAKISTAN {
+  left: 64%;
+  top: -370px;
+}
+
+.new-map .map-pins .location-with-card.S-AFRICA {
+  left: 54.5%;
+  top: -160px;
+}
+
+.new-map .map-pins .location-with-card.MOROCCO {
+  left: 47.5%;
+  top: -385px;
+}
+
+.new-map .map-pins .location-with-card.GREECE {
+  left: 54.2%;
+  top: -420px;
 }
 
 .new-map-side .data-section .close-nav span {
@@ -4029,8 +4080,8 @@ path:hover {
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
-  left: 63%;
-  top: -395px;
+  left: 60%;
+  top: -402px;
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
@@ -4041,6 +4092,81 @@ path:hover {
 .col-xl-9 .new-map .locations-map .map-pins .USA {
   left: 23%;
   top: -430px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .JAPAN {
+  left: 84.3%;
+  top: -415px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .SOUTH-KOREA {
+  left: 81.3%;
+  top: -415px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .ITALY {
+  left: 52.5%;
+  top: -433px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .TURKEY {
+  left: 57%;
+  top: -424px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .MALAYSIA {
+  left: 74.8%;
+  top: -312px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .INDIA {
+  left: 69%;
+  top: -355px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .CHINA {
+  left: 74%;
+  top: -403px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .GREMANY {
+  left: 51.6%;
+  top: -483px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .SWIS {
+  left: 51%;
+  top: -455px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .LEBANON {
+  left: 58%;
+  top: -403px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .ENGLAND {
+  left: 48.5%;
+  top: -483px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .PAKISTAN {
+  left: 66%;
+  top: -382px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .S-AFRICA {
+  left: 54.5%;
+  top: -200px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .MOROCCO {
+  left: 47%;
+  top: -397px;
+}
+
+.col-xl-9 .new-map .locations-map .map-pins .GREECE {
+  left: 54.4%;
+  top: -423px;
 }
 
 /*
@@ -4831,8 +4957,8 @@ path:hover {
     top: 15px;
   }
   .new-map .map-pins .location-with-card.IRAQ {
-    left: 63%;
-    top: -390px;
+    left: 60%;
+    top: -397px;
   }
   .new-map .map-pins .location-with-card.KSA {
     left: 60%;
@@ -4870,8 +4996,8 @@ path:hover {
     top: -256px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
-    left: 62.5%;
-    top: -275px;
+    left: 60%;
+    top: -397px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .EGYPT {
     left: 56%;
@@ -4895,6 +5021,130 @@ path:hover {
   .locations-main .locations-slider .item .content-boxx p {
     font-size: 16px;
     text-align: left;
+  }
+  .new-map .map-pins .location-with-card.JAPAN {
+    left: 84.3%;
+    top: -415px;
+  }
+  .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 81.4%;
+    top: -415px;
+  }
+  .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 74.8%;
+    top: -310px;
+  }
+  .new-map .map-pins .location-with-card.INDIA {
+    left: 69%;
+    top: -355px;
+  }
+  .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 55%;
+    top: -195px;
+  }
+  .new-map .map-pins .location-with-card.MOROCCO {
+    left: 46.5%;
+    top: -388px;
+  }
+  .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 66.5%;
+    top: -385px;
+  }
+  .new-map .map-pins .location-with-card.CHINA {
+    left: 74%;
+    top: -403px;
+  }
+  .new-map .map-pins .location-with-card.ENGLAND {
+    left: 48.5%;
+    top: -492px;
+  }
+  .new-map .map-pins .location-with-card.LEBANON {
+    left: 58%;
+    top: -400px;
+  }
+  .new-map .map-pins .location-with-card.TURKEY {
+    left: 57%;
+    top: -418px;
+  }
+  .new-map .map-pins .location-with-card.GREECE {
+    left: 54.5%;
+    top: -420px;
+  }
+  .new-map .map-pins .location-with-card.ITALY {
+    left: 52.5%;
+    top: -430px;
+  }
+  .new-map .map-pins .location-with-card.SWIS {
+    left: 51%;
+    top: -455px;
+  }
+  .new-map .map-pins .location-with-card.GREMANY {
+    left: 51.6%;
+    top: -482px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .JAPAN {
+    left: 83%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .SOUTH-KOREA {
+    left: 80%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .MALAYSIA {
+    left: 73.8%;
+    top: -222px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .S-AFRICA {
+    left: 54.5%;
+    top: -139px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .INDIA {
+    left: 68%;
+    top: -255px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .CHINA {
+    left: 74%;
+    top: -287px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .PAKISTAN {
+    left: 65%;
+    top: -276px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+    left: 59.5%;
+    top: -288px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .MOROCCO {
+    left: 47%;
+    top: -287px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .ENGLAND {
+    left: 48%;
+    top: -349px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .GREMANY {
+    left: 51.6%;
+    top: -350px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .SWIS {
+    left: 50.5%;
+    top: -329px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .ITALY {
+    left: 52%;
+    top: -313px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .GREECE {
+    left: 54%;
+    top: -305px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .LEBANON {
+    left: 57.5%;
+    top: -290px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .TURKEY {
+    left: 56%;
+    top: -304px;
   }
 }
 
@@ -5172,6 +5422,94 @@ path:hover {
     left: 62%;
     top: -290px;
   }
+  .new-map .map-pins .location-with-card.JAPAN {
+    left: 84%;
+    top: -425px;
+  }
+  .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 80.7%;
+    top: -419px;
+  }
+  .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 74.2%;
+    top: -329px;
+  }
+  .new-map .map-pins .location-with-card.INDIA {
+    left: 68.5%;
+    top: -367px;
+  }
+  .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 66%;
+    top: -393px;
+  }
+  .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 55%;
+    top: -235px;
+  }
+  .new-map .map-pins .location-with-card.MOROCCO {
+    left: 46%;
+    top: -393px;
+  }
+  .new-map .map-pins .location-with-card.ENGLAND {
+    left: 48%;
+    top: -488px;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 59.8%;
+    top: -408px;
+  }
+  .new-map .map-pins .location-with-card.TURKEY {
+    left: 57%;
+    top: -424px;
+  }
+  .new-map .map-pins .location-with-card.ITALY {
+    left: 52.5%;
+    top: -435px;
+  }
+  .new-map .map-pins .location-with-card.GREECE {
+    left: 54.5%;
+    top: -426px;
+  }
+  .new-map .map-pins .location-with-card.GREMANY {
+    left: 51.6%;
+    top: -480px;
+  }
+  .new-map .map-pins .location-with-card.LEBANON {
+    left: 57.8%;
+    top: -405px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .JAPAN {
+    left: 82%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .SOUTH-KOREA {
+    left: 79%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .S-AFRICA {
+    left: 54%;
+    top: -170px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .MALAYSIA {
+    left: 73%;
+    top: -237px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .INDIA {
+    left: 67.3%;
+    top: -262px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .CHINA {
+    left: 72.5%;
+    top: -292px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .PAKISTAN {
+    left: 64.5%;
+    top: -281px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
+    left: 59.2%;
+    top: -299px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -5324,6 +5662,185 @@ path:hover {
   }
   .data-section {
     padding-top: 30px;
+  }
+  .new-map .svg-map svg {
+    height: 550px;
+  }
+  .new-map .map-pins .location-with-card {
+    width: 20px;
+    height: 20px;
+  }
+  .new-map .map-pins .location-with-card img {
+    width: 20px;
+    height: 20px;
+  }
+  .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 54.5%;
+    top: -149px;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 81%;
+    top: -155px;
+  }
+  .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 73.7%;
+    top: -224px;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 22.5%;
+    top: -305px;
+  }
+  .new-map .map-pins .location-with-card.MOROCCO {
+    left: 46.8%;
+    top: -282px;
+  }
+  .new-map .map-pins .location-with-card.INDIA {
+    left: 68%;
+    top: -255px;
+  }
+  .new-map .map-pins .location-with-card.CHINA {
+    left: 73.5%;
+    top: -283px;
+  }
+  .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 65.5%;
+    top: -275px;
+  }
+  .new-map .map-pins .location-with-card.JAPAN {
+    left: 82.5%;
+    top: -299px;
+  }
+  .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 79.8%;
+    top: -294px;
+  }
+  .new-map .map-pins .location-with-card.KSA {
+    left: 59.7%;
+    top: -255px;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 56%;
+    top: -267px;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 59.4%;
+    top: -284px;
+  }
+  .new-map .map-pins .location-with-card.RUSSIA {
+    left: 72%;
+    top: -385px;
+  }
+  .new-map .map-pins .location-with-card.LEBANON {
+    left: 57.5%;
+    top: -288px;
+  }
+  .new-map .map-pins .location-with-card.ENGLAND {
+    left: 48.5%;
+    top: -343px;
+  }
+  .new-map .map-pins .location-with-card.TURKEY {
+    left: 56.5%;
+    top: -300px;
+  }
+  .new-map .map-pins .location-with-card.ITALY {
+    left: 52.5%;
+    top: -305px;
+  }
+  .new-map .map-pins .location-with-card.SWIS {
+    left: 50.6%;
+    top: -324px;
+  }
+  .new-map .map-pins .location-with-card.GREMANY {
+    left: 51.5%;
+    top: -340px;
+  }
+  .new-map .map-pins .location-with-card.GREECE {
+    left: 54.5%;
+    top: -303px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 54.5%;
+    top: -149px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 81%;
+    top: -155px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 73.7%;
+    top: -224px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.USA {
+    left: 22.5%;
+    top: -305px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MOROCCO {
+    left: 46.8%;
+    top: -282px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.INDIA {
+    left: 68%;
+    top: -255px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
+    left: 73.5%;
+    top: -283px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 65.5%;
+    top: -275px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.JAPAN {
+    left: 82.5%;
+    top: -299px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 79.8%;
+    top: -294px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.KSA {
+    left: 59.7%;
+    top: -255px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.EGYPT {
+    left: 56%;
+    top: -267px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.IRAQ {
+    left: 59.4%;
+    top: -284px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
+    left: 72%;
+    top: -385px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.LEBANON {
+    left: 57.5%;
+    top: -288px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ENGLAND {
+    left: 48.5%;
+    top: -343px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.TURKEY {
+    left: 56.5%;
+    top: -300px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ITALY {
+    left: 52.5%;
+    top: -305px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SWIS {
+    left: 50.6%;
+    top: -324px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREMANY {
+    left: 51.5%;
+    top: -340px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREECE {
+    left: 54.5%;
+    top: -303px;
   }
 }
 
@@ -5496,6 +6013,150 @@ path:hover {
   }
   .locations-main .locations-slider .swiper-slide {
     width: inherit !important;
+  }
+  .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 53.5%;
+    top: -141px;
+  }
+  .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 71.5%;
+    top: -192px;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 54.7% !important;
+    top: -219px !important;
+  }
+  .new-map .locations-map .map-pins .KSA {
+    left: 58% !important;
+    top: -213px !important;
+  }
+  .new-map .map-pins .location-with-card.MOROCCO {
+    left: 45.8%;
+    top: -228px;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 58% !important;
+    top: -231px !important;
+  }
+  .new-map .map-pins .location-with-card.INDIA {
+    left: 66%;
+    top: -210px;
+  }
+  .new-map .map-pins .location-with-card.CHINA {
+    left: 71%;
+    top: -230px;
+  }
+  .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 64%;
+    top: -226px;
+  }
+  .new-map .map-pins .location-with-card.JAPAN {
+    left: 80%;
+    top: -242px;
+  }
+  .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 77.2%;
+    top: -239px;
+  }
+  .new-map .map-pins .location-with-card.ENGLAND {
+    left: 47.5%;
+    top: -274px;
+  }
+  .new-map .map-pins .location-with-card.LEBANON {
+    left: 56%;
+    top: -230px;
+  }
+  .new-map .map-pins .location-with-card.TURKEY {
+    left: 55.3%;
+    top: -242px;
+  }
+  .new-map .map-pins .location-with-card.GREECE {
+    left: 53%;
+    top: -243px;
+  }
+  .new-map .map-pins .location-with-card.ITALY {
+    left: 51%;
+    top: -246px;
+  }
+  .new-map .map-pins .location-with-card.SWIS {
+    left: 49.6%;
+    top: -259px;
+  }
+  .new-map .map-pins .location-with-card.GREMANY {
+    left: 50.5%;
+    top: -270px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 53.5%;
+    top: -141px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 71.5%;
+    top: -192px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.EGYPT {
+    left: 54.7% !important;
+    top: -219px !important;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .KSA {
+    left: 58% !important;
+    top: -213px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MOROCCO {
+    left: 45.8%;
+    top: -228px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.IRAQ {
+    left: 58% !important;
+    top: -231px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.INDIA {
+    left: 66%;
+    top: -210px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
+    left: 71%;
+    top: -230px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 64%;
+    top: -226px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.JAPAN {
+    left: 80%;
+    top: -242px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 77.2%;
+    top: -239px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ENGLAND {
+    left: 47.5%;
+    top: -274px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.LEBANON {
+    left: 56%;
+    top: -230px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.TURKEY {
+    left: 55.3%;
+    top: -242px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREECE {
+    left: 53%;
+    top: -243px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ITALY {
+    left: 51%;
+    top: -246px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SWIS {
+    left: 49.6%;
+    top: -259px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREMANY {
+    left: 50.5%;
+    top: -270px;
   }
 }
 
@@ -5701,6 +6362,166 @@ path:hover {
     left: 56% !important;
     top: -161px !important;
   }
+  .new-map .map-pins .location-with-card {
+    width: 11px;
+    height: 11px;
+  }
+  .new-map .map-pins .location-with-card img {
+    width: 11px;
+    height: 11px;
+  }
+  .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 54%;
+    top: -103px;
+  }
+  .new-map .map-pins .location-with-card.JAPAN {
+    left: 79.5%;
+    top: -179px;
+  }
+  .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 76.7%;
+    top: -176px;
+  }
+  .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 70.8%;
+    top: -141px;
+  }
+  .new-map .map-pins .location-with-card.CHINA {
+    left: 69%;
+    top: -172px;
+  }
+  .new-map .map-pins .location-with-card.INDIA {
+    left: 65.7%;
+    top: -154px;
+  }
+  .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 64%;
+    top: -166px;
+  }
+  .new-map .map-pins .location-with-card.MOROCCO {
+    left: 47%;
+    top: -169px;
+  }
+  .new-map .map-pins .location-with-card.ENGLAND {
+    left: 48%;
+    top: -204px;
+  }
+  .new-map .locations-map .map-pins .KSA {
+    left: 58.5% !important;
+    top: -156px !important;
+  }
+  .new-map .map-pins .location-with-card.EGYPT {
+    left: 55.3% !important;
+    top: -161px !important;
+  }
+  .new-map .map-pins .location-with-card.LEBANON {
+    left: 56.8%;
+    top: -171px;
+  }
+  .new-map .map-pins .location-with-card.TURKEY {
+    left: 55.7%;
+    top: -178px;
+  }
+  .new-map .map-pins .location-with-card.GREECE {
+    left: 53.7%;
+    top: -178px;
+  }
+  .new-map .map-pins .location-with-card.ITALY {
+    left: 52%;
+    top: -182px;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 58.3% !important;
+    top: -170px !important;
+  }
+  .new-map .map-pins .location-with-card.SWIS {
+    left: 50.6%;
+    top: -189px;
+  }
+  .new-map .map-pins .location-with-card.GREMANY {
+    left: 51.5%;
+    top: -199px;
+  }
+  .new-map .map-pins .location-with-card.USA {
+    left: 26% !important;
+    top: -178px !important;
+  }
+  .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 77.5% !important;
+    top: -108px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 54%;
+    top: -103px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.JAPAN {
+    left: 79.5%;
+    top: -179px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 76.7%;
+    top: -176px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 70.8%;
+    top: -141px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
+    left: 69%;
+    top: -172px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.INDIA {
+    left: 65.7%;
+    top: -154px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 64%;
+    top: -166px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MOROCCO {
+    left: 47%;
+    top: -169px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ENGLAND {
+    left: 48%;
+    top: -204px;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .KSA {
+    left: 58.5% !important;
+    top: -156px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.EGYPT {
+    left: 55.3% !important;
+    top: -161px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.LEBANON {
+    left: 56.8%;
+    top: -171px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.TURKEY {
+    left: 55.7%;
+    top: -178px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREECE {
+    left: 53.7%;
+    top: -178px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ITALY {
+    left: 52%;
+    top: -182px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.IRAQ {
+    left: 58.3% !important;
+    top: -170px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SWIS {
+    left: 50.6%;
+    top: -189px;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREMANY {
+    left: 51.5%;
+    top: -199px;
+  }
 }
 
 @media (max-width: 574.98px) {
@@ -5774,70 +6595,189 @@ path:hover {
     width: 50px;
     height: 50px;
   }
-}
-
-@media (max-width: 450px) {
-  .new-map .map-pins .location-with-card {
-    width: 10px;
-    height: 9px;
+  .new-map .svg-map {
+    padding: 15px 20px;
+    text-align: left;
   }
-  .new-map .map-pins .location-with-card img {
-    width: 10px;
-    height: 9px;
-  }
-  .new-map .locations-map .map-pins .KSA {
-    left: 58% !important;
-    top: -166px !important;
-  }
-  .new-map .map-pins .location-with-card.EGYPT {
-    left: 55% !important;
-    top: -169px !important;
-  }
-  .new-map .map-pins .location-with-card.IRAQ {
-    left: 60% !important;
-    top: -172px !important;
-  }
-  .new-map .map-pins .location-with-card.RUSSIA {
-    left: 66% !important;
-    top: -215px !important;
-  }
-  .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 75% !important;
-    top: -132px !important;
-  }
-  .new-map .map-pins .location-with-card.USA {
-    left: 28% !important;
-    top: -178px !important;
-  }
-}
-
-@media (max-width: 400px) {
   .new-map .svg-map svg {
     height: 200px !important;
+    width: 260px !important;
+  }
+  .new-map .map-pins .location-with-card {
+    width: 6px;
+    height: 7px;
+  }
+  .new-map .map-pins .location-with-card img {
+    width: 6px;
+    height: 7px;
   }
   .new-map .map-pins .location-with-card.USA {
-    left: 29% !important;
-    top: -130px !important;
+    left: 20% !important;
+    top: -129px !important;
+  }
+  .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 47% !important;
+    top: -74px !important;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 73% !important;
-    top: -92px !important;
+    left: 69.5% !important;
+    top: -78px !important;
   }
   .new-map .map-pins .location-with-card.RUSSIA {
-    left: 66% !important;
-    top: -152px !important;
+    left: 63% !important;
+    top: -158px !important;
   }
-  .new-map .map-pins .location-with-card.IRAQ {
-    left: 59% !important;
-    top: -126px !important;
+  .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 63% !important;
+    top: -102px !important;
+  }
+  .new-map .map-pins .location-with-card.INDIA {
+    left: 58% !important;
+    top: -112px !important;
+  }
+  .new-map .map-pins .location-with-card.CHINA {
+    left: 63% !important;
+    top: -123px !important;
+  }
+  .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 56% !important;
+    top: -119px !important;
   }
   .new-map .locations-map .map-pins .KSA {
-    left: 57% !important;
-    top: -120px !important;
+    left: 51.5% !important;
+    top: -113px !important;
   }
   .new-map .map-pins .location-with-card.EGYPT {
-    left: 54% !important;
+    left: 48.3% !important;
+    top: -116px !important;
+  }
+  .new-map .map-pins .location-with-card.MOROCCO {
+    left: 40.5% !important;
     top: -122px !important;
+  }
+  .new-map .map-pins .location-with-card.IRAQ {
+    left: 51.3% !important;
+    top: -124px !important;
+  }
+  .new-map .map-pins .location-with-card.LEBANON {
+    left: 49.5% !important;
+    top: -123px !important;
+  }
+  .new-map .map-pins .location-with-card.TURKEY {
+    left: 48.7% !important;
+    top: -128px !important;
+  }
+  .new-map .map-pins .location-with-card.GREECE {
+    left: 46.7% !important;
+    top: -129px !important;
+  }
+  .new-map .map-pins .location-with-card.ITALY {
+    left: 45% !important;
+    top: -130px !important;
+  }
+  .new-map .map-pins .location-with-card.ENGLAND {
+    left: 42% !important;
+    top: -146px !important;
+  }
+  .new-map .map-pins .location-with-card.SWIS {
+    left: 43.6% !important;
+    top: -136px !important;
+  }
+  .new-map .map-pins .location-with-card.GREMANY {
+    left: 44.5% !important;
+    top: -143px !important;
+  }
+  .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 68.5% !important;
+    top: -127px !important;
+  }
+  .new-map .map-pins .location-with-card.JAPAN {
+    left: 71% !important;
+    top: -129px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.USA {
+    left: 20% !important;
+    top: -129px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.S-AFRICA {
+    left: 47% !important;
+    top: -74px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.AUSTRALIA {
+    left: 69.5% !important;
+    top: -78px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
+    left: 63% !important;
+    top: -158px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
+    left: 63% !important;
+    top: -102px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.INDIA {
+    left: 58% !important;
+    top: -112px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
+    left: 63% !important;
+    top: -123px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.PAKISTAN {
+    left: 56% !important;
+    top: -119px !important;
+  }
+  .col-xl-9 .new-map .locations-map .map-pins .KSA {
+    left: 51.5% !important;
+    top: -113px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.EGYPT {
+    left: 48.3% !important;
+    top: -116px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.MOROCCO {
+    left: 40.5% !important;
+    top: -122px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.IRAQ {
+    left: 51.3% !important;
+    top: -124px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.LEBANON {
+    left: 49.5% !important;
+    top: -123px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.TURKEY {
+    left: 48.7% !important;
+    top: -128px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREECE {
+    left: 46.7% !important;
+    top: -129px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ITALY {
+    left: 45% !important;
+    top: -130px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.ENGLAND {
+    left: 42% !important;
+    top: -146px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SWIS {
+    left: 43.6% !important;
+    top: -136px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.GREMANY {
+    left: 44.5% !important;
+    top: -143px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.SOUTH-KOREA {
+    left: 68.5% !important;
+    top: -127px !important;
+  }
+  .col-xl-9 .new-map .map-pins .location-with-card.JAPAN {
+    left: 71% !important;
+    top: -129px !important;
   }
 }
 

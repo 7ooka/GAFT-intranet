@@ -569,7 +569,7 @@ function showIraqDetails(){
   $(".loc-card.iraq").fadeIn(  )
   
   $("path").removeClass("fill-map-color")
-  $("#IR").addClass("fill-map-color")
+  $("#IQ").addClass("fill-map-color")
   
   $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
   $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
@@ -629,6 +629,282 @@ function showAusDetails(){
   $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
   
 }
+
+
+
+function showJpnDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Jpn-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".JAPAN .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.jpn").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#JP").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+function showSKoreaDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".SKorea-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".SOUTH-KOREA .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.South-Korea").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#KR").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showItalyDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Italy-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".ITALY .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.italy").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#IT").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showTurkDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Turk-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".TURKEY .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.turkey").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#TR").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showMalDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Malaysia-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".MALAYSIA .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.Malaysia").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#MY").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showIndDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".India-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".INDIA .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.india").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#IN").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showChinaDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".China-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".CHINA .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.china").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#CN").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showGerDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Germany-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".GREMANY .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.germany").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#DE").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showSwisDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Swiss-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".SWIS .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.Swis").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#CH").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showLebDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Leb-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".LEBANON .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.lebanon").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#LB").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showEngDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".UK-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".ENGLAND .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.england").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#GB").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+function showPakDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Pak-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".PAKISTAN .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.pakistan").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#PK").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showSAfricaDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".SAfrica-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".S-AFRICA .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.S-Africa").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#ZA").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showMorDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Mor-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".MOROCCO .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.morocco").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#MA").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+function showGreceDetails(){
+  $(".mySwiperContary .item").removeClass("clicked")
+  $(".Greece-a").closest(".item").addClass("clicked")
+
+  $(".location img").removeClass("plus-scaled")
+  $(".GREECE .location img").addClass("plus-scaled")
+
+  $(".loc-card").css("display", "none")
+  $(".loc-card.greece").fadeIn(  )
+
+  $("path").removeClass("fill-map-color")
+  $("#GR").addClass("fill-map-color")
+  
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-md-12').addClass('col-xl-9')
+  $(".barBGWhite .swiper-slide").parents('.row').children('.col-xl-3').delay( 100 ).fadeIn( 200 )
+}
+
+
+
+
+
+
+
 
 /*
  AO start 
