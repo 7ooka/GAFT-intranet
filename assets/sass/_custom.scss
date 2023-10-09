@@ -361,6 +361,36 @@ footer {
         border: 1px solid $gold-color;
         margin-#{$end-direction}:10px ;
       }
+      .notifications{
+        width: 52px;
+        height: 52px;
+        padding: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 300ms;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid $gold-color;
+        margin-#{$end-direction}:10px ;
+        // margin-#{$start-direction}:10px ;
+        position: relative;
+        span{
+          position: absolute;
+          background-color: $green-main;
+          color: #fff;
+          width: 28px;
+          height: 28px;
+          top: -10px;
+          #{$start-direction}:-10px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+
+        }
+      }
       .dark-Mode{
         span{
           display: block;
@@ -589,6 +619,7 @@ footer {
       align-items: center;
       justify-content: center;
       border-radius: 50%;
+      display: none;
     }
   }
   .content-box{
@@ -621,6 +652,12 @@ footer {
         color: #fff;
         background-color: $gold-color;
         border-radius: 22px;
+        padding: 5px 15px 10px;
+        &.requests{
+          background-color: $green-main;
+          width: 110px;
+          margin-#{$start-direction}: 10px;
+        }
       }
     }
   }
@@ -900,7 +937,7 @@ footer {
 }
 
 .favorite{
-  background-color: #EFEDE6;
+  background-color: rgba($color: $grey-bbb , $alpha: 0.2);
   border: 1px solid $grey-bbb;
   padding: 22px 24px;
   height: 300px;
@@ -1003,10 +1040,19 @@ footer {
   background-color: #fff;
   height: 500px;
   padding: 20px ;
-  .main-cards-hd{
-    background-color:#264C59 ;
-    color: #fff;
-    margin-bottom: 30px;
+  .news-top-section{
+    padding: 0;
+    margin-bottom: 30px ;
+    .main-cards-hd{
+      background-color:#264C59 ;
+      color: #fff;
+    }
+    .show-all{
+      a{
+        color: $green-main;
+      }
+    }
+
   }
   .item{
     .img-box{
@@ -1178,29 +1224,10 @@ footer {
   background-color: #fff;
   padding: 20px 16px 30px 25px;
   height: 500px;
-  .nav-tabs{
-    border: none;
+  .main-cards-hd{
+    background-color: $gold-color;
+    color: #fff;
     margin-bottom: 20px;
-    .nav-link{
-      border: 1px solid $gold-color;
-      padding: 8px 27px 5px ;
-      color: $gold-color;
-      font-size: 17px;
-      font-weight: $w-medium;
-      height: 44px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-#{$end-direction}: 10px;
-      border-radius: 22px;
-      &.active{
-        color: #fff;
-        background-color: $gold-color;
-      }
-      &:last-child{
-        margin: 0;
-      }
-    }
   }
   .swiper-main {
     max-height: 385px;
@@ -2221,6 +2248,7 @@ path:hover {fill: $green-main;}
   position: relative;
   .img-box{
     width: 100%;
+    // height: 270px;
     height: 300px;
     overflow: hidden;
     img{
@@ -2253,6 +2281,13 @@ path:hover {fill: $green-main;}
       height: calc(24px * 2);
       overflow: hidden;
     }
+    // .description{
+    //   font-size: 14px;
+    //   font-weight: $w-normal;
+    //   color: #000;
+    //   line-height: 23px;
+    //   height: calc(24px * 2);
+    // }
   }
 
   &:hover{
@@ -2977,6 +3012,7 @@ path:hover {fill: $green-main;}
 
 .cards-align-center{
   align-items: center;
+  justify-content: center;
 }
 
 
@@ -3506,6 +3542,222 @@ path:hover {fill: $green-main;}
 }
 
 
+.agencyBox.community-card{
+  height: 473px;
+  .ABLogo{
+    margin-bottom: 15px;
+  }
+  .ABContent {
+
+    .font25{
+      font-size: 25px;
+      font-weight: $w-bold;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .font26{
+      font-size: 25px;
+      font-weight: $w-medium;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .font20{
+      font-size: 20px;
+      font-weight: $w-medium;
+      margin-bottom: 20px;
+      padding-top: 0;
+      line-height: 1.5;
+    }
+    .font16{
+      font-size: 16px;
+    }
+  }
+}
+.agencyBox.newAgancy-card{
+  height: 450px;
+  .ABLogo{
+    img{
+      max-height: 120px;
+    }
+  }
+  .ABContent {
+    .font25{
+      font-size: 24px;
+    }
+  }
+}
+
+.search-sec-sort{
+  margin-bottom: 40px;
+  input{
+    height: 60px;
+    border: 2px solid #E0E3E5;
+    font-size: 20px;
+    color:#5E5E59;
+    transition: 300ms;
+    &::placeholder{
+      color: rgba($color: #5E5E59 , $alpha: 0.5);
+    }
+    &:focus{
+      border-color: $gold-color;
+    }
+  }
+  input[type=text]{
+    padding: 10px 20px ;
+    padding-#{$end-direction}: 50px;
+    width: 650px;
+    background-image: url(../images/home/Search-Icon.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 23px;
+    background-size: 16.5px;
+  }
+ select{
+  height: 60px;
+  border: 2px solid #E0E3E5;
+  font-size: 20px;
+  color:#5E5E59;
+  width: auto;
+  max-width: 265px;
+  margin-#{$start-direction}: 15px ;
+  
+  
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px 15px ;
+  padding-#{$end-direction}: 35px;
+  position: relative;
+  background-image: url(../images/agencies/Arrow-select.svg);
+  background-position: 14px 28px ;
+  background-size: auto ;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms;
+  &:focus{
+    border-color: $gold-color;
+    box-shadow: none;
+  }
+ }
+ option{
+  font-size: 16px;
+ }
+}
+
+
+.agancy-inner-mainCard{
+  background-color: rgba($color: #009ABD , $alpha: 0.2);
+  padding: 20px 35px;
+  border-radius: 30px;
+
+  h3{
+    font-size: 30px;
+    font-weight: $w-bold;
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  p{
+    font-size: 22px;
+    font-weight: $w-normal;
+    line-height: 40px;
+    color: #000;
+    
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    li{
+      font-size: 22px;
+      font-weight: $w-normal;
+      line-height: 40px;
+      color: #000;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+.agancy-acc{
+  margin-top: 50px;
+  .accordion-body{
+    ul{
+      list-style: disc;
+      padding-#{$start-direction}: 30px;
+      padding-#{$end-direction}: 0;
+
+      li{
+        font-size: 18px;
+        font-weight: $w-normal;
+        color: $drak-main-color;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+
+
+.electronic-services{
+  .nav-tabs{
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    .nav-link{
+      width: 300px;
+      height: 70px;
+      border-radius: 50px;
+      border: 1px solid $gold-color;
+      color: $gold-color;
+      font-size: 20px ;
+      font-weight: $w-normal;
+      transition: 300ms;
+      &.active{
+        background-color: $gold-color;
+        color: #fff;
+
+      }
+      & +  .nav-link{
+        margin-#{$start-direction}: 10px;
+      }
+    }
+  }
+  .agencyBox.policies-box {
+    .img-box{
+      max-width: 70px;
+      max-height: 70px;
+      // transform: translateY(35px);
+    }
+    .content-box{
+      // transform: translateY(35px);
+      h3{
+        font-size: 17px;
+        line-height: 1.5;
+      }
+    }
+    .btns-box{
+      margin-top: 30px;
+    }
+
+    // &:hover{
+    //   .img-box{
+    //     transform: translateY(0);
+    //   }
+    //   .content-box{
+    //     transform: translateY(0);
+    //   }
+    // }
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -3888,6 +4140,24 @@ path:hover {fill: $green-main;}
 .new-map-side .data-section .loc-card .hub-card .content-box .phone,
 .new-map-side .data-section .loc-card .hub-card .content-box .mail{
   color: #BBBBBB;
+}
+
+
+
+.main-topnav .bgTopNav .topNav .notifications{
+  background-color: $drak-main-color;
+  border-color: $drak-main-color;
+}
+.offers .news-top-section .show-all a{
+  color: $gold-color;
+}
+
+
+.agancy-inner-mainCard h3{
+  color: #fff;
+}
+.agancy-inner-mainCard ul li{
+  color: #fff;
 }
 
 

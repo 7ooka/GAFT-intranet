@@ -496,6 +496,49 @@ footer .left-footer p {
   margin-right: 10px;
 }
 
+.main-topnav .bgTopNav .topNav .notifications {
+  width: 52px;
+  height: 52px;
+  padding: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #CCA079;
+  margin-right: 10px;
+  position: relative;
+}
+
+.main-topnav .bgTopNav .topNav .notifications span {
+  position: absolute;
+  background-color: #007066;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+}
+
 .main-topnav .bgTopNav .topNav .dark-Mode span {
   display: block;
   width: 80px;
@@ -778,6 +821,7 @@ footer .left-footer p {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
+  display: none;
 }
 
 .personal-card .content-box {
@@ -820,6 +864,13 @@ footer .left-footer p {
   color: #fff;
   background-color: #CCA079;
   border-radius: 22px;
+  padding: 5px 15px 10px;
+}
+
+.personal-card .content-box .details a.requests {
+  background-color: #007066;
+  width: 110px;
+  margin-left: 10px;
 }
 
 .weather-card {
@@ -1177,7 +1228,7 @@ footer .left-footer p {
 }
 
 .favorite {
-  background-color: #EFEDE6;
+  background-color: rgba(187, 187, 187, 0.2);
   border: 1px solid #BBBBBB;
   padding: 22px 24px;
   height: 300px;
@@ -1301,10 +1352,18 @@ footer .left-footer p {
   padding: 20px;
 }
 
-.offers .main-cards-hd {
+.offers .news-top-section {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.offers .news-top-section .main-cards-hd {
   background-color: #264C59;
   color: #fff;
-  margin-bottom: 30px;
+}
+
+.offers .news-top-section .show-all a {
+  color: #007066;
 }
 
 .offers .item .img-box {
@@ -1501,38 +1560,10 @@ footer .left-footer p {
   height: 500px;
 }
 
-.comu-and-best .nav-tabs {
-  border: none;
-  margin-bottom: 20px;
-}
-
-.comu-and-best .nav-tabs .nav-link {
-  border: 1px solid #CCA079;
-  padding: 8px 27px 5px;
-  color: #CCA079;
-  font-size: 17px;
-  font-weight: 500;
-  height: 44px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 10px;
-  border-radius: 22px;
-}
-
-.comu-and-best .nav-tabs .nav-link.active {
-  color: #fff;
+.comu-and-best .main-cards-hd {
   background-color: #CCA079;
-}
-
-.comu-and-best .nav-tabs .nav-link:last-child {
-  margin: 0;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .comu-and-best .swiper-main {
@@ -3630,6 +3661,9 @@ path:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .locations-main .locations-map {
@@ -4169,6 +4203,228 @@ path:hover {
   top: -423px;
 }
 
+.agencyBox.community-card {
+  height: 473px;
+}
+
+.agencyBox.community-card .ABLogo {
+  margin-bottom: 15px;
+}
+
+.agencyBox.community-card .ABContent .font25 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.agencyBox.community-card .ABContent .font26 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.agencyBox.community-card .ABContent .font20 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-top: 0;
+  line-height: 1.5;
+}
+
+.agencyBox.community-card .ABContent .font16 {
+  font-size: 16px;
+}
+
+.agencyBox.newAgancy-card {
+  height: 450px;
+}
+
+.agencyBox.newAgancy-card .ABLogo img {
+  max-height: 120px;
+}
+
+.agencyBox.newAgancy-card .ABContent .font25 {
+  font-size: 24px;
+}
+
+.search-sec-sort {
+  margin-bottom: 40px;
+}
+
+.search-sec-sort input {
+  height: 60px;
+  border: 2px solid #E0E3E5;
+  font-size: 20px;
+  color: #5E5E59;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.search-sec-sort input::-webkit-input-placeholder {
+  color: rgba(94, 94, 89, 0.5);
+}
+
+.search-sec-sort input:-ms-input-placeholder {
+  color: rgba(94, 94, 89, 0.5);
+}
+
+.search-sec-sort input::-ms-input-placeholder {
+  color: rgba(94, 94, 89, 0.5);
+}
+
+.search-sec-sort input::placeholder {
+  color: rgba(94, 94, 89, 0.5);
+}
+
+.search-sec-sort input:focus {
+  border-color: #CCA079;
+}
+
+.search-sec-sort input[type=text] {
+  padding: 10px 20px;
+  padding-right: 50px;
+  width: 650px;
+  background-image: url(../images/home/Search-Icon.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 23px;
+  background-size: 16.5px;
+}
+
+.search-sec-sort select {
+  height: 60px;
+  border: 2px solid #E0E3E5;
+  font-size: 20px;
+  color: #5E5E59;
+  width: auto;
+  max-width: 265px;
+  margin-left: 15px;
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px 15px;
+  padding-right: 35px;
+  position: relative;
+  background-image: url(../images/agencies/Arrow-select.svg);
+  background-position: 14px 28px;
+  background-size: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.search-sec-sort select:focus {
+  border-color: #CCA079;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.search-sec-sort option {
+  font-size: 16px;
+}
+
+.agancy-inner-mainCard {
+  background-color: rgba(0, 154, 189, 0.2);
+  padding: 20px 35px;
+  border-radius: 30px;
+}
+
+.agancy-inner-mainCard h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.agancy-inner-mainCard p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000;
+}
+
+.agancy-inner-mainCard ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.agancy-inner-mainCard ul li {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.agancy-acc {
+  margin-top: 50px;
+}
+
+.agancy-acc .accordion-body ul {
+  list-style: disc;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.agancy-acc .accordion-body ul li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #47525B;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.electronic-services .nav-tabs {
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.electronic-services .nav-tabs .nav-link {
+  width: 300px;
+  height: 70px;
+  border-radius: 50px;
+  border: 1px solid #CCA079;
+  color: #CCA079;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.electronic-services .nav-tabs .nav-link.active {
+  background-color: #CCA079;
+  color: #fff;
+}
+
+.electronic-services .nav-tabs .nav-link + .nav-link {
+  margin-left: 10px;
+}
+
+.electronic-services .agencyBox.policies-box .img-box {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.electronic-services .agencyBox.policies-box .content-box h3 {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.electronic-services .agencyBox.policies-box .btns-box {
+  margin-top: 30px;
+}
+
 /*
 
       daaaaaaaaaaaaaaaaaaaaark
@@ -4614,6 +4870,23 @@ path:hover {
   color: #BBBBBB;
 }
 
+.Dark .main-topnav .bgTopNav .topNav .notifications {
+  background-color: #47525B;
+  border-color: #47525B;
+}
+
+.Dark .offers .news-top-section .show-all a {
+  color: #CCA079;
+}
+
+.Dark .agancy-inner-mainCard h3 {
+  color: #fff;
+}
+
+.Dark .agancy-inner-mainCard ul li {
+  color: #fff;
+}
+
 .font30,
 .font25,
 .font24,
@@ -4722,7 +4995,7 @@ path:hover {
 /* start agency */
 .headAgency {
   padding: 20px;
-  background: linear-gradient(130deg, #79CC9C, #BBBBBB);
+  background-color: rgba(0, 154, 189, 0.2);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4761,6 +5034,17 @@ path:hover {
   height: 170px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.headAgency .font20 {
+  text-align: center;
+}
+
+.headAgency .font24 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0;
 }
 
 .padding15 > * {

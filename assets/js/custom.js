@@ -121,34 +121,6 @@ $('.owl-carousel-com').owlCarousel({
 
 
 
-$('.owl-carousel-most').owlCarousel({
-  loop:false,
-  margin:20,
-  nav:true,
-  navText: arrow2,
-  rtl: true,
-  items:5,
-  dots:false,
-  responsive : {
-    // breakpoint from 0 up
-    0 : {
-      items:2,
-    },
-    // breakpoint from 480 up
-    480 : {
-
-    },
-    // breakpoint from 768 up
-    768 : {
-      items:4,
-    },
-    1400 : {
-      items:5,
-    }
-  }
-
-})
-
 
 $('.owl-carousel-sys').owlCarousel({
   loop:false,

@@ -93,7 +93,8 @@
 /* start agency */
 .headAgency {
   padding: 20px;
-  background: linear-gradient(130deg, #79CC9C, #BBBBBB);
+  // background: linear-gradient(130deg, #79CC9C, #BBBBBB);
+  background-color: rgba($color: #009ABD, $alpha: .2);
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -117,6 +118,15 @@
         border-radius: 50%;
         overflow: hidden;
       }
+    }
+    .font20{
+      text-align: center;
+    }
+    .font24{
+      font-size: 24px;
+      font-weight: $w-bold;
+      color: #000000;
+      margin-bottom: 0;
     }
 }
 .padding15 > * {
