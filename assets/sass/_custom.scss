@@ -2963,6 +2963,7 @@ path:hover {fill: $green-main;}
     padding: 30px;
     background-color: #F6F6F6;
     min-height: 400px;
+    font-size: 20px;
     &::placeholder{
       color: #BBBBBB;
     }
@@ -2993,7 +2994,7 @@ path:hover {fill: $green-main;}
     height: 70px;
     #{$start-direction}: 50%;
     transform: translateX(58%);
-    top: 52%;
+    top: 55%;
     a{
       display: flex;
       align-items: center;
@@ -3753,16 +3754,174 @@ path:hover {fill: $green-main;}
 }
 
 
+.trans{
+  &.currency-converter{
+    .translate-textarea textarea{
+      min-height: 220px;
+    }
+    .translate-dropdown select{
+      background-image: url(../images/translator/lang-Arrow.svg) , url(../images/translator/dollar-Icon.svg);
+      background-position: 21px 34px , calc(100% - 35px) 26px ;
+      background-size: auto;
+      padding-#{$start-direction}: 60px;
+    }
 
 
 
 
 
+    
+    
+  }
+}
+
+
+.date-conv{
+  .date-desc {
+    display: inline-block;
+    border: 1px solid #BBBBBB;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 25px;
+    /* padding-right: 75px; */
+    padding-#{$end-direction}: 40px;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+    img {
+      width: 25px;
+      margin-#{$end-direction}: 15px;
+    }
+  }
+
+  .date-dropdowns {
+    margin-top: 30px;
+    height: 220px;
+    width: 100%;
+    border: 1px solid #BBBBBB;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: transparent;
+
+    p{
+      font-size: 20px;
+      font-weight: $w-normal;
+      color: #000;
+      margin-bottom: 30px;
+    }
+    select{
+      display: inline-block;
+      border: 1px solid #BBBBBB;
+      border-radius: 50px;
+      background-color: transparent;
+      color: #000;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px 35px;
+      padding-#{$end-direction}: 40px;
+      width: 200px;
+      height: 70px;
+      position: relative;
+      background-image: url(../images/translator/lang-Arrow.svg);
+      background-size: 12px;
+      background-position: 35px center;
+
+
+      & + select{
+        margin-#{$start-direction}: 10px;
+      }
+    }
+  }
+}
 
 
 
+.security-modal {
+  .modal-dialog{
+    color: #000000;
+  }
+  .modal-content{
+    border-radius: 8px;
+    border: 0;
+    overflow: hidden;
+
+    .modal-body{
+      padding: 0;
+      .img-box{
+        position: relative;
+        background-color: $green-main;
+        // height: 100px;
+        padding: 20px 40px 24px;
+        margin-bottom: 25px;
+        text-align: center;
+        img{
+          height: 75px;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 10px;
+          right: calc(50% - 15px);
+          bottom: -5px;
+          background-image: url(../images/security-Arrow.svg);
+          background-size: contain;
 
 
+        }
+      }
+      .content-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 35px 40px;
+        h3{
+          font-size: 22px;
+          font-weight: $w-bold;
+          color: $gold-color;
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 16px;
+          font-weight: $w-normal;
+          color: #264C59;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+        a.more-a{
+          display: block;
+          font-size: 14px;
+          font-weight: $w-normal;
+          color: $green-main;
+          margin-bottom: 30px;
+        }
+        .security-accept{
+          a{
+            width: 140px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: $w-normal;
+            color: #fff;
+            background-color: $gold-color;
+            padding: 5px 20px;
+            border-radius: 50px;
+  
+          }
+        }
+        
+      }
+    }
+
+  }
+}
 
 
 
@@ -4159,6 +4318,27 @@ path:hover {fill: $green-main;}
 .agancy-inner-mainCard ul li{
   color: #fff;
 }
+
+.date-conv .date-desc{
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+
+.date-dropdowns {
+  background-color: #5E676E;
+  border: none;
+  color: #bbbbbb;
+}
+
+.date-conv .date-dropdowns select{
+  background-color: #5E676E;
+  color: #fff;
+}
+
+
+
+
 
 
 }
