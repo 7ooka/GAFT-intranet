@@ -3779,6 +3779,7 @@ path:hover {
   border-radius: 50%;
   overflow: hidden;
   margin-left: 10px;
+  border: 1px solid #ddd;
 }
 
 .locations-main .locations-slider .item .content-boxx {
@@ -3814,6 +3815,10 @@ path:hover {
 
 .locations-main .locations-slider .item.clicked {
   background-color: #007066;
+}
+
+.locations-main .locations-slider .item.clicked .img-boxx {
+  border: none;
 }
 
 .locations-main .locations-slider .item.clicked .content-boxx h6 {
@@ -3905,18 +3910,18 @@ path:hover {
 }
 
 .new-map .map-pins .location-with-card.RUSSIA {
-  left: 72%;
-  top: -555px;
+  left: 59%;
+  top: -496px;
 }
 
 .new-map .map-pins .location-with-card.USA {
-  left: 28%;
-  top: -420px;
+  left: 32%;
+  top: -413px;
 }
 
 .new-map .map-pins .location-with-card.AUSTRALIA {
-  left: 78%;
-  top: -190px;
+  left: 82%;
+  top: -164px;
 }
 
 .new-map .map-pins .location-with-card.JAPAN {
@@ -3950,8 +3955,8 @@ path:hover {
 }
 
 .new-map .map-pins .location-with-card.CHINA {
-  left: 71%;
-  top: -403px;
+  left: 74.75%;
+  top: -420px;
 }
 
 .new-map .map-pins .location-with-card.GREMANY {
@@ -4055,6 +4060,7 @@ path:hover {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 15px;
+  border: 1px solid #ddd;
 }
 
 .new-map-side .data-section .loc-card .hub-card .img-box img {
@@ -4120,13 +4126,13 @@ path:hover {
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
-  left: 83%;
-  top: -220px;
+  left: 86.5%;
+  top: -206px;
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .USA {
-  left: 23%;
-  top: -430px;
+  left: 29%;
+  top: -418px;
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .JAPAN {
@@ -4160,8 +4166,8 @@ path:hover {
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .CHINA {
-  left: 74%;
-  top: -403px;
+  left: 78%;
+  top: -422px;
 }
 
 .col-xl-9 .new-map .locations-map .map-pins .GREMANY {
@@ -4593,6 +4599,96 @@ path:hover {
   background-color: #CCA079;
   padding: 5px 20px;
   border-radius: 50px;
+}
+
+.media-box {
+  height: 322px;
+  background-color: #EFEDE6;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.media-box .img-box {
+  width: 100%;
+  height: 250px;
+}
+
+.media-box .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.media-box .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 13.5px;
+}
+
+.media-box .content-box h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #007066;
+}
+
+.media-box .content-box .num-box {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.media-box.vid-box .img-box {
+  position: relative;
+}
+
+.media-box.vid-box .img-box a {
+  position: relative;
+  display: block;
+}
+
+.media-box.vid-box .img-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.media-box.vid-box .img-box a::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 25px);
+  right: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/media/play-circle.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.media-box.vid-box .content-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.media-box.vid-box .content-box h3 {
+  text-align: center;
 }
 
 /*
@@ -5440,27 +5536,27 @@ path:hover {
     top: -373px;
   }
   .new-map .map-pins .location-with-card.USA {
-    left: 22%;
-    top: -435px;
+    left: 29%;
+    top: -415px;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 82%;
-    top: -210px;
+    left: 86.5%;
+    top: -197px;
   }
   .col-xl-9 .new-map .svg-map svg {
     height: 550px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
-    left: 82%;
-    top: -145px;
+    left: 85%;
+    top: -140px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .USA {
-    left: 23%;
+    left: 29%;
     top: -300px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
-    left: 72%;
-    top: -400px;
+    left: 59%;
+    top: -352px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .KSA {
     left: 60%;
@@ -5522,8 +5618,8 @@ path:hover {
     top: -385px;
   }
   .new-map .map-pins .location-with-card.CHINA {
-    left: 74%;
-    top: -403px;
+    left: 78%;
+    top: -420px;
   }
   .new-map .map-pins .location-with-card.ENGLAND {
     left: 48.5%;
@@ -5574,8 +5670,8 @@ path:hover {
     top: -255px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .CHINA {
-    left: 74%;
-    top: -287px;
+    left: 76.75%;
+    top: -300px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .PAKISTAN {
     left: 65%;
@@ -5862,8 +5958,8 @@ path:hover {
     font-size: 12px;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 82%;
-    top: -252px;
+    left: 86%;
+    top: -239px;
   }
   .new-map .map-pins .location-with-card.EGYPT {
     left: 56.5%;
@@ -5878,8 +5974,8 @@ path:hover {
     top: -401px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .AUSTRALIA {
-    left: 81%;
-    top: -180px;
+    left: 84%;
+    top: -170px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .KSA {
     left: 59%;
@@ -5892,6 +5988,10 @@ path:hover {
   .col-xl-9 .new-map .locations-map .map-pins .IRAQ {
     left: 62%;
     top: -290px;
+  }
+  .new-map .map-pins .location-with-card.RUSSIA {
+    left: 59%;
+    top: -480px;
   }
   .new-map .map-pins .location-with-card.JAPAN {
     left: 84%;
@@ -5949,6 +6049,10 @@ path:hover {
     left: 57.8%;
     top: -405px;
   }
+  .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
+    left: 58%;
+    top: -345px;
+  }
   .col-xl-9 .new-map .locations-map .map-pins .JAPAN {
     left: 82%;
     top: -300px;
@@ -5970,8 +6074,8 @@ path:hover {
     top: -262px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .CHINA {
-    left: 72.5%;
-    top: -292px;
+    left: 75.5%;
+    top: -305px;
   }
   .col-xl-9 .new-map .locations-map .map-pins .PAKISTAN {
     left: 64.5%;
@@ -6150,16 +6254,16 @@ path:hover {
     top: -149px;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 81%;
-    top: -155px;
+    left: 85%;
+    top: -147px;
   }
   .new-map .map-pins .location-with-card.MALAYSIA {
     left: 73.7%;
     top: -224px;
   }
   .new-map .map-pins .location-with-card.USA {
-    left: 22.5%;
-    top: -305px;
+    left: 29.5%;
+    top: -300px;
   }
   .new-map .map-pins .location-with-card.MOROCCO {
     left: 46.8%;
@@ -6170,8 +6274,8 @@ path:hover {
     top: -255px;
   }
   .new-map .map-pins .location-with-card.CHINA {
-    left: 73.5%;
-    top: -283px;
+    left: 76.5%;
+    top: -300px;
   }
   .new-map .map-pins .location-with-card.PAKISTAN {
     left: 65.5%;
@@ -6198,8 +6302,8 @@ path:hover {
     top: -284px;
   }
   .new-map .map-pins .location-with-card.RUSSIA {
-    left: 72%;
-    top: -385px;
+    left: 58%;
+    top: -347px;
   }
   .new-map .map-pins .location-with-card.LEBANON {
     left: 57.5%;
@@ -6234,16 +6338,16 @@ path:hover {
     top: -149px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 81%;
-    top: -155px;
+    left: 85%;
+    top: -147px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
     left: 73.7%;
     top: -224px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.USA {
-    left: 22.5%;
-    top: -305px;
+    left: 29.5%;
+    top: -300px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.MOROCCO {
     left: 46.8%;
@@ -6254,8 +6358,8 @@ path:hover {
     top: -255px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
-    left: 73.5%;
-    top: -283px;
+    left: 76.5%;
+    top: -300px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.PAKISTAN {
     left: 65.5%;
@@ -6282,8 +6386,8 @@ path:hover {
     top: -284px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
-    left: 72%;
-    top: -385px;
+    left: 58%;
+    top: -347px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.LEBANON {
     left: 57.5%;
@@ -6468,16 +6572,16 @@ path:hover {
     top: -230px !important;
   }
   .new-map .map-pins .location-with-card.RUSSIA {
-    left: 70% !important;
-    top: -300px !important;
+    left: 57% !important;
+    top: -273px !important;
   }
   .new-map .map-pins .location-with-card.USA {
-    left: 24% !important;
-    top: -245px !important;
+    left: 29.5% !important;
+    top: -239px !important;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 78% !important;
-    top: -147px !important;
+    left: 82% !important;
+    top: -140px !important;
   }
   .locations-main .swiperArr {
     display: none;
@@ -6514,8 +6618,8 @@ path:hover {
     top: -210px;
   }
   .new-map .map-pins .location-with-card.CHINA {
-    left: 71%;
-    top: -230px;
+    left: 74.25% !important;
+    top: -242px !important;
   }
   .new-map .map-pins .location-with-card.PAKISTAN {
     left: 64%;
@@ -6810,16 +6914,16 @@ path:hover {
     height: 300px !important;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 76% !important;
-    top: -108px !important;
+    left: 81% !important;
+    top: -103px !important;
   }
   .new-map .map-pins .location-with-card.USA {
-    left: 24% !important;
-    top: -178px !important;
+    left: 31.5% !important;
+    top: -177px !important;
   }
   .new-map .map-pins .location-with-card.RUSSIA {
-    left: 70% !important;
-    top: -224px !important;
+    left: 58% !important;
+    top: -202px !important;
   }
   .new-map .map-pins .location-with-card.IRAQ {
     left: 58.5% !important;
@@ -6858,8 +6962,8 @@ path:hover {
     top: -141px;
   }
   .new-map .map-pins .location-with-card.CHINA {
-    left: 69%;
-    top: -172px;
+    left: 73.5% !important;
+    top: -178px !important;
   }
   .new-map .map-pins .location-with-card.INDIA {
     left: 65.7%;
@@ -6913,14 +7017,6 @@ path:hover {
     left: 51.5%;
     top: -199px;
   }
-  .new-map .map-pins .location-with-card.USA {
-    left: 26% !important;
-    top: -178px !important;
-  }
-  .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 77.5% !important;
-    top: -108px !important;
-  }
   .col-xl-9 .new-map .map-pins .location-with-card.S-AFRICA {
     left: 54%;
     top: -103px;
@@ -6936,10 +7032,6 @@ path:hover {
   .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
     left: 70.8%;
     top: -141px;
-  }
-  .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
-    left: 69%;
-    top: -172px;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.INDIA {
     left: 65.7%;
@@ -7083,20 +7175,20 @@ path:hover {
     height: 7px;
   }
   .new-map .map-pins .location-with-card.USA {
-    left: 20% !important;
-    top: -129px !important;
+    left: 26% !important;
+    top: -126px !important;
   }
   .new-map .map-pins .location-with-card.S-AFRICA {
     left: 47% !important;
     top: -74px !important;
   }
   .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 69.5% !important;
-    top: -78px !important;
+    left: 72.5% !important;
+    top: -74px !important;
   }
   .new-map .map-pins .location-with-card.RUSSIA {
-    left: 63% !important;
-    top: -158px !important;
+    left: 51% !important;
+    top: -144px !important;
   }
   .new-map .map-pins .location-with-card.MALAYSIA {
     left: 63% !important;
@@ -7107,8 +7199,8 @@ path:hover {
     top: -112px !important;
   }
   .new-map .map-pins .location-with-card.CHINA {
-    left: 63% !important;
-    top: -123px !important;
+    left: 65.5% !important;
+    top: -129px !important;
   }
   .new-map .map-pins .location-with-card.PAKISTAN {
     left: 56% !important;
@@ -7167,20 +7259,20 @@ path:hover {
     top: -129px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.USA {
-    left: 20% !important;
-    top: -129px !important;
+    left: 26% !important;
+    top: -126px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.S-AFRICA {
     left: 47% !important;
     top: -74px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.AUSTRALIA {
-    left: 69.5% !important;
-    top: -78px !important;
+    left: 72.5% !important;
+    top: -74px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.RUSSIA {
-    left: 63% !important;
-    top: -158px !important;
+    left: 51% !important;
+    top: -144px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.MALAYSIA {
     left: 63% !important;
@@ -7191,8 +7283,8 @@ path:hover {
     top: -112px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.CHINA {
-    left: 63% !important;
-    top: -123px !important;
+    left: 65.5% !important;
+    top: -129px !important;
   }
   .col-xl-9 .new-map .map-pins .location-with-card.PAKISTAN {
     left: 56% !important;
