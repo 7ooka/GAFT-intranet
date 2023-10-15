@@ -207,26 +207,26 @@ $(function () {
 
 
 
-    AOS.init({
-        duration: 1000,
-    });
+  //   AOS.init({
+  //       duration: 1000,
+  //   });
 
-    $("a.fancybox").fancybox({
+  //   $("a.fancybox").fancybox({
 
-  });
-  $("a.fancyboxVideo").fancybox({
-      // openEffect	: 'none',
-      // closeEffect	: 'none',
-      type: "iframe",
-      scrolling: 'no',
-      padding:0,
-      // ratio: 16 / 10,
-      // width: 640,
-      // height: 360,
-      youtube: {
-          autoplay: 1, // enable autoplay
-      }
-  });
+  // });
+  // $("a.fancyboxVideo").fancybox({
+  //     // openEffect	: 'none',
+  //     // closeEffect	: 'none',
+  //     type: "iframe",
+  //     scrolling: 'no',
+  //     padding:0,
+  //     // ratio: 16 / 10,
+  //     // width: 640,
+  //     // height: 360,
+  //     // youtube: {
+  //     //     autoplay: 1, // enable autoplay
+  //     // }
+  // });
 
 
 

@@ -539,6 +539,81 @@ footer .left-footer p {
   font-size: 12px;
 }
 
+.main-topnav .bgTopNav .topNav .notifications::after {
+  display: none;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu {
+  border: 1px solid #BBBBBB;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 25px;
+  width: 540px;
+  right: -20px !important;
+  top: 65px !important;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(152, 158, 163, 0.2);
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li:last-of-type {
+  border-bottom: none;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a {
+  padding: 0;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a .title {
+  margin-bottom: 10px;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a .title img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a .title h5 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #007066;
+  margin-bottom: 0;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a .details {
+  font-size: 13px;
+  font-weight: 400;
+  color: #323E48;
+  height: 33px;
+  padding: 0 15px;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li + li {
+  margin-top: 20px;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu .more-show {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu .more-show a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #CCA079;
+  text-decoration: underline;
+}
+
 .main-topnav .bgTopNav .topNav .dark-Mode span {
   display: block;
   width: 80px;
@@ -4577,7 +4652,7 @@ path:hover {
   display: block;
   font-size: 14px;
   font-weight: 400;
-  color: #007066;
+  color: #007066 !important;
   margin-bottom: 30px;
 }
 
@@ -4689,6 +4764,10 @@ path:hover {
 
 .media-box.vid-box .content-box h3 {
   text-align: center;
+}
+
+.news .owl-carousel-news .item {
+  padding: 0 !important;
 }
 
 /*
@@ -5167,6 +5246,14 @@ path:hover {
 
 .Dark .date-conv .date-dropdowns select {
   background-color: #5E676E;
+  color: #fff;
+}
+
+.Dark .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a .title h5 {
+  color: #CCA079;
+}
+
+.Dark .main-topnav .bgTopNav .topNav .dropdown .dropdown-menu.notification-Menu ul li a .details {
   color: #fff;
 }
 
