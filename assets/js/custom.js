@@ -1,4 +1,52 @@
+var RootUrl=window.location.protocol + "//" + window.location.host;
 $( document ).ready(function() {
+//start check User Approved Policy Popup
+var currentUserApprovedStatus = sessionStorage.getItem('userIsApprovedPolicy');
+if(currentUserApprovedStatus!='1' && window.location.href.toLowerCase().includes("securitypolicy.aspx")==false ){
+// Make a GET request to retrieve the current user
+$.ajax({
+  url: RootUrl + "/_api/web/currentUser",
+  type: "GET",
+  headers: {
+    "Accept": "application/json;odata=verbose"
+  },
+   success : onSuccess_CurrentUser,
+  error : onError
+});	
+}
+$(document).on("click","#btnAcceptPolicy",function(){
+	event.preventDefault();
+  // Define the item data
+  var itemType = GetItemTypeForListName("PoliciesApprovals");
+    var item = {
+        "__metadata": { "type": itemType },
+        "Title":$("#lblLoginName").val(),
+        "UserLoginName": $("#lblLoginName").val(),
+		"IsApproved":true
+    };
+// Make a POST request to insert a new item in the SharePoint list
+$.ajax({
+  url: RootUrl  + "/_api/web/lists/getByTitle('PoliciesApprovals')/items",
+  type: "POST",
+  headers: {
+    "Accept": "application/json;odata=verbose",
+    "Content-Type": "application/json;odata=verbose",
+    "X-RequestDigest": $("#__REQUESTDIGEST").val()
+  },
+  data: JSON.stringify(item),
+  success: function(data) {
+    // Handle the response data
+	$("#securityModal").modal("hide");
+	sessionStorage.setItem('userIsApprovedPolicy', '1');
+  },
+  error: function(error) {
+    // Handle error
+    console.log(error);
+  }
+});
+
+});
+//End check User Approved Policy Popup
 
   var darkModeCookie = getCookie('darkMode');
 	console.log(darkModeCookie);
@@ -223,9 +271,9 @@ $(function () {
   //     // ratio: 16 / 10,
   //     // width: 640,
   //     // height: 360,
-  //     // youtube: {
-  //     //     autoplay: 1, // enable autoplay
-  //     // }
+  //     youtube: {
+  //         autoplay: 1, // enable autoplay
+  //     }
   // });
 
 
@@ -957,3 +1005,41 @@ $(".close-nav").click(function(e){
 
   
 })
+
+function onSuccess_CurrentUser(data, request) {
+	// Retrieve the current user's login name
+    var currentUser = data.d;
+    var loginName = currentUser.LoginName;
+   
+	if (loginName.indexOf("|") !== -1) {
+        loginName = loginName.split("|")[1];
+    }
+	$("#lblLoginName").val(loginName);
+	//Check current user has approved policies
+	$.ajax({
+  url: RootUrl + "/_api/web/lists/getByTitle('PoliciesApprovals')/items?$filter=UserLoginName eq '"+loginName+"' and IsApproved eq 1",
+  type: "GET",
+  headers: {
+    "Accept": "application/json;odata=verbose"
+  },
+    success : onSuccess_CheckIsApproved,
+    error : onError
+});
+}
+function onError(error) {
+  alert(error);
+  }
+function onSuccess_CheckIsApproved(data, request) {
+	  if (data.d.results.length === 0) {
+	   $('#securityModal').modal({backdrop: 'static', keyboard: false})  
+      $("#securityModal").modal("show");
+
+      } else {
+      sessionStorage.setItem('userIsApprovedPolicy', '1');
+    }
+	
+}
+// Get List Item Type metadata
+function GetItemTypeForListName(name) {
+    return "SP.Data." + name.charAt(0).toUpperCase() + name.split(" ").join("").slice(1) + "ListItem";
+}
