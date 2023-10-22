@@ -2220,7 +2220,9 @@ path:hover {fill: $green-main;}
   position: relative;
   border-radius: 8px;
   &.main-depEemp{
-    background-color: rgba($color: #79CC9C , $alpha: 0.6);
+    // background-color: rgba($color: #79CC9C , $alpha: 0.6);
+    background: rgb(206,162,119);
+    background: linear-gradient(160deg, rgba(206,162,119,1) 0%, rgba(215,179,142,1) 25%, rgba(223,194,166,1) 60%, rgba(234,213,192,1) 100%);
     // background-color: #D9E4F0;
     // // border-radius: 30px;
     // overflow: hidden;

@@ -2716,7 +2716,8 @@ path:hover {
 }
 
 .depEemp-box.main-depEemp {
-  background-color: rgba(121, 204, 156, 0.6);
+  background: #cea277;
+  background: linear-gradient(160deg, #cea277 0%, #d7b38e 25%, #dfc2a6 60%, #ead5c0 100%);
 }
 
 .depEemp-box .img-box {
@@ -5365,7 +5366,8 @@ path:hover {
 /* start agency */
 .headAgency {
   padding: 20px;
-  background-color: rgba(0, 154, 189, 0.2);
+  background: #007066;
+  background: linear-gradient(160deg, #007066 20%, #2b7a72 40%, #46847c 70%, #5f8f88 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5393,6 +5395,7 @@ path:hover {
 .headAgency .HATxt .font30,
 .headAgency .HATxt .font24 {
   margin-bottom: 8px;
+  color: #fff;
 }
 
 .headAgency .HAImg {
@@ -5408,12 +5411,17 @@ path:hover {
 
 .headAgency .font20 {
   text-align: center;
+  color: #fff;
+}
+
+.headAgency .font22 {
+  text-align: center;
+  color: #fff;
 }
 
 .headAgency .font24 {
   font-size: 24px;
   font-weight: 700;
-  color: #000000;
   margin-bottom: 0;
 }
 
