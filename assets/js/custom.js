@@ -1027,7 +1027,7 @@ function onSuccess_CurrentUser(data, request) {
 });
 }
 function onError(error) {
-  alert(error);
+  // alert(error);
   }
 function onSuccess_CheckIsApproved(data, request) {
 	  if (data.d.results.length === 0) {
