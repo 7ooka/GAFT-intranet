@@ -337,8 +337,33 @@ $(function () {
         }
     });
 }
+function animateElements2() {
+  $('.progressbarCircle2').each(function () {
+      let elementPos = $(this).offset().top;
+      let topOfWindow = $(window).scrollTop();
+      // var percent = $(this).find('.circle').attr('data-percent');
+      let minValue = $(this).find('.circle').attr('aria-valuenow');
+      let maxValue = $(this).find('.circle').attr('aria-valuemax');
+      let animate = $(this).data('animate');
+      let total = (minValue / maxValue) * 100
 
+      if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+          $(this).data('animate', true);
+          $(this).find('.circle').circleProgress({
+              startAngle: -Math.PI / 1.3,
+              value: total / 100,
+              size : 92,
+              thickness:10,
+              emptyFill: " rgba(0, 112, 103, 0.99)" ,
+              fill: {
+                color: "rgba(204, 160, 121, 0.99)"
+              }
+          }).stop();
+      }
+  });
+}
 animateElements();
+animateElements2();
 // $(window).scroll(animateElements);
 
 // if($('body').hasClass("Dark")) {

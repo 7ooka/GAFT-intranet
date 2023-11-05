@@ -5651,11 +5651,13 @@ path:hover {
   color: #007066;
 }
 
+.progressbarCircle2 .font16,
 .progressbarCircle .font16 {
   margin-top: 7px;
   display: inline-block;
 }
 
+.progressbarCircle2 .circle,
 .progressbarCircle .circle {
   width: 92px;
   display: inline-block;
@@ -5664,11 +5666,13 @@ path:hover {
   line-height: 1.2;
 }
 
+.progressbarCircle2 .circle canvas,
 .progressbarCircle .circle canvas {
   vertical-align: top;
   width: 92px !important;
 }
 
+.progressbarCircle2 .circle strong,
 .progressbarCircle .circle strong {
   position: absolute;
   top: calc(50% + -5px);
@@ -5682,6 +5686,12 @@ path:hover {
   color: #000000;
   font-family: "DINNextLT";
   font-weight: 500;
+}
+
+.Attendance-card .charts-box,
+.vacation-card .charts-box {
+  border: unset;
+  margin: 0;
 }
 
 .Dark .progressbarCircle .circle strong {

@@ -39,7 +39,7 @@
 .color007066 {
   color: #007066;
 }
-
+.progressbarCircle2,
 .progressbarCircle {
   .font16 {
     margin-top: 7px;
@@ -71,6 +71,14 @@
     
   }
 }
+.Attendance-card,
+.vacation-card {
+  .charts-box {
+    border: unset;
+    margin: 0;
+  } 
+}
+
 .Dark {
   .progressbarCircle {
     .circle {
