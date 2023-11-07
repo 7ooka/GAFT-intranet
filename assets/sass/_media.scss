@@ -363,6 +363,20 @@
 }
 
 
+.Vacation .content-box .today-time{
+  font-size: 23px;
+}
+.Vacation .content-box .title{
+  font-size: 14px;
+}
+
+.contact-info .list-cards .card-det {
+  width: calc(100% / 3 );
+}
+
+
+
+
 }
 
 
@@ -752,7 +766,69 @@
 
 
 
+.profile-main-data .img-box{
+  width: 200px;
+  height: 200px;
+  flex: 0 0 200px;
+  transform: translateY(-150px);
+  background-size: contain;
+}
+.profile-main-data .content-box{
+  transform: translateY(-150px);
 
+}
+
+.progressbarCircle2 .circle canvas, .progressbarCircle .circle canvas{
+  width: 75px !important;
+}
+
+.progressbarCircle2 .circle strong, .progressbarCircle .circle strong{
+  font-size: 25px;
+}
+
+.Attendance-card h4 {
+  margin-bottom: 5px;
+}
+
+.Attendance-card .Vacation .content-box {
+  flex: 0 0 100%;
+  flex-direction: row;
+}
+
+
+.Attendance-card .charts-box, .vacation-card .charts-box {
+  flex-wrap: wrap;
+  padding-top: 0;
+}
+.Attendance-card .Vacation .content-box .today-time {
+  margin: 0;
+  margin-#{$end-direction}: 5px;
+}
+
+.contact-info .list-cards {
+  padding: 0 10px;
+}
+
+.contact-info .list-cards .card-det .content-box h6 {
+  font-size: 16px;
+}
+
+.contact-info .list-cards .card-det .content-box p {
+  font-size: 15px;
+}
+
+.contact-info .list-cards .card-det .img-box {
+  width: 60px;
+  height: 60px;
+}
+
+.requests .req-table table tbody tr td {
+  font-size: 14px;
+}
+
+.requests .req-table table th {
+  font-size: 16px;
+}
 
 }
 
@@ -1114,6 +1190,37 @@
 .offers-det .content-box h4 span{
   font-size: 22px;
 }
+
+
+
+.profile-main-data .content-box .name{
+  font-size: 20px;
+}
+
+
+.profile-main-data .content-box .emp-number, .profile-main-data .content-box .id-number {
+  font-size: 16px;
+}
+
+.progressbarCircle2 .circle, .progressbarCircle .circle{
+  width: 75px;
+}
+.progressbarCircle2 .circle canvas, .progressbarCircle .circle canvas {
+  width: 60px !important;
+}
+.vacation-card.Attendance-card .charts-box, .vacation-card .charts-box {
+  flex-wrap: nowrap;
+}
+
+.progressbarCircle2 .circle strong, .progressbarCircle .circle strong{
+  font-size: 22px;
+  top: calc(45% + -5px);
+}
+
+
+
+
+
 }
 
 
@@ -1462,9 +1569,34 @@
   font-size: 14px;
 }
 
+.profile-main-data .img-box{
+  transform: none;
+}
+.profile-main-data .content-box{
+  transform: none;
+}
+.profile-main-data {
+  height: auto;
+}
 
+.progressbarCircle2 .circle, .progressbarCircle .circle {
+  width: 91px;
+}
+.progressbarCircle2 .circle canvas, .progressbarCircle .circle canvas {
+  width: 95px !important;
+}
 
+.Attendance-card .Vacation .content-box {
+  flex: 0 0 auto;
+}
 
+.profile-name h2{
+  font-size: 22px;
+}
+
+.requests .req-table {
+  overflow-x: auto;
+}
 
 }
 
@@ -1843,9 +1975,23 @@
 }
 
 
+.contact-info .list-cards .card-det {
+  width: 100%;
+  margin-bottom: 15px;
+}
 
+.contact-info .list-cards {
+  flex-direction: column;
+}
 
+.contact-info {
+  height: auto;
+}
 
+.progressbarCircle2 .circle canvas, .progressbarCircle .circle canvas {
+  width: 75px !important;
+  height: 75px !important;
+}
 
 }
 
