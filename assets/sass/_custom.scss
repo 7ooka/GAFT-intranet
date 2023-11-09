@@ -717,7 +717,7 @@ footer {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        color: #fff !important;
         background-color: $gold-color;
         border-radius: 22px;
         padding: 5px 15px 10px;
@@ -725,6 +725,7 @@ footer {
           background-color: $green-main;
           width: 110px;
           margin-#{$start-direction}: 10px;
+          margin-bottom: 0;
         }
       }
     }
@@ -4815,7 +4816,16 @@ path:hover {fill: $green-main;}
 }
 
 
+ .depEemp-box.main-depEemp .content-box .name{
+  color: $green-main;
+}
 
+.depEemp-box.main-depEemp .content-box .job,
+.depEemp-box.main-depEemp .content-box .mail a,
+.depEemp-box.main-depEemp .content-box .phone,
+.depEemp-box.main-depEemp .content-box .phone a{
+  color: #000;
+}
 
 
 }

@@ -119,9 +119,15 @@ $.ajax({
         // breakpoint from 768 up
         768 : {
           items:2,
+          margin:20,
+        },
+        1400 : {
+          items:3,
+          margin:10,
         },
         1650 : {
           items:3,
+          margin:20,
         }
     }
 
