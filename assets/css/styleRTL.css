@@ -5107,6 +5107,1187 @@ path:hover {
       ;
 }
 
+.organizational-chart {
+  overflow-x: auto;
+}
+
+.structure-container {
+  width: 1540px;
+  min-height: 2186px;
+  padding-top: 100px;
+}
+
+.structure-container .structure-head {
+  position: absolute;
+  right: calc(50% - 120px);
+  top: -30px;
+  background-color: #cca079;
+  border-radius: 4px;
+  height: 55px;
+  width: 235px;
+}
+
+.structure-container .structure-head img {
+  max-width: 100%;
+  height: auto;
+}
+
+.structure-container .structure-head h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 40px;
+  margin-bottom: 0;
+  padding: 8px 15px 6px;
+  text-align: center;
+}
+
+.structure-container .level-one {
+  position: relative;
+  height: 290px;
+}
+
+.structure-container .level-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 235px);
+  width: 125px;
+  height: 2px;
+  border-bottom: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+  display: none;
+}
+
+.structure-container .level-one .main {
+  background-color: #007066;
+  color: #CCA079;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 185px;
+  height: 55px;
+  position: absolute;
+  top: 214px;
+  right: calc(50% - 92px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.structure-container .level-one .main::before {
+  content: "";
+  position: absolute;
+  top: -189px;
+  right: calc(50% - 1px);
+  width: 2px;
+  height: 189px;
+  border-left: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one .main::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 1px);
+  width: 2px;
+  height: 395px;
+  border-left: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one .sub1 {
+  background-color: #fff;
+  color: #CCA079;
+  border: 3px solid #007066;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0px 15px 6px;
+  border-radius: 4px;
+  top: 120px;
+  text-align: center;
+}
+
+.structure-container .level-one .sub1.sub1-a {
+  border-style: dashed;
+  position: absolute;
+  left: 350px;
+  top: -25px;
+}
+
+.structure-container .level-one .sub1.sub1-a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 1px);
+  width: 2px;
+  height: 230px;
+  border-left: 3px dashed #bbbbbb;
+}
+
+.structure-container .level-one .sub1.sub1-a::after {
+  content: "";
+  position: absolute;
+  top: 268px;
+  left: 120px;
+  width: 430px;
+  height: 2px;
+  border-top: 3px dashed #bbbbbb;
+}
+
+.structure-container .level-one .sub1.sub1-b {
+  position: absolute;
+  left: 944px;
+  top: 30px;
+  width: 255px;
+  height: 42px;
+}
+
+.structure-container .level-one .sub1.sub1-b::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 100.7%;
+  width: 175px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one .sub1.sub1-bb {
+  top: 102px;
+}
+
+.structure-container .level-one .sub1.sub1-c {
+  position: absolute;
+  left: 944px;
+  top: 170px;
+  width: 255px;
+  height: 42px;
+}
+
+.structure-container .level-one .sub1.sub1-c::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 100.7%;
+  width: 175px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one .sub1.sub1-c::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  right: 127px;
+  width: 2px;
+  height: 80px;
+  border-left: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 {
+  position: relative;
+  height: 320px;
+}
+
+.structure-container .level-one-2 .sub1-two {
+  color: #013430;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  background-color: #CCA079;
+  border-radius: 4px;
+  padding: 4px 10px 6px;
+  text-align: center;
+  width: 200px;
+  min-height: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a1 {
+  top: 55px;
+  right: 910px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a1::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 100%;
+  width: 140px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a2 {
+  top: 161px;
+  right: 910px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a2:not(.sub1-two-a3a)::before {
+  width: 524px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a2::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 100%;
+  width: 140px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a2::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -179.5px;
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+  display: none;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-a3a {
+  top: 256px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b1 {
+  top: 109px;
+  right: 560px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b1::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  width: 2px;
+  height: 25px;
+  border-right: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b2 {
+  top: 0px;
+  right: 365px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 70px;
+  height: 2px;
+  border-top: 3px dashed #bbbbbb;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b2::after {
+  content: "";
+  position: absolute;
+  top: -73%;
+  border-left: 3px dashed #bbbbbb;
+  right: 135%;
+  width: 2px;
+  height: 66px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b3 {
+  top: 109px;
+  right: 350px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b3::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  width: 2px;
+  height: 25px;
+  border-right: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b3::after {
+  content: "";
+  position: absolute;
+  bottom: 48%;
+  right: 379px;
+  width: 2px;
+  height: 153px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+  display: none;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b4 {
+  top: 214px;
+  right: 560px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b4::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  width: 2px;
+  height: 25px;
+  border-right: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b4::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -179.5px;
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+  display: none;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b5 {
+  top: 214px;
+  right: 350px;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b5::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  width: 2px;
+  height: 25px;
+  border-right: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-2 .sub1-two.sub1-two-b5::after {
+  content: "";
+  position: absolute;
+  bottom: 48%;
+  left: 379px;
+  width: 2px;
+  height: 153px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+  display: none;
+}
+
+.structure-container .level-one-3 {
+  position: relative;
+  height: 500px;
+  top: 60px;
+}
+
+.structure-container .level-one-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(50% - 556px);
+  width: 1133px;
+  height: 2px;
+  border-bottom: 2px solid #B2DBD7;
+}
+
+.structure-container .level-one-3::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+}
+
+.structure-container .level-one-3 .sub1-three {
+  position: absolute;
+}
+
+.structure-container .level-one-3 .sub1-three .level2sub2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 43px;
+}
+
+.structure-container .level-one-3 .sub1-three .level2sub2::after {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  right: 108px;
+}
+
+.structure-container .level-one-3 .sub1-three .level2sub2 .headLevel {
+  background: #E5E5E5;
+  padding: 0 5px;
+}
+
+.structure-container .level-one-3 .sub1-three .level2sub2 li {
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.structure-container .level-one-3 .sub1-three .level2sub2 li:not(:last-of-type)::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 22px;
+  border-left: 2px solid #B2DBD7;
+  bottom: -22px;
+  z-index: 2;
+}
+
+.structure-container .level-one-3 .sub1-three .level2sub2 ul:not(:first-of-type) {
+  margin-right: 55px;
+}
+
+.structure-container .level-one-3 .sub1-three .main-card {
+  background-color: #686868;
+  color: #fff;
+  border-radius: 4px;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 400;
+  width: 185px;
+  min-height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.structure-container .level-one-3 .sub1-three .main-card::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 130px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  bottom: 100%;
+}
+
+.structure-container .level-one-3 .sub1-three .main-card::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  top: 65px;
+}
+
+.structure-container .level-one-3 .sub1-three ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: 48px;
+}
+
+.structure-container .level-one-3 .sub1-three ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 48px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  bottom: 100%;
+}
+
+.structure-container .level-one-3 .sub1-three ul li {
+  background-color: #F8F8F8;
+  color: #012D29;
+  border-radius: 4px;
+  padding-top: 0;
+  padding-bottom: 0px;
+  padding-right: 13px;
+  padding-left: 15px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  width: 200px;
+  height: 52px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.structure-container .level-one-3 .sub1-three ul li.borderd-card {
+  border: 3px dashed #BBBBBB;
+  background-color: #fff;
+}
+
+.structure-container .level-one-3 .sub1-three .forAbsoPostion {
+  position: absolute;
+  margin: 0;
+  top: 96px;
+  right: 128px;
+}
+
+.structure-container .level-one-3 .sub1-three .forAbsoPostion::before {
+  height: 2px;
+  width: 30px;
+  border-bottom: 2px solid #B2DBD7;
+  right: 100%;
+  bottom: 55%;
+}
+
+.structure-container .level-one-3 .sub1-three .headLevel {
+  background: #E5E5E5;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a1 {
+  right: 36px;
+  top: 130px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a2 {
+  right: 180px;
+  top: 819px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 {
+  margin-top: 100px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2::after {
+  right: 108px;
+  width: 541px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 .crearMargin {
+  margin-right: 0;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a2 .main-card::after {
+  height: 100px;
+  top: 77px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 {
+  right: 522px;
+  top: 130px;
+  width: 500px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B {
+  margin-top: 42px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B .forAbsoPostion {
+  top: 92px;
+  right: 53px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B .forAbsoPostion li {
+  height: 40px;
+  width: 165px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion)::after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #B2DBD7;
+  width: 2px;
+  height: 286px;
+  top: 63px;
+  left: 250px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 22px !important;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 200px;
+  float: left;
+  margin-bottom: 22px;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(even) {
+  margin-right: 55px;
+  position: relative;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(even)::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 55px;
+  height: 2px;
+  right: -55px;
+  top: 35px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type, .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:first-of-type {
+  width: 50%;
+  float: unset;
+  margin-right: unset;
+  margin: 0 auto;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before {
+  content: unset;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 {
+  right: 1000px;
+  top: 819px;
+  width: 260px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card {
+  margin: unset;
+  margin-right: 10px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card::after {
+  left: 75%;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card::before {
+  height: 820px;
+  left: 60%;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B {
+  margin-top: 42px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion)::after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #B2DBD7;
+  width: 2px;
+  height: 257px;
+  top: -47px;
+  left: 245px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion)::before {
+  width: 132px;
+  height: 2px;
+  border-bottom: 2px solid #B2DBD7;
+  left: 49%;
+  bottom: unset;
+  z-index: -1;
+  top: -47px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 22px !important;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 216px;
+  float: left;
+  margin-bottom: 22px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd) {
+  margin-right: 55px;
+  position: relative;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd)::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 55px;
+  height: 2px;
+  right: -55px;
+  top: 35px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before {
+  width: 31px;
+  right: -31px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 {
+  right: 1155px;
+  top: 130px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .main-card::after {
+  content: unset;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B {
+  margin-top: 50px;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion)::before {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #B2DBD7;
+  width: 2px;
+  height: 215px;
+  top: -90px;
+  left: 243px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 22px !important;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 216px;
+  float: left;
+  margin-bottom: 22px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd) {
+  margin-right: 55px;
+  position: relative;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd)::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 55px;
+  height: 2px;
+  right: -55px;
+  top: 35px;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before {
+  content: unset;
+}
+
+.organizational-chart .structure-container {
+  min-height: 2500px;
+  overflow-x: hidden;
+}
+
+.organizational-chart .structure-container .level-one .main::after {
+  height: 480px;
+}
+
+.organizational-chart .structure-container .level-one-3 {
+  top: 140px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2.new-sub2-two {
+  top: 348px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew {
+  top: -31px;
+  right: unset;
+  left: 0;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew::before {
+  right: unset;
+  left: 95%;
+}
+
+/* start new xd */
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 {
+  right: -68px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
+  right: 1420px;
+}
+
+.organizational-chart .structure-container .level-one-3::before {
+  right: calc(50% - 640px);
+  width: 1174px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
+  right: 1200px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card::before {
+  height: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .main-card {
+  margin-bottom: 140px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .main-card::after {
+  height: 117px;
+  top: 65px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .main-card::after {
+  height: 90px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion)::after {
+  top: 138px;
+  height: 709px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 li::after,
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:not(.headLevel):not(:last-of-type):before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 24px !important;
+  height: 2px;
+  right: -24px !important;
+  top: 27px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:not(.headLevel):nth-of-type(even) {
+  margin-right: -92px;
+  margin-left: 97px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:not(.headLevel):last-of-type {
+  -webkit-transform: rotate(-90deg) translate(-165px, -125px);
+          transform: rotate(-90deg) translate(-165px, -125px);
+  margin: 0;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 57px !important;
+  position: relative;
+  margin-top: 155px !important;
+  width: 45%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) .headLevel::after {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #B2DBD7;
+  left: -41px;
+  top: -25px;
+  height: 110px;
+  width: 20px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 ul:not(:first-of-type) {
+  margin-right: 0;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 ul:not(:first-of-type) {
+  margin-right: 0;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type, .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:first-of-type {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 150px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li,
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 li {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 172px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 li:nth-of-type(2),
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 li:nth-of-type(1) {
+  margin-top: 0;
+  margin-bottom: 172px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 ul:first-of-type {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 ul:last-of-type {
+  -webkit-transform: translateX(45px);
+          transform: translateX(45px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2::after {
+  right: 0;
+  top: 154px;
+  width: 106px;
+  -webkit-transform: translateX(-148px);
+          transform: translateX(-148px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .main-card {
+  margin-bottom: 70px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 {
+  right: 315px;
+  top: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 {
+  margin-top: 90px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 ul:not(.forAbsoPostion) {
+  -webkit-transform: translateX(-66px);
+          transform: translateX(-66px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 ul:not(.forAbsoPostion) li {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 172px;
+  margin-right: -135px;
+  margin-left: 0px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 ul:not(.forAbsoPostion) li:first-of-type {
+  margin-top: 50px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2::after {
+  right: 33px;
+  width: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 li:not(:last-of-type)::after {
+  bottom: 14px;
+  left: -13px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 24px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .forAbsoPostion {
+  right: -73px;
+  top: 87px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .forAbsoPostion li {
+  width: 140px;
+  height: 40px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 ul.forAbsoPostion::before {
+  left: 151%;
+  bottom: 63%;
+}
+
+.structure-container .level-one-3 .sub1-three.sub1-three-a2 ul::before {
+  left: 98px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
+  top: 132px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B {
+  margin-top: 140px;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li {
+  margin-top: 14px;
+  margin-bottom: 172px;
+  margin-right: -95px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 22px !important;
+  height: 2px;
+  right: -22px !important;
+  top: 27px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li {
+  float: right;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion)::before {
+  width: 123px;
+  left: 49%;
+  top: -91px;
+}
+
+.structure-container .level-one-3 .sub1-three-a4 ul {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion)::after {
+  display: none;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card::after {
+  height: 79px;
+  top: 65px;
+  left: 60%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
+  right: 850px;
+  width: 350px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .main-card {
+  margin-bottom: 52px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 325px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 216px;
+  left: unset;
+  margin-right: 16px !important;
+  position: relative;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(3) {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(4) {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before,
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 22px !important;
+  height: 2px;
+  right: -22px !important;
+  top: 22px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion)::before {
+  height: 262px;
+  top: 22px;
+  left: 356px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .main-card::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  height: 79px;
+  top: 65px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .forAbsoPostion.headLevenew {
+  top: -40px;
+  left: 185px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .forAbsoPostion.headLevenew li {
+  height: 40px;
+  width: 165px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .forAbsoPostion.headLevenew::before {
+  left: -20px;
+  width: 20px;
+}
+
+body .organizational-chart .structure-container .level-one-3::after {
+  background-color: transparent;
+}
+
+body .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a3a {
+  background: #c8d7df;
+}
+
+body .organizational-chart .structure-container .level-one-3 .sub1-three .main-card {
+  background-color: #007066;
+}
+
+body .organizational-chart .structure-container .level-one-3 .sub1-three ul li {
+  background-color: #bdbcba;
+}
+
+body .organizational-chart .structure-container .level-one-3 .sub1-three .headLevel {
+  background: #d0a175 !important;
+}
+
+body .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .crearMargin .headLevel {
+  background: #00b4a3 !important;
+}
+
 /*
 
       daaaaaaaaaaaaaaaaaaaaark

@@ -94,7 +94,11 @@ $.ajax({
         navText: arrow,
         rtl: true,
         items:1,
-        dots:false
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true
+
     })
 
 
